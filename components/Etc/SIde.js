@@ -23,12 +23,15 @@ export default function Side() {
                     <Span className="InfoNum">2022.04.23</Span>
                     <Span className="InfoText">인증기기</Span>
                     <Span className="InfoNum">1555521323</Span>
-                    <Div className="Rectangle-Copy-20">라이센스입력</Div>
-                    <Div className="License">라이센스 연장</Div>
+                    <Input className="Rectangle-Copy-20" type="text" placeholder="라이센스입력" />
+                    <Btn className="License">라이센스 연장</Btn>
                 </Div>
                 <Div className="PointInfo">
                     <Span className="InfoText">전체 회원 포인트</Span>
-                    <Div className="Rectangle-Copy-21">P</Div>
+                    <Div className="Rectangle-Copy-21">
+                        <Input className="Rectangle-Copy-21" type="text" />P
+                    </Div>
+
                     <Div className="Rectangle-Copy-13">포인트 지급</Div>
                 </Div>
             </Div>
@@ -75,42 +78,7 @@ const Div = styled.div`
         background-color: #20232a;
         text-align: start;
     }
-    &.Rectangle-Copy-20 {
-        width: 100%;
-        height: 46px;
-        margin: 5px 0 20px 0;
-        padding-left: 10px;
-        display: flex;
-        align-items: center;
-        border-radius: 10px;
-        border: solid 1px #3d3f45;
-        background-color: #31333a;
-        font-family: Pretendard;
-        font-size: 15px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.73;
-        letter-spacing: normal;
-        color: #7a7c85;
-    }
-    &.License {
-        width: 100%;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 23px;
-        background-color: #f34a7e;
-        font-family: Pretendard;
-        font-size: 15px;
-        line-height: 2.75;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: normal;
-        color: #e5e8ea;
-    }
+
     &.PointInfo {
         width: 100%;
         height: 184px;
@@ -213,6 +181,68 @@ const Span = styled.span`
         font-stretch: normal;
         font-style: normal;
         line-height: 1.6;
+        letter-spacing: normal;
+        color: #e5e8ea;
+    }
+`;
+const Input = styled.input`
+    &.Rectangle-Copy-20 {
+        width: 100%;
+        height: 46px;
+        margin: 5px 0 20px 0;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        border: solid 1px #3d3f45;
+        background-color: #31333a;
+        font-family: Pretendard;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.73;
+        letter-spacing: normal;
+        color: #fff;
+    }
+    &.Rectangle-Copy-20:focus {
+        outline: none;
+    }
+    &.Rectangle-Copy-21:focus {
+        outline: none;
+    }
+    &.Rectangle-Copy-21 {
+        width: 90%;
+        height: 40px;
+        padding-left: 10px;
+        display: flex;
+        border: none;
+        background-color: #31333a;
+        font-family: Pretendard;
+        font-size: 15px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #fff;
+    }
+`;
+const Btn = styled.button`
+    &.License {
+        width: 100%;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 23px;
+        background-color: #f34a7e;
+        font-family: Pretendard;
+        font-size: 15px;
+        line-height: 2.75;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
         letter-spacing: normal;
         color: #e5e8ea;
     }

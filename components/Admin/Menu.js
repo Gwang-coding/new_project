@@ -42,6 +42,7 @@ const Span = styled.span`
         letter-spacing: normal;
         color: #3dc6d7;
         border-bottom: 4px solid #3dc5d6;
+        cursor: pointer;
     }
     &.MenuText {
         margin: 0 25px;
@@ -54,5 +55,6 @@ const Span = styled.span`
         line-height: 1.56;
         letter-spacing: normal;
         color: #7a7c85;
+        cursor: pointer;
     }
 `;
