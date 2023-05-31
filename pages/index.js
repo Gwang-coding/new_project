@@ -68,9 +68,7 @@ const Section = styled.section`
 
 const Div = styled.div`
     &.Rectangle-Copy {
-        flex: 5.4;
-
-        padding: 0 0 70px;
+        width: 85%;
         background-color: #1b1e24;
     }
     &.Main {
@@ -88,7 +86,7 @@ const Div = styled.div`
     }
     &.Rectangle-Copy-15 {
         width: 100%;
-        height: 800px;
+        height: 400px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;

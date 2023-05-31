@@ -177,12 +177,15 @@ const Div = styled.div`
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
+        width: 100%;
     }
 
     &.user {
-        width: 351px;
+        width: 23%;
         height: 130px;
-        padding: 33px 175px 33px 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
         border-radius: 20px;
         box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.4), inset 0 1px 2px 0 ${(props) => props.shadow};
         background-image: radial-gradient(circle at 103% -9%, ${(props) => props.backgroundColor}, #272a31 34%);
@@ -197,7 +200,6 @@ const Div = styled.div`
     }
     &.user_wrapper {
         display: flex;
-        width: 300px;
     }
     &.main_textbox {
         display: flex;
@@ -206,7 +208,7 @@ const Div = styled.div`
         margin-left: ${(props) => props.margin};
     }
     &.PriceBoxWrapper {
-        width: 351px;
+        width: 23%;
         display: flex;
         flex-direction: column;
         padding: 93px 40px;
@@ -220,14 +222,14 @@ const Div = styled.div`
         background-color: #3d3f45;
     }
     &.RankingBoxWrapper {
-        width: 351px;
+        width: 23%;
 
         padding: 30px 0 35px 0;
         border-radius: 20px;
         background-color: #272a31;
     }
     &.accuBar {
-        width: 351px;
+        width: 100%;
         height: 50px;
         margin: 1px 0 0;
         padding: 11px 26px 11px 25px;

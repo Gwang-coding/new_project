@@ -38,8 +38,8 @@ export default function Side() {
 
 const Div = styled.div`
     &.Rectangle {
-        flex: 1;
         background-color: #13171e;
+        width: 15%;
     }
 
     &.SideTop {
@@ -66,7 +66,7 @@ const Div = styled.div`
     &.UserInfo {
         display: flex;
         flex-direction: column;
-        width: 240px;
+        width: 100%;
         height: 392px;
         margin: 20px 0;
         padding: 21px 19px;
@@ -76,10 +76,12 @@ const Div = styled.div`
         text-align: start;
     }
     &.Rectangle-Copy-20 {
-        width: 202px;
+        width: 100%;
         height: 46px;
         margin: 5px 0 20px 0;
-        padding: 10px 105px 10px 15px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #31333a;
@@ -93,9 +95,11 @@ const Div = styled.div`
         color: #7a7c85;
     }
     &.License {
-        width: 202px;
+        width: 100%;
         height: 44px;
-        padding: 0px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 23px;
         background-color: #f34a7e;
         font-family: Pretendard;
@@ -108,7 +112,7 @@ const Div = styled.div`
         color: #e5e8ea;
     }
     &.PointInfo {
-        width: 240px;
+        width: 100%;
         height: 184px;
         margin: 18px 8px 0 0;
         padding: 21px 19px;
@@ -118,10 +122,13 @@ const Div = styled.div`
         background-color: #20232a;
     }
     &.Rectangle-Copy-21 {
-        width: 202px;
+        width: 100%;
         height: 46px;
         margin: 12px 0 16px;
-        padding: 11px 15px 11px 177px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding-right: 15px;
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #31333a;
@@ -134,28 +141,14 @@ const Div = styled.div`
         letter-spacing: normal;
         color: #fff;
     }
+
     &.Rectangle-Copy-13 {
-        width: 202px;
+        width: 100%;
         height: 44px;
         margin: 16px 0 0;
-        padding: 10px 60px;
-        border-radius: 23px;
-        background-color: #363c69;
-        font-family: Pretendard;
-        font-size: 15px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.6;
-        letter-spacing: normal;
-        text-align: center;
-        color: #e5e8e;
-    }
-    &.Rectangle-Copy-13 {
-        width: 202px;
-        height: 44px;
-        margin: 16px 0 0;
-        padding: 10px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 23px;
         background-color: #363c69;
         font-family: Pretendard;
