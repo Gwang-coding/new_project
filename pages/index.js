@@ -11,6 +11,7 @@ import Popup from '../components/Admin/Popup';
 import Design from '../components/Admin/Design';
 import User from '../components/Admin/User';
 import UserMange from '../components/Admin/UserMange';
+import LogManage from '../components/Admin/LogManage';
 
 export default function Home() {
     return (
@@ -112,6 +113,16 @@ export default function Home() {
                     <Div className="Main">
                         <Menu />
                         <UserMange />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <LogManage />
                     </Div>
                 </Div>
             </Section>
