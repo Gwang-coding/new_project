@@ -8,7 +8,7 @@ export default function Menu() {
                 <Span className="MenuText" border="4px solid #3dc5d6" color="#3dc6d7">
                     설정
                 </Span>
-                <Div className="Dropdown">
+                {/* <Div className="Dropdown">
                     <Span className="Dropdown_text" color="#7a7c85">
                         공지사항
                     </Span>
@@ -18,7 +18,7 @@ export default function Menu() {
                     <Span className="Dropdown_text" color="#e5e8ea">
                         하이퍼링크
                     </Span>
-                </Div>
+                </Div> */}
                 <Span className="MenuText" color="#7a7c85">
                     디자인
                 </Span>

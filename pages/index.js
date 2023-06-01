@@ -9,6 +9,8 @@ import Link from '../components/Admin/HyperLink';
 import PopupManage from '../components/Admin/PopupManage';
 import Popup from '../components/Admin/Popup';
 import Design from '../components/Admin/Design';
+import User from '../components/Admin/User';
+import UserMange from '../components/Admin/UserMange';
 
 export default function Home() {
     return (
@@ -90,6 +92,26 @@ export default function Home() {
                     <Div className="Main">
                         <Menu />
                         <Design />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <User />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <UserMange />
                     </Div>
                 </Div>
             </Section>

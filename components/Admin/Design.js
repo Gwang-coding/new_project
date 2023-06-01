@@ -58,36 +58,21 @@ export default function Design() {
                 </Span>
                 <Div className="PercentWrapper">
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            배경
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">배경</Span>
+
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            글자
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">글자</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            긴급공지
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">긴급공지</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            카드
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">카드</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                 </Div>
             </Div>
@@ -97,44 +82,24 @@ export default function Design() {
                 </Span>
                 <Div className="PercentWrapper">
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            배경
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">배경</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            버튼1
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">버튼1</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            버튼2
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">버튼2</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            클릭시 글자
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">클릭시 글자</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            방문자수
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">방문자수</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                 </Div>
             </Div>
@@ -144,68 +109,36 @@ export default function Design() {
                 </Span>
                 <Div className="PercentWrapper">
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            배경
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">배경</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            카드
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">카드</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            버튼1
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">버튼1</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            버튼2
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">버튼2</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            버튼3
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">버튼3</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            버튼1클릭
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">버튼1클릭</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            버튼2클릭
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">버튼2클릭</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="DesignText" size="15px" weight="normal">
-                            버튼3클릭
-                        </Span>
-                        <Div className="Rectangle-Copy-10" width="100%">
-                            <Input className="Rectangle-Copy-10" width="100%"></Input>
-                        </Div>
+                        <Span className="GridText">버튼3클릭</Span>
+                        <Input className="Rectangle-Copy-10" width="70%"></Input>
                     </Div>
                 </Div>
             </Div>
@@ -276,6 +209,18 @@ const Span = styled.span`
         font-family: Pretendard;
         font-size: ${(props) => props.size};
         font-weight: ${(props) => props.weight};
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.46;
+        margin-right: 10px;
+        letter-spacing: normal;
+        color: #e5e8ea;
+    }
+    &.GridText {
+        width: 80px;
+        font-family: Pretendard;
+        font-size: 15px;
+        font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.46;
