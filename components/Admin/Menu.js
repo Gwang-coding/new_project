@@ -2,34 +2,42 @@ import styled from 'styled-components';
 
 export default function Menu() {
     return (
-        <Div className="MenuBox">
-            <Span className="MenuHomeText">홈</Span>
-            <Span className="MenuText" border="4px solid #3dc5d6" color="#3dc6d7">
-                설정
-            </Span>
-            <Div className="Dropdown">
-                <Span className="Dropdown_text">공지사항</Span>
-                <Span className="Dropdown_text">하이퍼링크</Span>
-                <Span className="Dropdown_text">하이퍼링크</Span>
+        <Div className="Rectangle-Copy-5">
+            <Div className="MenuBox">
+                <Span className="MenuHomeText">홈</Span>
+                <Span className="MenuText" border="4px solid #3dc5d6" color="#3dc6d7">
+                    설정
+                </Span>
+                <Div className="Dropdown">
+                    <Span className="Dropdown_text" color="#7a7c85">
+                        공지사항
+                    </Span>
+                    <Span className="Dropdown_text" color="#e5e8ea">
+                        하이퍼링크
+                    </Span>
+                    <Span className="Dropdown_text" color="#e5e8ea">
+                        하이퍼링크
+                    </Span>
+                </Div>
+                <Span className="MenuText" color="#7a7c85">
+                    디자인
+                </Span>
+                <Span className="MenuText" border="4px solid #3dc5d6" color="#3dc6d7">
+                    회원관리
+                </Span>
+                <Span className="MenuText" border="4px solid #3dc5d6" color="#3dc6d7">
+                    상품관리
+                </Span>
+                <Span className="MenuText" border="4px solid #3dc5d6" color="#3dc6d7">
+                    충전관리
+                </Span>
+                <Span className="MenuText" color="#7a7c85">
+                    판매내역
+                </Span>
+                <Span className="MenuText" color="#7a7c85">
+                    수익통계
+                </Span>
             </Div>
-            <Span className="MenuText" color="#7a7c85">
-                디자인
-            </Span>
-            <Span className="MenuText" border="4px solid #3dc5d6" color="#3dc6d7">
-                회원관리
-            </Span>
-            <Span className="MenuText" border="4px solid #3dc5d6" color="#3dc6d7">
-                상품관리
-            </Span>
-            <Span className="MenuText" border="4px solid #3dc5d6" color="#3dc6d7">
-                충전관리
-            </Span>
-            <Span className="MenuText" color="#7a7c85">
-                판매내역
-            </Span>
-            <Span className="MenuText" color="#7a7c85">
-                수익통계
-            </Span>
         </Div>
     );
 }
@@ -60,8 +68,6 @@ const Div = styled.div`
     }
 `;
 const Span = styled.span`
-   
-  
     &.MenuHomeText {
         padding: 16px 15px;
         margin: 0 25px;
@@ -97,6 +103,6 @@ const Span = styled.span`
         font-style: normal;
         line-height: 1.75;
         letter-spacing: normal;
-        color: #e5e8ea;
+        color: ${(props) => props.color};
     }
 `;

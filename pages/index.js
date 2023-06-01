@@ -8,6 +8,7 @@ import Notice from '../components/Admin/Notice';
 import Link from '../components/Admin/HyperLink';
 import PopupManage from '../components/Admin/PopupManage';
 import Popup from '../components/Admin/Popup';
+import Design from '../components/Admin/Design';
 
 export default function Home() {
     return (
@@ -79,6 +80,16 @@ export default function Home() {
                     <Div className="Main">
                         <Menu />
                         <PopupManage />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <Design />
                     </Div>
                 </Div>
             </Section>

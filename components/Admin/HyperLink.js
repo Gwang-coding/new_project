@@ -17,17 +17,17 @@ export default function Link() {
                         <Span className="LinkText" width="26px" weight="normal" size="15px">
                             이름
                         </Span>
-                        <Input placeholder="이름" className="Rectangle-Copy-10" width="220px"></Input>
+                        <Input placeholder="이름" className="Rectangle-Copy-10" width="13%"></Input>
 
                         <Span className="LinkText" width="135px" weight="normal" size="15px">
                             링크 URL(http://필수)
                         </Span>
-                        <Input placeholder="링크 URL" className="Rectangle-Copy-10" width="600px"></Input>
+                        <Input placeholder="링크 URL" className="Rectangle-Copy-10" width="40%"></Input>
 
                         <Span className="LinkText" width="112px" weight="normal" size="15px">
                             구매자 이상만 보기
                         </Span>
-                        <Div className="Rectangle-Copy-10" width="220px">
+                        <Div className="Rectangle-Copy-10" width="13%">
                             <p>아니요</p>
                             <Img src="/assets/images/icon-a-right-gray.png" className="IconARightGray16"></Img>
                         </Div>

@@ -253,6 +253,7 @@ const Img = styled.img`
         height: 30px;
         margin: 3px 0 0px 43px;
         object-fit: contain;
+        cursor: pointer;
     }
     &.iconuser44 {
         width: 38px;

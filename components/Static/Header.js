@@ -60,6 +60,7 @@ const Img = styled.img`
         height: 30px;
         margin: 0px 14px;
         object-fit: contain;
+        cursor: pointer;
     }
     &.iconuser24 {
         width: 24px;
