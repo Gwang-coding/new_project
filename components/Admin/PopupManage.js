@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import dynamic from 'next/dynamic';
+const PostEditor = dynamic(() => import('../Admin/PostEditor'), { ssr: false });
 
 export default function PopupManage() {
     return (
@@ -9,49 +11,16 @@ export default function PopupManage() {
                 </Span>
                 <Btn className="Rectangle-Copy-6">+ 추가하기</Btn>
             </Div>
-            <Div className="PopBar">
-                <Span className="PopText" size="16px" weight="bold">
+            <Div className="PopBottom">
+                <Span className="PopText" size="18px" weight="normal">
                     제목
                 </Span>
-            </Div>
-            <Div className="PopInfo" border="1px solid #3d3f45">
-                <Div className="PopWrapper">
-                    <Img src="/assets/images/icon-a-updowncotrol-gray.png" />
-                    <Span className="PopText" weight="normal" size="15px" Lpadding="20px">
-                        게좌변경되었습니다.
-                    </Span>
-                </Div>
-                <Div>
-                    <Btn className="Rectangle-Copy-7" color="#00abbf">
-                        <Span className="PopText" weight="normal" size="15px">
-                            수정
-                        </Span>
-                    </Btn>
-                    <Btn className="Rectangle-Copy-7" color="#f34a7e">
-                        <Span className="PopText" weight="normal" size="15px">
-                            삭제
-                        </Span>
-                    </Btn>
-                </Div>
-            </Div>
-            <Div className="PopInfo" border="">
-                <Div className="PopWrapper">
-                    <Img src="/assets/images/icon-a-updowncotrol-gray.png" />
-                    <Span className="PopText" weight="normal" size="15px" Lpadding="20px">
-                        게좌변경되었습니다.
-                    </Span>
-                </Div>
-                <Div>
-                    <Btn className="Rectangle-Copy-7" color="#00abbf">
-                        <Span className="PopText" weight="normal" size="15px">
-                            수정
-                        </Span>
-                    </Btn>
-                    <Btn className="Rectangle-Copy-7" color="#f34a7e">
-                        <Span className="PopText" weight="normal" size="15px">
-                            삭제
-                        </Span>
-                    </Btn>
+                <Input className="Rectangle-Copy-10" width="100%"></Input>
+                <Span className="PopText" size="18px" weight="normal">
+                    내용
+                </Span>
+                <Div className="EditorBox">
+                    <PostEditor />
                 </Div>
             </Div>
         </Div>
@@ -67,32 +36,18 @@ const Div = styled.div`
         background-color: #272a31;
         padding-bottom: 5px;
     }
+    &.PopBottom {
+        padding: 30px 40px;
+    }
     &.PopTop {
         width: 100%;
         padding: 25px 40px;
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid #3d3f45;
     }
-    &.PopBar {
-        width: 100%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #31333a;
-    }
-    &.PopInfo {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        padding: 20px 40px;
-        background-color: #272a31;
-        border-bottom: ${(props) => props.border};
-    }
-    &.PopWrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &.EditorBox {
+        margin: 25px 0;
     }
 `;
 const Span = styled.span`
@@ -109,6 +64,27 @@ const Span = styled.span`
         padding-left: ${(props) => props.Lpadding};
     }
 `;
+const Input = styled.input`
+&.Rectangle-Copy-10 {
+    width: ${(props) => props.width};
+    height: 52px;
+    margin 20px 0;
+    border-radius: 10px;
+    border: solid 1px #3d3f45;
+    background-color: #31333a;
+    font-family: Pretendard;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: normal;
+    color: #fff;
+}
+&.Rectangle-Copy-10 :focus {
+    outline: none;
+}
+`;
 const Btn = styled.button`
     &.Rectangle-Copy-6 {
         height: 40px;
@@ -123,14 +99,6 @@ const Btn = styled.button`
         line-height: 1.6;
         letter-spacing: normal;
         color: #fff;
-    }
-    &.Rectangle-Copy-7 {
-        width: 60px;
-        height: 34px;
-        padding: 5px 17px;
-        border-radius: 6px;
-        background-color: ${(props) => props.color};
-        margin-left: 15px;
     }
 `;
 
