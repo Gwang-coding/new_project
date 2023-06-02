@@ -12,6 +12,7 @@ import Design from '../components/Admin/Design';
 import User from '../components/Admin/User';
 import UserMange from '../components/Admin/UserMange';
 import LogManage from '../components/Admin/LogManage';
+import IP from '../components/Admin/Ip';
 
 export default function Home() {
     return (
@@ -123,6 +124,16 @@ export default function Home() {
                     <Div className="Main">
                         <Menu />
                         <LogManage />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <IP />
                     </Div>
                 </Div>
             </Section>

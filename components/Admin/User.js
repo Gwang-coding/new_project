@@ -277,6 +277,15 @@ const Input = styled.input`
         border: solid 1px #3d3f45;
         background-color: #31333a;
         margin: 0 10px;
+        padding-left: 10px;
+        font-family: Pretendard;
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.73;
+        letter-spacing: normal;
+        color: #fff;
     }
     &.Rectangle-Copy-18 :focus {
         outline: none;
