@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { ko } from 'date-fns/esm/locale';
-import styles from '/styles/Calendar.module.css';
+
 export default function Calendar() {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
@@ -23,7 +23,6 @@ export default function Calendar() {
                 locale={ko}
                 dateFormat="yyyy-MM-dd"
                 customInput={<ExampleCustomInput />}
-                calendarClassName={styles.calenderWrapper}
             />
             <P>-</P>
             <DatePicker
@@ -36,7 +35,6 @@ export default function Calendar() {
                 locale={ko}
                 dateFormat="yyyy-MM-dd"
                 customInput={<ExampleCustomInput />}
-                calendarClassName={styles.calenderWrapper}
             />
         </>
     );
