@@ -220,7 +220,7 @@ const Btn = styled.button`
     &.Rectangle-Copy-7 {
         width: 100px;
         height: 46px;
-        padding: 5px 17px;
+        padding: 5px 20px;
         border-radius: 6px;
         background-color: #00abbf;
         color: #fff;
