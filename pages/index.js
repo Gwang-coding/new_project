@@ -13,6 +13,12 @@ import User from '../components/Admin/User';
 import UserMange from '../components/Admin/UserMange';
 import LogManage from '../components/Admin/LogManage';
 import IP from '../components/Admin/Ip';
+import ProdectManage from '../components/Admin/ProductManage';
+import ProdectManageIn from '../components/Admin/ProductManageIn';
+import Category from '../components/Admin/Category';
+import ChargeManage from '../components/Admin/ChargeManage';
+import ChargeRequest from '../components/Admin/ChargeRequest';
+import SellLog from '../components/Admin/SellLog';
 
 export default function Home() {
     return (
@@ -134,6 +140,66 @@ export default function Home() {
                     <Div className="Main">
                         <Menu />
                         <IP />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <ProdectManage />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <ProdectManageIn />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <Category />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <ChargeManage />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <ChargeRequest />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <SellLog />
                     </Div>
                 </Div>
             </Section>

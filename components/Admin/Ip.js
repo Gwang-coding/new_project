@@ -4,19 +4,19 @@ export default function IP() {
     return (
         <>
             <Div className="Rectangle-Copy-15">
-                <Div className="LogManageTopBox">
+                <Div className="IpTopBox">
                     <Span className="Text" size="26px" weight="bold">
                         아이피 차단
                     </Span>
                 </Div>
-                <Div className="LogManageTopBox">
-                    <Div className="LogManageTop">
+                <Div className="IpTopBox">
+                    <Div className="IpTop">
                         <Span className="Text" size="15px" weight="normal">
                             아이피
                         </Span>
                         <Input className="Rectangle-Copy-18" width="220px" />
                     </Div>
-                    <Div className="LogManageTop">
+                    <Div className="IpTop">
                         <Span className="Text" size="15px" weight="normal">
                             차단이유
                         </Span>
@@ -25,7 +25,7 @@ export default function IP() {
                             차단하기
                         </Btn>
                     </Div>
-                    <Div className="LogManageTop">
+                    <Div className="IpTop">
                         <Input className="Rectangle-Copy-18" width="180px" placeholder="아이피" />
                         <Input className="Rectangle-Copy-18" width="250px" />
                         <Btn className="Rectangle-Copy-7" width="80px" color="#00abbf">
@@ -33,7 +33,7 @@ export default function IP() {
                         </Btn>
                     </Div>
                 </Div>
-                <Div className="LogManageTopBox">
+                <Div className="IpTopBox">
                     <Span className="Text" size="22px" weight="bold">
                         아이피 차단 목록
                     </Span>
@@ -134,14 +134,14 @@ const Div = styled.div`
         background-color: #272a31;
         padding-bottom: 20px;
     }
-    &.LogManageTopBox {
+    &.IpTopBox {
         width: 100%;
         padding: 25px 40px;
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid #3d3f45;
     }
-    &.LogManageTop {
+    &.IpTop {
         width: ${(props) => props.width};
         display: flex;
         align-items: center;
