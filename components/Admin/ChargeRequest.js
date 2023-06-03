@@ -69,7 +69,7 @@ export default function ChargeRequest() {
                             아이디
                         </Span>
                         <Span className="Text" size="16px" weight="bold" width="220px">
-                            입금자명
+                            송금자명
                         </Span>
                         <Span className="Text" size="16px" weight="bold" width="150px">
                             금액
@@ -233,7 +233,7 @@ const Btn = styled.button`
         margin-left: 10px;
     }
     &.Rectangle-Copy-7 {
-        width: 105px;
+        width: 180px;
         height: 40px;
         padding: 5px 17px;
         border-radius: 23px;

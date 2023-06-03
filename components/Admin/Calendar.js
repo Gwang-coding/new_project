@@ -42,7 +42,7 @@ export default function Calendar() {
 
 const Div = styled.div`
     &.example-custom-input {
-        width: 180px;
+        width: 100%;
         height: 46px;
         display: flex;
         align-items: center;
@@ -56,6 +56,6 @@ const Div = styled.div`
 `;
 const P = styled.p`
     color: #e5e8ea;
-    margin-right: 20px;
+    margin: 20px;
 `;
 const Img = styled.img``;

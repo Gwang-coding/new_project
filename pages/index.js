@@ -19,6 +19,7 @@ import Category from '../components/Admin/Category';
 import ChargeManage from '../components/Admin/ChargeManage';
 import ChargeRequest from '../components/Admin/ChargeRequest';
 import SellLog from '../components/Admin/SellLog';
+import Profit from '../components/Admin/Profit';
 
 export default function Home() {
     return (
@@ -200,6 +201,16 @@ export default function Home() {
                     <Div className="Main">
                         <Menu />
                         <SellLog />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <Side />
+                <Div className="Rectangle-Copy">
+                    <Header />
+                    <Div className="Main">
+                        <Menu />
+                        <Profit />
                     </Div>
                 </Div>
             </Section>

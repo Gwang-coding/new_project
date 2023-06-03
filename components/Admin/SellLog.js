@@ -8,7 +8,7 @@ export default function SellLog() {
             <Div className="Rectangle-Copy-15">
                 <Div className="TopBox">
                     <Span className="Text" size="26px" weight="bold">
-                        충전관리
+                        판매내역
                     </Span>
                     <Div className="Top">
                         <Div className="Rectangle-Copy-10">
@@ -31,10 +31,8 @@ export default function SellLog() {
                     </Div>
                     <Div className="Top">
                         <Calendar />
-                        <Btn className="Rectangle-Copy-7" color="#00abbf" width="125px">
-                            <Span className="Text" size="15px" weight="normal">
-                                적용
-                            </Span>
+                        <Btn className="Rectangle-Copy-7" color="#00abbf" width="150px">
+                            적용
                         </Btn>
                     </Div>
                 </Div>
@@ -226,7 +224,6 @@ const Div = styled.div`
     }
     &.LinkDropdown {
         position: absolute;
-
         margin-top: 220px;
         width: 180px;
         text-align: center;
@@ -295,6 +292,9 @@ const Btn = styled.button`
         padding: 11px 27px;
         border-radius: 10px;
         background-color: ${(props) => props.color};
+        margin-left: 10px;
+        color: #fff;
+        font-size: 15px;
     }
 `;
 

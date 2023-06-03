@@ -218,12 +218,14 @@ const Span = styled.span`
 const Input = styled.input``;
 const Btn = styled.button`
     &.Rectangle-Copy-7 {
-        width: 100px;
+        width: 150px;
         height: 46px;
         padding: 5px 20px;
-        border-radius: 6px;
+        border-radius: 10px;
         background-color: #00abbf;
         color: #fff;
+        font-size: 15px;
+        margin-left: 10px;
     }
 `;
 
