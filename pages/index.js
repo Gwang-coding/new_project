@@ -22,6 +22,7 @@ import SellLog from '../components/Admin/SellLog';
 import Profit from '../components/Admin/Profit';
 import Login from '../components/User/Login';
 import Join from '../components/User/Join';
+import UserMain from '../components/User/Main';
 
 export default function Home() {
     return (
@@ -217,7 +218,9 @@ export default function Home() {
                 <UserSide />
                 <Div className="Rectangle-Copy">
                     <UserHeader />
-                    <Div className="Main"></Div>
+                    <Div className="UserMain">
+                        <UserMain />
+                    </Div>
                 </Div>
             </Section>
         </>
@@ -236,6 +239,9 @@ const Div = styled.div`
     }
     &.Main {
         margin: 50px 80px;
+    }
+    &.UserMain {
+        margin: 50px 90px;
     }
 `;
 
