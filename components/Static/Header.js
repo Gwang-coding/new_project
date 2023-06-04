@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default function Header() {
+export function Header() {
     return (
         <Div className="MenuTop">
             <Img src="/assets/images/icon-c-notice.png" className="IconC"></Img>
@@ -14,15 +14,45 @@ export default function Header() {
         </Div>
     );
 }
+export function UserHeader() {
+    return (
+        <Div className="UserMenuTop">
+            <Img src="/assets/images/icon-c-home.png" className="IconC"></Img>
+
+            <Div className="UserMenu">
+                <Img src="/assets/images/icon-c-notice.png" className="IconC"></Img>
+                <Img src="/assets/images/icon-c-chat.png" className="IconC"></Img>
+                <Img src="/assets/images/icon-c-setting.png" className="IconC"></Img>
+                <Div className="IconSlash" />
+                <Span className="admon5488">admon5488님</Span>
+                <Div className="MenuMask">
+                    <Img src="/assets/images/icon-user.png" className="iconuser24"></Img>
+                </Div>
+            </Div>
+        </Div>
+    );
+}
 
 const Div = styled.div`
     &.MenuTop {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 17px 30px;
+        padding: 18px 30px;
         border-bottom: 1px solid #3d3f45;
         justify-content: flex-end;
+    }
+    &.UserMenuTop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 30px 18px 10px;
+        border-bottom: 1px solid #3d3f45;
+        justify-content: space-between;
+    }
+    &.UserMenu {
+        display: flex;
+        align-items: center;
     }
     &.IconSlash {
         width: 1px;

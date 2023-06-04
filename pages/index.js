@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Side from '../components/Etc/SIde';
-import Header from '../components/Static/Header';
+import { AdminSide, UserSide } from '../components/Etc/Side';
+import { Header, UserHeader } from '../components/Static/Header';
 import Menu from '../components/Admin/Menu';
 import Main from '../components/Admin/Main';
 import Setting from '../components/Admin/Setting';
@@ -27,7 +27,7 @@ export default function Home() {
     return (
         <>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -37,7 +37,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -47,7 +47,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -57,7 +57,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -67,7 +67,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -77,7 +77,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -87,7 +87,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -97,7 +97,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -107,7 +107,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -117,7 +117,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -127,7 +127,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -137,7 +137,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -147,7 +147,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -157,7 +157,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -167,7 +167,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -177,7 +177,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -187,7 +187,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -197,7 +197,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -207,7 +207,7 @@ export default function Home() {
                 </Div>
             </Section>
             <Section>
-                <Side />
+                <AdminSide />
                 <Div className="Rectangle-Copy">
                     <Header />
                     <Div className="Main">
@@ -221,6 +221,13 @@ export default function Home() {
             </Section>
             <Section>
                 <Join />
+            </Section>
+            <Section>
+                <UserSide />
+                <Div className="Rectangle-Copy">
+                    <UserHeader />
+                    <Div className="Main"></Div>
+                </Div>
             </Section>
         </>
     );
