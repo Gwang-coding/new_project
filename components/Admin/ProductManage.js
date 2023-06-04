@@ -4,7 +4,7 @@ export default function ProdectManage() {
     return (
         <>
             <Div className="Rectangle-Copy-15">
-                <Div className="UserTopBox">
+                <Div className="TopBox">
                     <Span className="Text" size="26px" weight="bold">
                         상품관리
                     </Span>
@@ -207,13 +207,13 @@ const Div = styled.div`
         background-color: #272a31;
         padding-bottom: 20px;
     }
-    &.UserTopBox {
+    &.TopBox {
         width: 100%;
         padding: 25px 40px;
         display: flex;
         justify-content: space-between;
     }
-    &.UserTop {
+    &.Top {
         width: ${(props) => props.width};
         display: flex;
         align-items: center;
@@ -357,28 +357,7 @@ const Span = styled.span`
         color: #fc7772;
     }
 `;
-const Input = styled.input`
-    &.Rectangle-Copy-18 {
-        width: 250px;
-        height: 46px;
-        border-radius: 10px;
-        border: solid 1px #3d3f45;
-        background-color: #31333a;
-        margin: 0 10px;
-        padding-left: 10px;
-        font-family: Pretendard;
-        font-size: 17px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.73;
-        letter-spacing: normal;
-        color: #fff;
-    }
-    &.Rectangle-Copy-18 :focus {
-        outline: none;
-    }
-`;
+const Input = styled.input``;
 const Btn = styled.button`
     &.Rectangle-Copy-7 {
         width: 105px;

@@ -96,28 +96,28 @@ export default function ProdectManageIn() {
                                 <Span className="Text" size="18px" weight="normal">
                                     첫번째
                                 </Span>
-                                <Input className="Rectangle-Copy-18" height="250px" width="450px" placeholder="재고넣는 칸입니다." />
-                                <Input className="Rectangle-Copy-18" height="52px" width="450px" placeholder="가격(숫자만 입력)" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="450px" placeholder="단위" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="450px" placeholder="원가" />
+                                <Input className="Rectangle-Copy-18" height="250px" width="100%" placeholder="재고넣는 칸입니다." />
+                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="가격(숫자만 입력)" />
+                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="단위" />
+                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="원가" />
                             </Div>
                             <Div className="WrapperItem">
                                 <Span className="Text" size="18px" weight="normal">
                                     두번째
                                 </Span>
-                                <Input className="Rectangle-Copy-18" height="250px" width="450px" placeholder="재고넣는 칸입니다." />
-                                <Input className="Rectangle-Copy-18" height="52px" width="450px" placeholder="가격(숫자만 입력)" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="450px" placeholder="단위" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="450px" placeholder="원가" />
+                                <Input className="Rectangle-Copy-18" height="250px" width="100%" placeholder="재고넣는 칸입니다." />
+                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="가격(숫자만 입력)" />
+                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="단위" />
+                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="원가" />
                             </Div>
                             <Div className="WrapperItem">
                                 <Span className="Text" size="18px" weight="normal">
                                     세번째
                                 </Span>
-                                <Input className="Rectangle-Copy-18" height="250px" width="450px" placeholder="재고넣는 칸입니다." />
-                                <Input className="Rectangle-Copy-18" height="52px" width="450px" placeholder="가격(숫자만 입력)" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="450px" placeholder="단위" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="450px" placeholder="원가" />
+                                <Input className="Rectangle-Copy-18" height="250px" width="100%" placeholder="재고넣는 칸입니다." />
+                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="가격(숫자만 입력)" />
+                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="단위" />
+                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="원가" />
                             </Div>
                         </Div>
                     </Div>
@@ -181,6 +181,7 @@ const Div = styled.div`
         flex-direction: column;
         justify-content: space-between;
         height: 500px;
+        width: 30%;
     }
     &.EditorBox {
         margin: 25px 0;
@@ -243,7 +244,6 @@ const Input = styled.input`
         border: solid 1px #3d3f45;
         background-color: #31333a;
         padding: 10px;
-
         font-family: Pretendard;
         font-size: 17px;
         font-weight: normal;

@@ -14,20 +14,20 @@ export default function IP() {
                         <Span className="Text" size="15px" weight="normal">
                             아이피
                         </Span>
-                        <Input className="Rectangle-Copy-18" width="220px" />
+                        <Input className="Rectangle-Copy-18" width="100%" />
                     </Div>
                     <Div className="IpTop">
                         <Span className="Text" size="15px" weight="normal">
                             차단이유
                         </Span>
-                        <Input className="Rectangle-Copy-18" width="300px" />
+                        <Input className="Rectangle-Copy-18" width="100%" />
                         <Btn className="Rectangle-Copy-7" width="106px" color="#f34a7e">
                             차단하기
                         </Btn>
                     </Div>
                     <Div className="IpTop">
-                        <Input className="Rectangle-Copy-18" width="180px" placeholder="아이피" />
-                        <Input className="Rectangle-Copy-18" width="250px" />
+                        <Input className="Rectangle-Copy-18" width="90%" placeholder="아이피" />
+                        <Input className="Rectangle-Copy-18" width="110%" />
                         <Btn className="Rectangle-Copy-7" width="80px" color="#00abbf">
                             검색
                         </Btn>

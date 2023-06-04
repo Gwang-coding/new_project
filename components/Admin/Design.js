@@ -5,7 +5,7 @@ export default function Design() {
         <Div className="Rectangle-Copy-15">
             <Div className="DesignTop">
                 <Span className="DesignText" size="26px" weight="bold">
-                    다지인
+                    디지인
                 </Span>
                 <Btn className="Rectangle-Copy-6"> 적용하기</Btn>
             </Div>
@@ -15,33 +15,33 @@ export default function Design() {
                     <Span className="DesignText" weight="normal" size="18px">
                         로그인 배경화면 이미지 URL
                     </Span>
-                    <Input className="Rectangle-Copy-10" width="83%" placeholder="https://"></Input>
+                    <Input className="Rectangle-Copy-10" width="80%" placeholder="https://"></Input>
                 </Div>
                 <Div className="DesignBox" width="100%">
                     <Span className="DesignText" weight="normal" size="18px">
                         공지사항 URL
                     </Span>
-                    <Input className="Rectangle-Copy-10" width="83%" placeholder="https://"></Input>
+                    <Input className="Rectangle-Copy-10" width="80%" placeholder="https://"></Input>
                 </Div>
                 <Div className="DesignBox" width="100%">
                     <Span className="DesignText" weight="normal" size="18px">
                         배경음악 URL
                     </Span>
-                    <Input className="Rectangle-Copy-10" width="83%" placeholder="https://"></Input>
+                    <Input className="Rectangle-Copy-10" width="80%" placeholder="https://"></Input>
                 </Div>
                 <Div className="DesignBox" width="100%">
                     <Span className="DesignText" weight="normal" size="18px">
                         점검창로고 URL
                     </Span>
-                    <Input className="Rectangle-Copy-10" width="83%" placeholder="https://"></Input>
+                    <Input className="Rectangle-Copy-10" width="80%" placeholder="https://"></Input>
                 </Div>
                 <Div className="DesignBox" width="100%">
                     <Span className="DesignText" weight="normal" size="18px">
                         프로필사진
                     </Span>
-                    <Input className="Rectangle-Copy-10" width="83%" placeholder="https://"></Input>
+                    <Input className="Rectangle-Copy-10" width="80%" placeholder="https://"></Input>
                 </Div>
-                <Div className="DesignBox" width="21%">
+                <Div className="DesignBox" width="25%">
                     <Span className="DesignText" weight="normal" size="18px">
                         RGB 사용
                         <br />
@@ -172,6 +172,7 @@ const Div = styled.div`
     &.DesignBox {
         width: ${(props) => props.width};
         display: flex;
+        align-items: center;
         margin-bottom: 20px;
         justify-content: space-between;
     }

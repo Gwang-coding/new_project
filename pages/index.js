@@ -20,6 +20,8 @@ import ChargeManage from '../components/Admin/ChargeManage';
 import ChargeRequest from '../components/Admin/ChargeRequest';
 import SellLog from '../components/Admin/SellLog';
 import Profit from '../components/Admin/Profit';
+import Login from '../components/User/Login';
+import Join from '../components/User/Join';
 
 export default function Home() {
     return (
@@ -213,6 +215,12 @@ export default function Home() {
                         <Profit />
                     </Div>
                 </Div>
+            </Section>
+            <Section>
+                <Login />
+            </Section>
+            <Section>
+                <Join />
             </Section>
         </>
     );

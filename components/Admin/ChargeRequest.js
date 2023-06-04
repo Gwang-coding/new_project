@@ -233,7 +233,7 @@ const Btn = styled.button`
         margin-left: 10px;
     }
     &.Rectangle-Copy-7 {
-        width: 180px;
+        width: 105px;
         height: 40px;
         padding: 5px 17px;
         border-radius: 23px;
