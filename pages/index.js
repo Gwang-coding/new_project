@@ -23,6 +23,7 @@ import Profit from '../components/Admin/Profit';
 import Login from '../components/User/Login';
 import Join from '../components/User/Join';
 import UserMain from '../components/User/Main';
+import BankModal from '../components/User/BankModal';
 
 export default function Home() {
     return (
@@ -221,6 +222,13 @@ export default function Home() {
                     <Div className="UserMain">
                         <UserMain />
                     </Div>
+                </Div>
+            </Section>
+            <Section>
+                <UserSide />
+                <Div className="Rectangle-Copy">
+                    <UserHeader />
+                    <BankModal />
                 </Div>
             </Section>
         </>
