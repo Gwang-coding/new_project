@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default function Munsang() {
+export default function BankPopUp() {
     return (
         <Div className="ModalBox">
             <Div className="ModalContent">
@@ -16,35 +16,35 @@ export default function Munsang() {
                 </Div>
                 <Div className="Bottom">
                     <Div className="BottomBox">
-                        <Span className="Text" width="85px" size="18px" weight="500" color="#e5e8ea">
-                            결제 방식
+                        <Span className="Text" size="15px" weight="500" color="#e5e8ea">
+                            아래 계좌로 입금후 확인버튼을 눌러주시면 신청이 완료됩니다.
                         </Span>
-                        <Div className="Oval" />
-                        <Span className="TextBox">계좌이체</Span>
-                        <Div className="Oval" />
-                        <Span className="TextBox">카카오페이 송금</Span>
-                        <Div className="CheckedOval" />
-                        <Span className="TextBox">문화 상품권 충전</Span>
                     </Div>
                     <Div className="BottomBox">
                         <Span className="Text" width="85px" size="18px" weight="500" color="#e5e8ea">
-                            입금자명
+                            은행
                         </Span>
                         <Div className="Input">
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
-                            <Input placeholder="4자리" className="InputBox" />
+                            <Input className="InputBox" />
                         </Div>
                     </Div>
+                    <Div className="BottomBox">
+                        <Span className="Text" width="85px" size="18px" weight="500" color="#e5e8ea">
+                            계좌번호
+                        </Span>
+                        <Div className="Input">
+                            <Input className="InputBox" />
+                        </Div>
+                    </Div>
+                    <Div className="BottomBox">
+                        <Span className="Text" width="85px" size="18px" weight="500" color="#e5e8ea">
+                            예금주
+                        </Span>
+                        <Div className="Input">
+                            <Input className="InputBox" />
+                        </Div>
+                    </Div>
+                    <Div className="Line" />
                     <Div className="Notice" margin="10px">
                         <Img className="NoticeIcon" src="/assets/images/icon-info-16.png" />
                         <Span className="Text" size="15px" weight="500" color="#e5e8ea">
@@ -54,24 +54,18 @@ export default function Munsang() {
                     <Div className="Notice" margin="5px">
                         <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
                         <Span className="Text" size="15px" weight="500" color="#7a7c85">
-                            문화상품권 충전 수수료는 10%입니다.
+                            꼭 계좌번호를 확인후 이체가 완료되면 확인버튼을 눌러주세요.
                         </Span>
                     </Div>
                     <Div className="Notice" margin="5px">
                         <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
                         <Span className="Text" size="15px" weight="500" color="#7a7c85">
-                            문화상품권 핀번호가 정확하다면 1분내로 충전됩니다.
-                        </Span>
-                    </Div>
-                    <Div className="Notice" margin="5px">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Text" size="15px" weight="500" color="#7a7c85">
-                            충전 오류가 있을 시 관리자에게 문의 주세요.
+                            확인 버튼을 누를 시 계좌번호를 다시 할인할 수 없습니다.
                         </Span>
                     </Div>
                 </Div>
                 <Div className="BtnBox">
-                    <Btn>충전하기</Btn>
+                    <Btn>확인</Btn>
                 </Div>
             </Div>
         </Div>
@@ -117,41 +111,30 @@ const Div = styled.div`
     &.CloseIcon {
         width: 32px;
         height: 32px;
+
         padding: 8px;
         border-radius: 50%;
         background-color: #32333a;
     }
     &.Bottom {
         width: 100%;
-        padding: 20px 30px 0;
+        padding: 0px 30px;
     }
     &.BottomBox {
         width: 100%;
         display: flex;
         align-items: center;
-        padding-bottom: 25px;
-        margin-bottom: 25px;
-        border-bottom: 1px solid #3d3f45;
+        padding-bottom: 30px;
     }
     &.Input {
-        height: 160px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 10px;
-        column-gap: 10px;
-        margin-bottom: 10px;
-    }
-    &.CheckedOval {
-        width: 20px;
-        height: 20px;
-        border: solid 6px #25b499;
-        border-radius: 50%;
-    }
-    &.Oval {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: solid 1px #e5e8ea;
+        width: 300px;
+        height: 52px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        border: solid 1px #3d3f45;
+        background-color: #31333a;
+        padding: 0px 10px;
     }
     &.Notice {
         display: flex;
@@ -161,6 +144,12 @@ const Div = styled.div`
     &.BtnBox {
         width: 100%;
         text-align: center;
+    }
+    &.Line {
+        width: 100%;
+        height: 1px;
+        background-color: #393b44;
+        margin 10px 0 30px;
     }
 `;
 
@@ -177,29 +166,22 @@ const Span = styled.span`
         color: ${(props) => props.color};
         margin-right: 100px;
     }
-    &.TextBox {
-        margin: 0 50px 0 10px;
-        color: #e5e8ea;
-        font-size: 15px;
-        weight: normal;
-    }
 `;
 const Input = styled.input`
     &.InputBox {
-        border: solid 1px #3d3f45;
-        background-color: #31333a;
+        border: none;
+        background-color: transparent;
         height: 52px;
-        width: 150px;
+        width: 100%;
         font-size: 18px;
         color: #e5e8ea;
-        border-radius: 10px;
-        padding: 10px;
     }
     &.InputBox:focus {
         outline: none;
     }
 `;
 const Btn = styled.button`
+    width: 200px;
     height: 60px;
     padding: 16px 84px;
     border-radius: 35px;

@@ -24,6 +24,10 @@ import Login from '../components/User/Login';
 import Join from '../components/User/Join';
 import UserMain from '../components/User/Main';
 import BankModal from '../components/User/BankModal';
+import BankPopUp from '../components/User/BankPopUp';
+import Kakaopay from '../components/User/Kakaopay';
+import Munsang from '../components/User/Munsang';
+import KakaoQR from '../components/User/KakaoQR';
 
 export default function Home() {
     return (
@@ -88,7 +92,6 @@ export default function Home() {
                     </Div>
                 </Div>
             </Section>
-
             <Section>
                 <AdminSide />
                 <Div className="Rectangle-Copy">
@@ -224,13 +227,11 @@ export default function Home() {
                     </Div>
                 </Div>
             </Section>
-            <Section>
-                <UserSide />
-                <Div className="Rectangle-Copy">
-                    <UserHeader />
-                    <BankModal />
-                </Div>
-            </Section>
+            <BankModal />
+            <BankPopUp />
+            <Kakaopay />
+            <Munsang />
+            <KakaoQR />
         </>
     );
 }

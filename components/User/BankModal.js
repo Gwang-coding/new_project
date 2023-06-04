@@ -75,9 +75,9 @@ export default function BankModal() {
                             입금신청을 잘못하신 경우 5분 후 다시 시도해주세요.
                         </Span>
                     </Div>
-                    <Div className="BtnBox">
-                        <Btn>다음</Btn>
-                    </Div>
+                </Div>
+                <Div className="BtnBox">
+                    <Btn>다음</Btn>
                 </Div>
             </Div>
         </Div>
@@ -86,7 +86,7 @@ export default function BankModal() {
 
 const Div = styled.div`
     &.ModalBox {
-        position: fixed;
+        // position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -103,11 +103,13 @@ const Div = styled.div`
         border-radius: 16px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         background-color: #272a31;
+        padding: 30px 0px;
     }
     &.Top {
         width: 100%;
-        padding: 30px 25px 30px 10px;
+        padding: 0px 25px 30px 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -128,7 +130,7 @@ const Div = styled.div`
     }
     &.Bottom {
         width: 100%;
-        padding: 30px 30px;
+        padding: 30px 30px 0;
     }
     &.BottomBox {
         width: 100%;
