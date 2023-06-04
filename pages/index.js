@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { AdminSide, UserSide } from '../components/Etc/Side.js';
+import { AdminSide, UserSide } from '../components/Etc/SIde';
 import { Header, UserHeader } from '../components/Static/Header';
 import Menu from '../components/Admin/Menu';
 import Main from '../components/Admin/Main';
