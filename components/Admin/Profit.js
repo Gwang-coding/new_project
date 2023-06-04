@@ -186,7 +186,6 @@ const Div = styled.div`
     &.Top {
         display: flex;
         align-items: center;
-        margin-top: 40px;
     }
     &.InfoBox {
         width: 100%;

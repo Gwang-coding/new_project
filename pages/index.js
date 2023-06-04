@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { AdminSide, UserSide } from '../components/Etc/Side';
+import { AdminSide, UserSide } from '../components/Etc/Side.js';
 import { Header, UserHeader } from '../components/Static/Header';
 import Menu from '../components/Admin/Menu';
 import Main from '../components/Admin/Main';
@@ -86,16 +86,7 @@ export default function Home() {
                     </Div>
                 </Div>
             </Section>
-            <Section>
-                <AdminSide />
-                <Div className="Rectangle-Copy">
-                    <Header />
-                    <Div className="Main">
-                        <Menu />
-                        <PopupManage />
-                    </Div>
-                </Div>
-            </Section>
+
             <Section>
                 <AdminSide />
                 <Div className="Rectangle-Copy">
