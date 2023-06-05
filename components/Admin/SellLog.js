@@ -146,7 +146,7 @@ export default function SellLog() {
 const Div = styled.div`
     &.Rectangle-Copy-15 {
         width: 100%;
-        height: 100%;
+
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -232,7 +232,6 @@ const Div = styled.div`
         flex-direction: column;
         border-radius: 10px;
         border: solid 1px #3d3f45;
-        box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
         background-color: #31333a;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         z-index: 1;

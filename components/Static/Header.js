@@ -83,6 +83,7 @@ export function UserHeader() {
 
 const Div = styled.div`
     &.MenuTop {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -91,6 +92,7 @@ const Div = styled.div`
         justify-content: flex-end;
     }
     &.UserMenuTop {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;

@@ -30,7 +30,7 @@ export default function Notice() {
 const Div = styled.div`
     &.Rectangle-Copy-15 {
         width: 100%;
-        height: 100%;
+
         padding: 25px 40px;
         margin: 40px 0px;
         display: flex;

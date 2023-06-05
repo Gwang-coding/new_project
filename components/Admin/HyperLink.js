@@ -130,7 +130,7 @@ export default function Link() {
 const Div = styled.div`
     &.Rectangle-Copy-15 {
         width: 100%;
-        height: 100%;
+
         margin-top: 40px;
         padding-bottom: 15px;
         border-radius: 16px;

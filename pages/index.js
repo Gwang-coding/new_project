@@ -28,6 +28,9 @@ import BankPopUp from '../components/User/BankPopUp';
 import Kakaopay from '../components/User/Kakaopay';
 import Munsang from '../components/User/Munsang';
 import KakaoQR from '../components/User/KakaoQR';
+import Store from '../components/User/Store';
+import PurchasePopUp from '../components/User/PurchasePopup';
+import Nomoney from '../components/User/Nomoney';
 
 export default function Home() {
     return (
@@ -232,6 +235,17 @@ export default function Home() {
             <Kakaopay />
             <Munsang />
             <KakaoQR />
+            <Section>
+                <UserSide />
+                <Div className="Rectangle-Copy">
+                    <UserHeader />
+                    <Div className="UserMain">
+                        <Store />
+                    </Div>
+                </Div>
+            </Section>
+            <PurchasePopUp />
+            <Nomoney />
         </>
     );
 }
@@ -245,12 +259,19 @@ const Div = styled.div`
     &.Rectangle-Copy {
         width: 85%;
         background-color: #1b1e24;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     &.Main {
-        margin: 50px 80px;
+        margin: 50px 0px;
+        width: 95%;
     }
     &.UserMain {
-        margin: 50px 90px;
+        width: 100%;
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
     }
 `;
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default function UserMain() {
     return (
-        <>
+        <Div className="Wrapper">
             <Div className="Notice">
                 <Div className="NoticeIcon">
                     <Img src="/assets/images/icon-c-bell-blue.png"></Img>
@@ -148,11 +148,16 @@ export default function UserMain() {
                     </Div>
                 </Div>
             </Div>
-        </>
+        </Div>
     );
 }
 
 const Div = styled.div`
+    &.Wrapper {
+        width: 1320px;
+        display: flex;
+        flex-direction: column;
+    }
     &.Notice {
         width: 100%;
         height: 90px;
