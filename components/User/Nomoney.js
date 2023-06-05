@@ -25,7 +25,7 @@ export default function Nomoney() {
 
 const Div = styled.div`
     &.ModalBox {
-        position: fixed;
+        // position: fixed;
         top: 0;
         left: 0;
         width: 100%;

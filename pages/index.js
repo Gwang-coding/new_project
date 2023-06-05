@@ -31,6 +31,9 @@ import KakaoQR from '../components/User/KakaoQR';
 import Store from '../components/User/Store';
 import PurchasePopUp from '../components/User/PurchasePopup';
 import Nomoney from '../components/User/Nomoney';
+import ChargeLog from '../components/User/ChargeLog';
+import Userinfo from '../components/User/Userinfo';
+import PurchaseLog from '../components/User/PurchaseLog';
 
 export default function Home() {
     return (
@@ -246,6 +249,33 @@ export default function Home() {
             </Section>
             <PurchasePopUp />
             <Nomoney />
+            <Section>
+                <UserSide />
+                <Div className="Rectangle-Copy">
+                    <UserHeader />
+                    <Div className="UserMain">
+                        <ChargeLog />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <UserSide />
+                <Div className="Rectangle-Copy">
+                    <UserHeader />
+                    <Div className="UserMain">
+                        <Userinfo />
+                    </Div>
+                </Div>
+            </Section>
+            <Section>
+                <UserSide />
+                <Div className="Rectangle-Copy">
+                    <UserHeader />
+                    <Div className="UserMain">
+                        <PurchaseLog />
+                    </Div>
+                </Div>
+            </Section>
         </>
     );
 }
