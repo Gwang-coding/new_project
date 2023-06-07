@@ -124,6 +124,7 @@ const Div = styled.div`
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #31333a;
+        cursor: pointer;
     }
     &.FixedValue {
         width: 70%;
@@ -194,9 +195,4 @@ const Btn = styled.button`
     }
 `;
 
-const Img = styled.img`
-    &.iconpagnagtion {
-        width: 24px;
-        height: 24px;
-    }
-`;
+const Img = styled.img``;

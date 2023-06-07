@@ -16,6 +16,11 @@ export default function User() {
                         <Div className="InputBox" width="180px">
                             <Span>아이디</Span>
                             <Img src="/assets/images/icon-a-right-gray.png" />
+                            {/* 드롭다운 */}
+                            <Div className="Dropdown">
+                                <Span>hi</Span>
+                            </Div>
+                            {/* 드롭다운 */}
                         </Div>
                         <Input />
                         <Btn className="SearchBtn">
@@ -46,8 +51,12 @@ export default function User() {
                     <Span>2022.07.01</Span>
                     <Span>6,000</Span>
                     <Span>570,000</Span>
-                    <Span>관리</Span>
-                    <Span>로그</Span>
+                    <Span>
+                        <a>관리</a>
+                    </Span>
+                    <Span>
+                        <a>로그</a>
+                    </Span>
                 </Div>
                 <Div className="Line" />
                 <Div className="Info">
@@ -62,30 +71,24 @@ export default function User() {
                     <Span>2022.07.01</Span>
                     <Span>6,000</Span>
                     <Span>570,000</Span>
-                    <Span>관리</Span>
-                    <Span>로그</Span>
+                    <Span>
+                        <a>관리</a>
+                    </Span>
+                    <Span>
+                        <a>로그</a>
+                    </Span>
                 </Div>
             </Div>
             <Div className="PageBox">
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-left-2.png" className="iconpagnagtion" />
-                </Div>
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-left.png" className="iconpagnagtion" />
-                </Div>
-                <Div className="CheckedNum">
-                    <Div className="CheckedText">1</Div>
-                </Div>
+                <Img src="/assets/images/icon-pagnagtion-left-2.png" className="iconpagnagtion" />
+                <Img src="/assets/images/icon-pagnagtion-left.png" className="iconpagnagtion" />
+                <Div className="CheckedText">1</Div>
                 <Div className="PageText">2</Div>
                 <Div className="PageText">3</Div>
                 <Div className="PageText">4</Div>
                 <Div className="PageText">5</Div>
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-right.png" className="iconpagnagtion" />
-                </Div>
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-right-2.png" className="iconpagnagtion" />
-                </Div>
+                <Img src="/assets/images/icon-pagnagtion-right.png" className="iconpagnagtion" />
+                <Img src="/assets/images/icon-pagnagtion-right-2.png" className="iconpagnagtion" />
             </Div>
         </>
     );
@@ -141,11 +144,26 @@ const Div = styled.div`
         border: solid 1px #3d3f45;
         background-color: #31333a;
     }
+    &.Dropdown {
+        position: absolute;
+        margin-top: 120px;
+        margin-left: -15px;
+        width: 180px;
+        padding: 20px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        border-radius: 10px;
+        background-color: #31333a;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
     &.PageBox {
         display: flex;
         width: 100%;
         justify-content: center;
         padding: 30px 0;
+        align-items: center;
     }
     &.PageText {
         width: 44px;
@@ -156,13 +174,9 @@ const Div = styled.div`
         align-items: center;
         justify-content: center;
         color: #7a7c85;
+        cursor: pointer;
     }
-    &.CheckedNum {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: #00abbf;
-    }
+
     &.CheckedText {
         width: 44px;
         height: 44px;
@@ -172,6 +186,9 @@ const Div = styled.div`
         align-items: center;
         justify-content: center;
         color: #fff;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #00abbf;
     }
     &.Line {
         height: 1px;
@@ -234,5 +251,7 @@ const Img = styled.img`
     &.iconpagnagtion {
         width: 24px;
         height: 24px;
+        margin: 0 10px;
+        cursor: pointer;
     }
 `;

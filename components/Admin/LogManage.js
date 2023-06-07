@@ -36,25 +36,15 @@ export default function LogManage() {
                 </Div>
             </Div>
             <Div className="PageBox">
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-left-2.png" className="iconpagnagtion" />
-                </Div>
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-left.png" className="iconpagnagtion" />
-                </Div>
-                <Div className="CheckedNum">
-                    <Div className="CheckedText">1</Div>
-                </Div>
+                <Img src="/assets/images/icon-pagnagtion-left-2.png" className="iconpagnagtion" />
+                <Img src="/assets/images/icon-pagnagtion-left.png" className="iconpagnagtion" />
+                <Div className="CheckedText">1</Div>
                 <Div className="PageText">2</Div>
                 <Div className="PageText">3</Div>
                 <Div className="PageText">4</Div>
                 <Div className="PageText">5</Div>
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-right.png" className="iconpagnagtion" />
-                </Div>
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-right-2.png" className="iconpagnagtion" />
-                </Div>
+                <Img src="/assets/images/icon-pagnagtion-right.png" className="iconpagnagtion" />
+                <Img src="/assets/images/icon-pagnagtion-right-2.png" className="iconpagnagtion" />
             </Div>
         </>
     );
@@ -101,6 +91,7 @@ const Div = styled.div`
         width: 100%;
         justify-content: center;
         padding: 30px 0;
+        align-items: center;
     }
     &.PageText {
         width: 44px;
@@ -111,13 +102,9 @@ const Div = styled.div`
         align-items: center;
         justify-content: center;
         color: #7a7c85;
+        cursor: pointer;
     }
-    &.CheckedNum {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: #00abbf;
-    }
+
     &.CheckedText {
         width: 44px;
         height: 44px;
@@ -127,6 +114,9 @@ const Div = styled.div`
         align-items: center;
         justify-content: center;
         color: #fff;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #00abbf;
     }
     &.Line {
         height: 1px;
@@ -166,5 +156,7 @@ const Img = styled.img`
     &.iconpagnagtion {
         width: 24px;
         height: 24px;
+        margin: 0 10px;
+        cursor: pointer;
     }
 `;

@@ -19,13 +19,13 @@ export function UserHeader() {
         <Div className="UserMenuTop">
             <Img src="/assets/images/icon-c-home.png" className="IconC"></Img>
             <Div className="UserMenu">
-                <Img src="/assets/images/icon-c-notice.png" className="IconC"></Img>
-                <Img src="/assets/images/icon-c-chat.png" className="IconC"></Img>
-                <Img src="/assets/images/icon-c-setting.png" className="IconC"></Img>
+                <Img src="/assets/images/icon-c-notice.png" className="IconC" />
+                <Img src="/assets/images/icon-c-chat.png" className="IconC" />
+                <Img src="/assets/images/icon-c-setting.png" className="IconC" />
                 <Div className="IconSlash" />
                 <Div>
                     <Span className="ID">admon5488님</Span>
-                    <Div className="ClickedBox">
+                    {/* <Div className="ClickedBox">
                         <Img src="/assets/images/icon-tooltip-arrow.png" className="PopupImg" />
                         <Div className="LinkDropdown">
                             <Div className="NameBox">
@@ -54,10 +54,10 @@ export function UserHeader() {
                             <Span className="DropText">비밀번호 변경</Span>
                             <Span className="DropText">로그아웃</Span>
                         </Div>
-                    </Div>
+                    </Div> */}
                 </Div>
                 <Div className="MenuMask">
-                    <Img src="/assets/images/icon-user.png" className="iconuser24"></Img>
+                    <Img src="/assets/images/icon-user.png" className="iconuser24" />
                 </Div>
             </Div>
         </Div>
@@ -153,6 +153,7 @@ const Span = styled.span`
     &.ID {
         height: 28px;
         margin: 0px 12px 0px 20px;
+        cursor: pointer;
     }
     &.DropID {
         font-size: 18px;
@@ -166,6 +167,7 @@ const Span = styled.span`
     }
     &.DropText {
         color: #fff;
+        cursor: pointer;
     }
 `;
 const Img = styled.img`

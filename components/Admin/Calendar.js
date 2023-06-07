@@ -52,6 +52,7 @@ const Div = styled.div`
         border: solid 1px #3d3f45;
         background-color: #31333a;
         color: #e5e8ea;
+        cursor: pointer;
     }
 `;
 const P = styled.p`

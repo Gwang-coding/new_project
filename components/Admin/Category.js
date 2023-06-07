@@ -147,6 +147,7 @@ const Div = styled.div`
         justify-content: center;
         border-radius: 50%;
         background-color: #3a3b44;
+        margin: 0 11px;
     }
     &.FirstBox {
         width: 95%;
@@ -157,10 +158,9 @@ const Div = styled.div`
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding-left: 15px;
     }
     &.OtherBox {
-        width: 95%;
+        width: 94%;
         height: 52px;
         border-radius: 10px;
         border: solid 1px #3d3f45;
@@ -190,6 +190,7 @@ const Span = styled.span`
         color: #e5e8ea;
     }
     &.SubTitle {
+        margin-right: 10px;
         font-size: 18px;
         font-weight: 500;
         color: #3dc6d7;
@@ -206,10 +207,11 @@ const Input = styled.input`
     border-radius: 10px;
     border: none;
     background-color: #31333a;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: normal;
     color: #e5e8ea;
     outline: none;
+    padding-left: 10px;
 `;
 const Btn = styled.button`
     height: 40px;
@@ -218,4 +220,6 @@ const Btn = styled.button`
     background-color: #00abbf;
 `;
 
-const Img = styled.img``;
+const Img = styled.img`
+    cursor: pointer;
+`;

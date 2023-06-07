@@ -7,103 +7,86 @@ export default function ChargeRequest() {
                 <Div className="TopBox">
                     <Span className="Title">충전요청</Span>
                     <Div>
-                        <Btn className="DelBtn">
-                            <Span className="BtnText">삭제하기</Span>
+                        <Btn className="OtherBtn">
+                            <Span className="BtnText">모두승인</Span>
                         </Btn>
-                        <Btn className="SaveBtn">
-                            <Span className="BtnText">저장하기</Span>
+                        <Btn className="OtherBtn">
+                            <Span className="BtnText">모두거절</Span>
+                        </Btn>
+                        <Btn className="ReBtn">
+                            <Span className="BtnText">새로고침</Span>
                         </Btn>
                     </Div>
                 </Div>
                 <Div className="Line" />
                 <Div className="Box">
-                    <Span className="SubTitle">링크관리</Span>
+                    <Span className="SubTitle">계좌</Span>
                     <Div className="Bar">
-                        <Span className="BarText">NO</Span>
-                        <Span className="BarText">이름</Span>
-                        <Span className="BarText">링크</Span>
-                        <Span className="BarText">구매자이상 보이기</Span>
+                        <Span className="BarText">아이디</Span>
+                        <Span className="BarText">입금자명</Span>
+                        <Span className="BarText">금액</Span>
                         <Span className="BarText" />
                     </Div>
                     <Div className="Info">
-                        <Span className="InfoText">
-                            <Img src="/assets/images/icon-a-updowncotrol-gray.png"></Img>
+                        <Span>AODWMMMMW12</Span>
+                        <Span>김길동</Span>
+                        <Span>15,000원</Span>
+                        <Span>
+                            <Btn className="OkBtn">
+                                <Span className="BtnText">승인하다</Span>
+                            </Btn>
+                            <Btn className="RefuseBtn">
+                                <Span className="BtnText">거절하다</Span>
+                            </Btn>
                         </Span>
-                        <Span className="InfoText">텔레그램 공지방</Span>
-                        <Span className="InfoText">https://t.me.+GaJUth56dVKNFGI</Span>
-                        <Span className="InfoText">아니오</Span>
-                        <Btn className="Delete">
-                            <Span>삭제</Span>
-                        </Btn>
                     </Div>
                     <Div className="Line" />
                 </Div>
                 <Div className="Box">
-                    <Span className="SubTitle">링크관리</Span>
-
+                    <Span className="SubTitle">카카오페이</Span>
                     <Div className="Bar">
-                        <Span className="BarText">NO</Span>
-                        <Span className="BarText">이름</Span>
-                        <Span className="BarText">링크</Span>
-                        <Span className="BarText">구매자이상 보이기</Span>
+                        <Span className="BarText">아이디</Span>
+                        <Span className="BarText">송금자명</Span>
+                        <Span className="BarText">금액</Span>
                         <Span className="BarText" />
                     </Div>
                     <Div className="Info">
-                        <Span className="InfoText">
-                            <Img src="/assets/images/icon-a-updowncotrol-gray.png"></Img>
+                        <Span>AODWMMMMW12</Span>
+                        <Span>김길동</Span>
+                        <Span>125,000원</Span>
+                        <Span>
+                            <Btn className="OkBtn">
+                                <Span className="BtnText">승인하다</Span>
+                            </Btn>
+                            <Btn className="RefuseBtn">
+                                <Span className="BtnText">거절하다</Span>
+                            </Btn>
                         </Span>
-                        <Span className="InfoText">텔레그램 공지방</Span>
-                        <Span className="InfoText">https://t.me.+GaJUth56dVKNFGI</Span>
-                        <Span className="InfoText">아니오</Span>
-                        <Btn className="Delete">
-                            <Span>삭제</Span>
-                        </Btn>
                     </Div>
                     <Div className="Line" />
                 </Div>
                 <Div className="Box">
-                    <Span className="SubTitle">링크관리</Span>
-
+                    <Span className="SubTitle">문화상품권</Span>
                     <Div className="Bar">
-                        <Span className="BarText">NO</Span>
-                        <Span className="BarText">이름</Span>
-                        <Span className="BarText">링크</Span>
-                        <Span className="BarText">구매자이상 보이기</Span>
+                        <Span className="BarText">아이디</Span>
+                        <Span className="BarText">Pin</Span>
+                        <Span className="BarText">수수료포함금액</Span>
                         <Span className="BarText" />
                     </Div>
                     <Div className="Info">
-                        <Span className="InfoText">
-                            <Img src="/assets/images/icon-a-updowncotrol-gray.png"></Img>
+                        <Span>AODWMMMMW12</Span>
+                        <Span>3232-2323-1234-157512</Span>
+                        <Span>15,000원</Span>
+                        <Span>
+                            <Btn className="OkBtn">
+                                <Span className="BtnText">승인하다</Span>
+                            </Btn>
+                            <Btn className="RefuseBtn">
+                                <Span className="BtnText">거절하다</Span>
+                            </Btn>
                         </Span>
-                        <Span className="InfoText">텔레그램 공지방</Span>
-                        <Span className="InfoText">https://t.me.+GaJUth56dVKNFGI</Span>
-                        <Span className="InfoText">아니오</Span>
-                        <Btn className="Delete">
-                            <Span>삭제</Span>
-                        </Btn>
                     </Div>
                     <Div className="Line" />
-                </Div>
-            </Div>
-            <Div className="PageBox">
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-left-2.png" className="iconpagnagtion" />
-                </Div>
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-left.png" className="iconpagnagtion" />
-                </Div>
-                <Div className="CheckedNum">
-                    <Div className="CheckedText">1</Div>
-                </Div>
-                <Div className="PageText">2</Div>
-                <Div className="PageText">3</Div>
-                <Div className="PageText">4</Div>
-                <Div className="PageText">5</Div>
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-right.png" className="iconpagnagtion" />
-                </Div>
-                <Div className="PageText">
-                    <Img src="/assets/images/icon-pagnagtion-right-2.png" className="iconpagnagtion" />
                 </Div>
             </Div>
         </>
@@ -133,54 +116,25 @@ const Div = styled.div`
     }
     &.Bar {
         display: grid;
-        grid-template-columns: 1fr 3fr 6fr 3fr 1fr;
+        grid-template-columns: 22fr 22fr 15fr 18fr;
         width: 100%;
         padding: 10px 40px;
         background-color: #31333a;
+        margin-top: 20px;
+        text-align: center;
     }
     &.Info {
         display: grid;
-        grid-template-columns: 1fr 3fr 6fr 3fr 1fr;
+        grid-template-columns: 22fr 22fr 15fr 18fr;
         padding: 10px 40px;
         background-color: #272a31;
-        margin-top: 10px;
+        margin: 5px 0;
+        text-align: center;
     }
     &.Line {
         height: 1px;
         width: 100%;
         background-color: #393b44;
-    }
-    &.PageBox {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        padding: 30px 0;
-    }
-    &.PageText {
-        width: 44px;
-        height: 44px;
-        font-size: 16px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #7a7c85;
-    }
-    &.CheckedNum {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: #00abbf;
-    }
-    &.CheckedText {
-        width: 44px;
-        height: 44px;
-        font-size: 16px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
     }
 `;
 const Span = styled.span`
@@ -188,45 +142,55 @@ const Span = styled.span`
     line-height: 1.56;
     font-weight: normal;
     font-size: 15px;
-
+    align-self: center;
     &.Title {
         font-size: 26px;
         font-weight: bold;
     }
     &.SubTitle {
         font-size: 22px;
+        align-self: start;
         font-weight: bold;
     }
     &.BarText {
         font-size: 16px;
         font-weight: bold;
-        text-align: center;
     }
-    &.InfoText {
-        text-align: center;
+    &.BtnText {
+        color: #fff;
+        weight: 600;
     }
 `;
 
 const Input = styled.input``;
 const Btn = styled.button`
-    &.DelBtn {
+    &.OtherBtn {
         height: 40px;
         padding: 8px 19px;
         border-radius: 23px;
         background-color: #474950;
+        margin-left: 10px;
     }
-    &.SaveBtn {
+    &.ReBtn {
         height: 40px;
         padding: 8px 19px;
         border-radius: 23px;
         background-color: #00abbf;
         margin-left: 10px;
     }
-`;
-
-const Img = styled.img`
-    &.iconpagnagtion {
-        width: 24px;
-        height: 24px;
+    &.OkBtn {
+        height: 40px;
+        padding: 8px 14px;
+        border-radius: 10px;
+        background-color: #00abbf;
+    }
+    &.RefuseBtn {
+        height: 40px;
+        padding: 8px 14px;
+        border-radius: 10px;
+        background-color: #f34a7e;
+        margin-left: 10px;
     }
 `;
+
+const Img = styled.img``;

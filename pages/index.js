@@ -254,7 +254,7 @@ export default function Home() {
                 <Div className="Rectangle-Copy">
                     <UserHeader />
                     <Div className="UserMain">
-                        <ChargeLog />
+                        <PurchaseLog />
                     </Div>
                 </Div>
             </Section>
@@ -272,7 +272,7 @@ export default function Home() {
                 <Div className="Rectangle-Copy">
                     <UserHeader />
                     <Div className="UserMain">
-                        <PurchaseLog />
+                        <ChargeLog />
                     </Div>
                 </Div>
             </Section>

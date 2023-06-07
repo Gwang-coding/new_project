@@ -7,19 +7,17 @@ export default function Login() {
                 <Div className="Box">
                     <Div className="Top">
                         <Div className="Login">
-                            <Span className="Text" size="24px" weight="bold" width="63px">
-                                로그인
-                            </Span>
+                            <Span className="Title">로그인</Span>
                         </Div>
-                        <Div className="empty"></Div>
+                        <Div className="empty" />
                     </Div>
-                    <Input placeholder="아이디 (6자 이상)" className="Rectangle-Copy-18" />
-                    <Input placeholder="비밀번호 입력" className="Rectangle-Copy-18" />
-                    <Btn className="Rectangle-Copy-7" color="#f34a7e">
-                        로그인
+                    <Input placeholder="아이디 (6자 이상)" />
+                    <Input placeholder="비밀번호 입력" type="password" />
+                    <Btn className="Login">
+                        <Span>로그인</Span>
                     </Btn>
-                    <Btn className="Rectangle-Copy-7" color="#363c69">
-                        회원가입
+                    <Btn className="Join">
+                        <Span>회원가입</Span>
                     </Btn>
                 </Div>
             </Div>
@@ -53,6 +51,7 @@ const Div = styled.div`
         display: flex;
         text-align: center;
         padding: 13px 50px;
+        width: 200px;
     }
     &.empty {
         width: 100%;
@@ -60,47 +59,42 @@ const Div = styled.div`
     }
 `;
 const Span = styled.span`
-    &.Text {
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        width: ${(props) => props.width};
-        line-height: 1.46;
-        letter-spacing: normal;
-        color: #e5e8ea;
+    color: #e5e8ea;
+    line-height: 1.56;
+    font-weight: bold;
+    font-size: 18px;
+
+    &.Title {
+        font-size: 24px;
+        font-weight: bold;
     }
 `;
 const Input = styled.input`
-    &.Rectangle-Copy-18 {
-        width: 100%;
-        height: 46px;
-        border: none;
-        border-bottom: solid 1px #ffb9cf;
-        font-family: Pretendard;
-        font-size: 17px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.73;
-        letter-spacing: normal;
-        background-color: transparent;
-        color: #fff;
-        margin: 18px 0;
-    }
-    &.Rectangle-Copy-18 :focus {
-        outline: none;
-    }
+    width: 100%;
+    height: 46px;
+    border: none;
+    border-bottom: solid 1px #ffb9cf;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.73;
+    background-color: transparent;
+    color: #e5e8ea;
+    margin: 18px 0;
+    outline: none;
 `;
 const Btn = styled.button`
-    &.Rectangle-Copy-7 {
+    &.Login {
         width: 100%;
         height: 60px;
         border-radius: 16px;
-        background-color: ${(props) => props.color};
-        color: #e5e8ea;
-        font-size: 18px;
+        background-color: #f34a7e;
+        margin-top: 16px;
+    }
+    &.Join {
+        width: 100%;
+        height: 60px;
+        border-radius: 16px;
+        background-color: #363c69;
         margin-top: 16px;
     }
 `;

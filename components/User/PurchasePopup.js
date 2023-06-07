@@ -6,9 +6,7 @@ export default function PurchasePopUp() {
             <Div className="ModalContent">
                 <Div className="Top">
                     <Div className="TopTitle">
-                        <Span className="Text" size="22px" weigth="bold" color="#e5e8ea">
-                            결제
-                        </Span>
+                        <Span className="Title">구매하기</Span>
                     </Div>
                     <Div className="CloseIcon">
                         <Img src="/assets/images/icon-close-white.png" />
@@ -16,47 +14,37 @@ export default function PurchasePopUp() {
                 </Div>
                 <Div className="Bottom">
                     <Div className="BottomBox">
-                        <Span className="Text" size="22px" weight="bold" color="#e5e8ea">
-                            [우디르]12시간
-                        </Span>
+                        <Span className="Title">[우디르]12시간</Span>
                     </Div>
                     <Div className="BottomBox">
-                        <Span className="Text" size="18px" weight="500" color="#e5e8ea">
-                            가격
-                        </Span>
-                        <Div className="Input" width="120px">
-                            <Input className="InputBox" />
-                            <Span className="Text" size="15px" weight="normal" color="#7a7c85">
-                                원
-                            </Span>
+                        <Span>가격</Span>
+                        <Div className="Input">
+                            <Span className="Inven">13,000</Span>
+                            <Span className="Count">원</Span>
                         </Div>
                     </Div>
                     <Div className="BottomBox">
-                        <Span className="Text" size="18px" weight="500" color="#e5e8ea">
-                            남은 재고 수
-                        </Span>
-                        <Div className="Input" width="120px">
-                            <Input className="InputBox" />
+                        <Span>남은 재고 수</Span>
+                        <Div className="Input">
+                            <Span className="Inven">1개</Span>
                         </Div>
                     </Div>
                     <Div className="BottomBox">
-                        <Span className="Text" size="18px" weight="500" color="#e5e8ea">
-                            구매수량
-                        </Span>
-                        <Div className="InputBox">
-                            <Div className="Input" width="62px">
-                                <Input className="InputBox" />
-                            </Div>
-                            <Span className="Text" size="15px" weight="normal" color="#7a7c85">
-                                /100개
-                            </Span>
+                        <Span>구매수량</Span>
+                        <Div>
+                            <Input />
+                            <Span className="Count">/100개</Span>
                         </Div>
                     </Div>
                     <Div className="Line" />
                 </Div>
                 <Div className="BtnBox">
-                    <Btn color="#31333a">취소</Btn>
-                    <Btn color="#1fa58c">확인</Btn>
+                    <Btn className="Cancle">
+                        <Span className="BtnText">취소</Span>
+                    </Btn>
+                    <Btn className="Buy">
+                        <Span className="BtnText">구매</Span>
+                    </Btn>
                 </Div>
             </Div>
         </Div>
@@ -102,7 +90,6 @@ const Div = styled.div`
     &.CloseIcon {
         width: 32px;
         height: 32px;
-
         padding: 8px;
         border-radius: 50%;
         background-color: #32333a;
@@ -119,20 +106,15 @@ const Div = styled.div`
         margin-bottom: 20px;
     }
     &.Input {
-        width: ${(props) => props.width};
+        width: 120px;
         height: 52px;
         border-radius: 10px;
         display: flex;
         align-items: center;
         border: solid 1px #3d3f45;
-        background-color: #31333a;
-        padding: 0px 10px;
-    }
-    &.InputBox {
-        width: 120px;
-        display: flex;
-        align-items: center;
+        background-color: #272a31;
         justify-content: space-between;
+        padding: 0px 15px;
     }
     &.BtnBox {
         width: 100%;
@@ -149,38 +131,51 @@ const Div = styled.div`
 `;
 
 const Span = styled.span`
-    &.Text {
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        letter-spacing: normal;
-        color: ${(props) => props.color};
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.56;
+    color: #e5e8ea;
+    &.Title {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &.BtnText {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &.Inven {
+        font-size: 15px;
+        font-weight: normal;
+    }
+    &.Count {
+        font-size: 15px;
+        font-weight: normal;
+        color: #7a7c85;
+        margin-left: 12px;
     }
 `;
 const Input = styled.input`
-    &.InputBox {
-        border: none;
-        background-color: transparent;
-        height: 52px;
-        width: 100%;
-        font-size: 18px;
-        color: #e5e8ea;
-    }
-    &.InputBox:focus {
-        outline: none;
-    }
+    border-radius: 10px;
+    border: solid 1px #3d3f45;
+    background-color: #31333a;
+    height: 52px;
+    width: 62px;
+    font-size: 15px;
+    color: #e5e8ea;
+    outline: none;
+    padding-left: 12px;
 `;
 const Btn = styled.button`
-    width: 140px;
-    height: 60px;
-    border-radius: 35px;
-    background-color: ${(props) => props.color};
-    font-size: 18px;
-    font-weight: bold;
-    color: #e5e8ea;
+    &.Cancle {
+        padding: 16px 54px;
+        border-radius: 35px;
+        background-color: #31333a;
+    }
+    &.Buy {
+        padding: 16px 54px;
+        border-radius: 35px;
+        background-color: #1fa58c;
+    }
 `;
 
 const Img = styled.img``;

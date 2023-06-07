@@ -21,7 +21,7 @@ export default function Notice() {
             </Div>
             <Span className="EditorText">긴급공지</Span>
             <Div className="EditorBox">
-                <Input />
+                <TextArea />
             </Div>
         </Div>
     );
@@ -53,6 +53,14 @@ const Div = styled.div`
         background-color: #474950;
         cursor: pointer;
     }
+    &.Rectangle-Copy-2-on {
+        width: 62px;
+        height: 32px;
+        padding: 4px 4px 4px 34px;
+        border-radius: 100px;
+        background-color: #00abbf;
+        cursor: pointer;
+    }
     &.Oval-Copy-2 {
         width: 24px;
         height: 24px;
@@ -81,7 +89,7 @@ const Span = styled.span`
     }
 `;
 
-const Input = styled.input`
+const TextArea = styled.textarea`
     outline: none;
     width: 100%;
     height: 329px;
@@ -92,6 +100,7 @@ const Input = styled.input`
     font-size: 15px;
     font-weight: normal;
     color: #e5e8ea;
+    resize: none;
 `;
 const Btn = styled.button`
     height: 40px;

@@ -173,6 +173,7 @@ const Div = styled.div`
         padding: 4px 4px 4px 34px;
         border-radius: 100px;
         background-color: #00abbf;
+        cursor: pointer;
     }
     &.Oval-Copy-2 {
         width: 24px;

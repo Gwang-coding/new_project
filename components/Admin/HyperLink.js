@@ -13,7 +13,7 @@ export default function Link() {
                     <Div className="LinkPlus">
                         <Div className="LinkBox">
                             <Span>이름</Span>
-                            <Input placeholder="이름" width="70%" />
+                            <Input placeholder="이름" width="65%" />
                         </Div>
                         <Div className="LinkBox" width="50%">
                             <Span>링크 URL(http://필수)</Span>
@@ -74,9 +74,7 @@ export default function Link() {
                 <Div className="PageText">
                     <Img src="/assets/images/icon-pagnagtion-left.png" className="iconpagnagtion" />
                 </Div>
-                <Div className="CheckedNum">
-                    <Div className="CheckedText">1</Div>
-                </Div>
+                <Div className="CheckedText">1</Div>
                 <Div className="PageText">2</Div>
                 <Div className="PageText">3</Div>
                 <Div className="PageText">4</Div>
@@ -131,6 +129,7 @@ const Div = styled.div`
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #31333a;
+        cursor: pointer;
     }
     &.LinkDropdown {
         position: absolute;
@@ -146,6 +145,7 @@ const Div = styled.div`
         background-color: #31333a;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        cursor: pointer;
     }
     &.LinkBar {
         display: grid;
@@ -181,12 +181,7 @@ const Div = styled.div`
         align-items: center;
         justify-content: center;
         color: #7a7c85;
-    }
-    &.CheckedNum {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background-color: #00abbf;
+        cursor: pointer;
     }
     &.CheckedText {
         width: 44px;
@@ -197,6 +192,9 @@ const Div = styled.div`
         align-items: center;
         justify-content: center;
         color: #fff;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #00abbf;
     }
 `;
 const Span = styled.span`
@@ -259,5 +257,6 @@ const Img = styled.img`
     &.iconpagnagtion {
         width: 24px;
         height: 24px;
+        cursor: pointer;
     }
 `;

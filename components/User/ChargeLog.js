@@ -5,146 +5,87 @@ export default function ChargeLog() {
         <Div className="Wrapper">
             <Div className="Top">
                 <Div className="NameBox">
-                    <Span className="Text" size="28px" weight="bold" color="#e5e8ea">
-                        Messi8090
-                    </Span>
-                    <Div className="Rectangle-Copy-11" bcolor="#0cbe9d">
-                        <Span className="Text" size="14px" weight="600" color="#e5e8ea">
-                            VIP
-                        </Span>
-                    </Div>
+                    <Span className="ID">Messi8090</Span>
+                    <Span className="Rank">VIP</Span>
                 </Div>
                 <Div className="TopText">
                     <Img src="/assets/images/icon-chargemoney.png" className="point" />
-                    <Span className="Text" size="15px" color="#fff" weight="normal">
-                        총 충전 금액 : 320,400원
-                    </Span>
-                    <Span className="TextBox">|</Span>
+                    <Span className="Point">총 충전 금액 : 320,400원</Span>
                     <Img src="/assets/images/icon-purchasemoney.png" className="point" />
-                    <Span className="Text" size="15px" color="#fff" weight="normal">
-                        총 구매 금액 : 320,400원
-                    </Span>
+                    <Span className="Point">총 구매 금액 : 320,400원</Span>
                 </Div>
                 <Div className="BtnBox">
-                    <Div className="Btn" border="5px solid #25b499">
-                        <Span className="Text" size="18px" weight="600" color="#16d8b4">
-                            구매내역
-                        </Span>
-                    </Div>
-                    <Div className="Btn">
-                        <Span className="Text" size="18px" weight="600" color="#7a7c85">
-                            충전내역
-                        </Span>
-                    </Div>
-                    <Div className="Btn">
-                        <Span className="Text" size="18px" weight="600" color="#7a7c85">
-                            파일함
-                        </Span>
-                    </Div>
-                    <Div className="Btn">
-                        <Span className="Text" size="18px" weight="600" color="#7a7c85">
-                            회원정보수정
-                        </Span>
-                    </Div>
+                    <Span className="Menu">구매내역</Span>
+                    <Span className="Clicked">충전내역</Span>
+                    <Span className="Menu">파일함</Span>
+                    <Span className="Menu">회원정보수정</Span>
                 </Div>
             </Div>
-            <Div className="Rectangle-Copy-15">
+            <Div className="Box">
                 <Div className="TopBox">
-                    <Span className="Text" size="28px" weight="bold" color="#e5e8ea">
-                        나의 구매 내역
-                    </Span>
+                    <Span className="Title">충전내역</Span>
                 </Div>
                 <Div className="Bar">
-                    <Span className="Text" size="16px" weight="bold" width="90px" color="#e5e8ea">
-                        NO
+                    <Span className="BarText">NO</Span>
+                    <Span className="BarText">충전날짜</Span>
+                    <Span className="BarText">입금자명</Span>
+                    <Span className="BarText">충전방법</Span>
+                    <Span className="BarText">금액</Span>
+                    <Span className="BarText">결과</Span>
+                </Div>
+                <Div className="Info">
+                    <Span>1</Span>
+                    <Span>2022-06-30 16:38:40</Span>
+                    <Span>홍길동</Span>
+                    <Span>
+                        <Span className="Account">계좌이체</Span>
                     </Span>
-                    <Span className="Text" size="16px" weight="bold" width="180px" color="#e5e8ea">
-                        구매날짜
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="260px" color="#e5e8ea">
-                        상품명
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="120px" color="#e5e8ea">
-                        기간
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="260px" color="#e5e8ea">
-                        코드(코드클릭시복사)
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="180px" color="#e5e8ea">
-                        가격
+                    <Span>6,000원</Span>
+                    <Span>
+                        <Span className="Success">성공</Span>
                     </Span>
                 </Div>
-                <Div className="Info" border="1px solid #3d3f45">
-                    <Span className="Text" size="15px" weight="normal" width="90px" color="#e5e8ea">
-                        1
+                <Div className="Info">
+                    <Span>1</Span>
+                    <Span>2022-06-30 16:38:40</Span>
+                    <Span>홍길동</Span>
+                    <Span>
+                        <Span className="Munsang">문화상품권</Span>
                     </Span>
-                    <Span className="Text" size="15px" weight="normal" width="180px" color="#e5e8ea">
-                        2022-06-30 16:38:40
-                    </Span>
-                    <Span className="Text" size="15px" weight="normal" width="260px" color="#e5e8ea">
-                        우디르
-                    </Span>
-                    <Span className="Text" size="15px" weight="normal" width="120px" color="#e5e8ea">
-                        13일
-                    </Span>
-                    <Span className="Text" size="15px" weight="normal" width="260px" color="#e5e8ea">
-                        Udyr-scadesacaedsac
-                    </Span>
-                    <Span className="Text" size="15px" weight="normal" width="180px" color="#e5e8ea">
-                        6,000원
+                    <Span>6,000원</Span>
+                    <Span>
+                        <Span className="Fail">실패</Span>
                     </Span>
                 </Div>
-                <Div className="Info" border="1px solid #3d3f45">
-                    <Span className="Text" size="15px" weight="normal" width="90px" color="#e5e8ea">
-                        1
+                <Div className="Info">
+                    <Span>1</Span>
+                    <Span>2022-06-30 16:38:40</Span>
+                    <Span>홍길동</Span>
+                    <Span>
+                        <Span className="Kakao">카카오페이</Span>
                     </Span>
-                    <Span className="Text" size="15px" weight="normal" width="180px" color="#e5e8ea">
-                        2022-06-30 16:38:40
-                    </Span>
-                    <Span className="Text" size="15px" weight="normal" width="260px" color="#e5e8ea">
-                        우디르
-                    </Span>
-                    <Span className="Text" size="15px" weight="normal" width="120px" color="#e5e8ea">
-                        13일
-                    </Span>
-                    <Span className="Text" size="15px" weight="normal" width="260px" color="#e5e8ea">
-                        Udyr-scadesacaedsac
-                    </Span>
-                    <Span className="Text" size="15px" weight="normal" width="180px" color="#e5e8ea">
-                        6,000원
+                    <Span>6,000원</Span>
+                    <Span>
+                        <Span className="Success">성공</Span>
                     </Span>
                 </Div>
                 <Div className="PageBox">
-                    <Div className="PageBar">
-                        <Div className="Rectangle-Copy-17">
-                            <Img src="/assets/images/icon-pagnagtion-left-2.png" className="iconpagnagtion" />
-                        </Div>
-                        <Div className="Rectangle-Copy-17">
-                            <Img src="/assets/images/icon-pagnagtion-left.png" className="iconpagnagtion" />
-                        </Div>
-                        <Div className="CheckedNum">
-                            <Div className="Rectangle-Copy-17" color="#fff">
-                                1
-                            </Div>
-                        </Div>
-                        <Div className="Rectangle-Copy-17" color="#7a7c85">
-                            2
-                        </Div>
-                        <Div className="Rectangle-Copy-17" color="#7a7c85">
-                            3
-                        </Div>
-                        <Div className="Rectangle-Copy-17" color="#7a7c85">
-                            4
-                        </Div>
-                        <Div className="Rectangle-Copy-17" color="#7a7c85">
-                            5
-                        </Div>
-                        <Div className="Rectangle-Copy-17" color="#7a7c85">
-                            <Img src="/assets/images/icon-pagnagtion-right.png" className="iconpagnagtion" />
-                        </Div>
-                        <Div className="Rectangle-Copy-17">
-                            <Img src="/assets/images/icon-pagnagtion-right-2.png" className="iconpagnagtion" />
-                        </Div>
+                    <Div className="PageText">
+                        <Img src="/assets/images/icon-pagnagtion-left-2.png" className="iconpagnagtion" />
+                    </Div>
+                    <Div className="PageText">
+                        <Img src="/assets/images/icon-pagnagtion-left.png" className="iconpagnagtion" />
+                    </Div>
+                    <Div className="CheckedText">1</Div>
+                    <Div className="PageText">2</Div>
+                    <Div className="PageText">3</Div>
+                    <Div className="PageText">4</Div>
+                    <Div className="PageText">5</Div>
+                    <Div className="PageText">
+                        <Img src="/assets/images/icon-pagnagtion-right.png" className="iconpagnagtion" />
+                    </Div>
+                    <Div className="PageText">
+                        <Img src="/assets/images/icon-pagnagtion-right-2.png" className="iconpagnagtion" />
                     </Div>
                 </Div>
             </Div>
@@ -158,14 +99,7 @@ const Div = styled.div`
         flex-direction: column;
     }
 
-    &.Rectangle-Copy-11 {
-        height: 22px;
-        margin-left: 10px;
-        padding: 0 8px;
-        border-radius: 4px;
-        background-color: ${(props) => props.bcolor};
-    }
-    &.Rectangle-Copy-15 {
+    &.Box {
         width: 1320px;
         margin-top: 40px;
         border-radius: 16px;
@@ -178,21 +112,17 @@ const Div = styled.div`
     }
     &.TopText {
         display: flex;
+        justify-content: space-between;
+        width: 33%;
         align-items: center;
         margin-bottom: 10px;
     }
     &.TopBox {
-        width: 100%;
         padding: 25px 40px;
     }
     &.BtnBox {
         display: flex;
         text-align: center;
-    }
-    &.Btn {
-        width: 123px;
-        border-bottom: ${(props) => props.border};
-        padding: 10px 0;
     }
     &.Top {
         width: 1320px;
@@ -205,71 +135,132 @@ const Div = styled.div`
         background-color: #272a31;
     }
     &.Bar {
-        padding: 0px 50px 0;
-        width: 100%;
-        height: 50px;
-        display: flex;
+        display: grid;
+        grid-template-columns: 9fr 18fr 26fr 13fr 13fr 9fr;
+        padding: 15px 40px;
         text-align: center;
-        align-items: center;
-        justify-content: space-between;
+        width: 100%;
         background-color: #31333a;
     }
     &.Info {
-        display: flex;
+        display: grid;
+        grid-template-columns: 9fr 18fr 26fr 13fr 13fr 9fr;
         width: 100%;
         text-align: center;
-        justify-content: space-between;
-        padding: 20px 50px 20px 50px;
-        background-color: #272a31;
-        border-bottom: ${(props) => props.border};
+        padding: 20px 40px;
+        border-bottom: 1px solid #393b44;
     }
     &.PageBox {
         display: flex;
         width: 100%;
         justify-content: center;
-        padding-top: 30px;
+        padding: 30px 0;
     }
-    &.PageBar {
-        display: flex;
-    }
-    &.Rectangle-Copy-17 {
+    &.PageText {
         width: 44px;
         height: 44px;
-        font-family: Pretendard;
         font-size: 16px;
         font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.75;
         display: flex;
-        letter-spacing: normal;
         align-items: center;
         justify-content: center;
-        color: ${(props) => props.color};
+        color: #7a7c85;
+        cursor: pointer;
     }
-    &.CheckedNum {
+    &.CheckedText {
         width: 44px;
         height: 44px;
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        cursor: pointer;
         border-radius: 6px;
         background-color: #1fa58c;
+        cursor: pointer;
     }
 `;
 
 const Span = styled.span`
-    &.Text {
-        width: ${(props) => props.width};
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        letter-spacing: normal;
-        color: ${(props) => props.color};
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.46;
+    color: #e5e8ea;
+    &.ID {
+        font-size: 22px;
+        font-weight: bold;
     }
-    &.TextBox {
-        margin: 0 10px;
-        color: #575a63;
+    &.Point {
+        color: #fff;
+    }
+    &.Rank {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #0cbe9d;
+        padding: 1px 7px;
+        border-radius: 3px;
+        margin-left: 10px;
+    }
+    &.Menu {
+        padding: 10px 0;
+        width: 123px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #7a7c85;
+        cursor: pointer;
+    }
+    &.Clicked {
+        font-size: 18px;
+        font-weight: 500;
+        color: #16d8b4;
+        width: 123px;
+        padding: 10px 0;
+        border-bottom: 5px solid #16d8b4;
+        cursor: pointer;
+    }
+    &.Title {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    &.BarText {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &.Kakao {
+        width: 76px;
+        background-color: #3d372f;
+        border-radius: 6px;
+        padding: 0 8px;
+        color: #cb9424;
+    }
+    &.Munsang {
+        width: 76px;
+        background-color: #3c3037;
+        border-radius: 6px;
+        padding: 1px 8px;
+        color: #a35756;
+    }
+    &.Account {
+        width: 76px;
+        padding: 0 8px;
+        border-radius: 6px;
+        background-color: #34373d;
+        color: #c0c1c2;
+    }
+    &.Success {
+        width: 43px;
+        padding: 3px 10px;
+        border-radius: 6px;
+        background-color: #0b8be9;
+    }
+    &.Fail {
+        width: 43px;
+        padding: 3px 10px;
+        border-radius: 6px;
+        background-color: #ff6136;
     }
 `;
 const Input = styled.input``;
@@ -279,8 +270,9 @@ const Img = styled.img`
     &.iconpagnagtion {
         width: 24px;
         height: 24px;
+        cursor: pointer;
     }
     &.point {
-        margin-right: 5px;
+        margin-right: -25px;
     }
 `;

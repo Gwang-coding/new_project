@@ -11,8 +11,7 @@ export default function Nomoney() {
                 </Div>
                 <Div className="Bottom">
                     <Img src="/assets/images/icon-wallet.png" className="Wallet" />
-
-                    <Span className="Text" size="22px" weight="normal" color="#e5e8ea">
+                    <Span>
                         보유금액이 부족합니다
                         <br />
                         금액을 충전해주세요
@@ -42,7 +41,6 @@ const Div = styled.div`
         border-radius: 16px;
         display: flex;
         flex-direction: column;
-
         background-color: #272a31;
         padding: 30px 0px;
     }
@@ -70,16 +68,10 @@ const Div = styled.div`
 `;
 
 const Span = styled.span`
-    &.Text {
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        letter-spacing: normal;
-        color: ${(props) => props.color};
-    }
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 10px;
+    color: #e5e8ea;
 `;
 const Input = styled.input``;
 const Btn = styled.button``;

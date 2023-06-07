@@ -5,221 +5,158 @@ export default function Store() {
     return (
         <>
             <Div className="Wrapper">
-                <Span className="Text" size="28px" weight="bold" color="#e5e8ea">
-                    서든 어택
-                </Span>
+                <Span className="Title">서든 어택</Span>
                 <Div className="GridBox">
                     <Div className="Box">
-                        <Div className="ImgBox"></Div>
+                        <Div className="ImgBox">
+                            <Img src="/assets/images/380px.png" className="Img" />
+                        </Div>
                         <Div className="TextBox">
-                            <Span className="Text" color="#e5e8ea" size="18px" weight="normal">
-                                서든어택 [원] 월 단품
-                            </Span>
-                            <Span className="TextBox">
-                                <Span className="Text" color="#7a7c85" size="15px" weight="500">
-                                    최강의 기능들로 구성된 제품입니다.
-                                </Span>
-                            </Span>
+                            <Span className="SubTitle">서든어택 [원] 월 단품</Span>
+                            <Span className="Info">최강의 기능들로 구성된 제품입니다.</Span>
                         </Div>
                         <Div className="BtnBox">
-                            <Div className="Rectangle-Copy-10">
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    12시간{' '}
-                                    <Span className="Text" color="rgba(229, 232, 234, 0.2)">
-                                        |
-                                    </Span>{' '}
-                                    13,000원
+                            <Div className="Dropdown">
+                                <Span>
+                                    12시간<Span className="Stick">|</Span>13,000원
                                 </Span>
-                                <Img src="/assets/images/icon-a-right-gray.png"></Img>
+                                <Img src="/assets/images/icon-a-right-gray.png" />
                             </Div>
-                            <Div className="LinkDropdown">
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    1시간{' '}
-                                    <Span className="Text" color="rgba(229, 232, 234, 0.2)">
-                                        |
-                                    </Span>{' '}
-                                    1,000원
+                            {/* 드롭다운 */}
+                            <Div className="DropdownText">
+                                <Span>
+                                    12시간<Span className="Stick">|</Span>13,000원
                                 </Span>
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    1시간{' '}
-                                    <Span className="Text" color="rgba(229, 232, 234, 0.2)">
-                                        |
-                                    </Span>{' '}
-                                    1,000원
+                                <Span>
+                                    12시간<Span className="Stick">|</Span>13,000원
                                 </Span>
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    1시간{' '}
-                                    <Span className="Text" color="rgba(229, 232, 234, 0.2)">
-                                        |
-                                    </Span>{' '}
-                                    1,000원
+                                <Span>
+                                    12시간<Span className="Stick">|</Span>13,000원
                                 </Span>
                             </Div>
-                            <Btn className="Rectangle-Copy-7" color="#1a8ac7">
-                                소개
+                            {/* 드롭다운 */}
+                            <Btn className="Info">
+                                <Span className="BtnText">소개</Span>
                             </Btn>
-                            <Btn className="Rectangle-Copy-7" color="#1fa58c">
-                                구매
+                            <Btn className="Buy">
+                                <Span className="BtnText">구매</Span>
                             </Btn>
                         </Div>
                     </Div>
                     <Div className="Box">
-                        <Div className="ImgBox"></Div>
+                        <Div className="ImgBox">
+                            <Img src="/assets/images/380px.png" className="Img" />
+                        </Div>
                         <Div className="TextBox">
-                            <Span className="Text" color="#e5e8ea" size="18px" weight="normal">
-                                (우디르) 최강학살 서든어택(반다르) 최강학살
-                            </Span>
-                            <Span className="TextBox">
-                                <Span className="Text" color="#7a7c85" size="15px" weight="500">
-                                    최강의 기능들로 구성된 제품입니다. 최강의 기능들로 구성된 제품입니다. 구성된 제품입니다.
-                                </Span>
+                            <Span className="SubTitle">(우디르) 최강학살 서든어택(반다르) 최강학살</Span>
+                            <Span className="Info">
+                                최강의 기능들로 구성된 제품입니다. 최강의 기능들로 구성된 제품입니다. 구성된 제품입니다.
                             </Span>
                         </Div>
                         <Div className="BtnBox">
-                            <Div className="Rectangle-Copy-10">
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    12시간{' '}
-                                    <Span className="Text" color="rgba(229, 232, 234, 0.2)">
-                                        |
-                                    </Span>{' '}
-                                    13,000원
+                            <Div className="Dropdown">
+                                <Span>
+                                    12시간<Span className="Stick">|</Span>13,000원
                                 </Span>
-                                <Img src="/assets/images/icon-a-right-gray.png"></Img>
+                                <Img src="/assets/images/icon-a-right-gray.png" />
                             </Div>
-
-                            <Btn className="Rectangle-Copy-7" color="#1a8ac7">
-                                소개
+                            <Btn className="Info">
+                                <Span className="BtnText">소개</Span>
                             </Btn>
-                            <Btn className="Rectangle-Copy-7" color="#1fa58c">
-                                구매
+                            <Btn className="Buy">
+                                <Span className="BtnText">구매</Span>
                             </Btn>
                         </Div>
                     </Div>
                     <Div className="Box">
-                        <Div className="ImgBox"></Div>
+                        <Div className="ImgBox">
+                            <Img src="/assets/images/380px.png" className="Img" />
+                        </Div>
                         <Div className="TextBox">
-                            <Span className="Text" color="#e5e8ea" size="18px" weight="normal">
-                                (우디르) 최강학살 서든어택(반다르) 최강학살
-                            </Span>
-                            <Span className="TextBox">
-                                <Span className="Text" color="#7a7c85" size="15px" weight="500">
-                                    최강의 기능들로 구성된 제품입니다.
-                                </Span>
-                            </Span>
+                            <Span className="SubTitle">서든어택 [원] 월 단품</Span>
+                            <Span className="Info">최강의 기능들로 구성된 제품입니다.</Span>
                         </Div>
                         <Div className="BtnBox">
-                            <Div className="Rectangle-Copy-10">
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    12시간{' '}
-                                    <Span className="Text" color="rgba(229, 232, 234, 0.2)">
-                                        |
-                                    </Span>{' '}
-                                    13,000원
+                            <Div className="Dropdown">
+                                <Span>
+                                    12시간<Span className="Stick">|</Span>13,000원
                                 </Span>
-                                <Img src="/assets/images/icon-a-right-gray.png"></Img>
+                                <Img src="/assets/images/icon-a-right-gray.png" />
                             </Div>
-
-                            <Btn className="Rectangle-Copy-7" color="#1a8ac7">
-                                소개
+                            <Btn className="Info">
+                                <Span className="BtnText">소개</Span>
                             </Btn>
-                            <Btn className="Rectangle-Copy-7" color="#1fa58c">
-                                구매
+                            <Btn className="Patch">
+                                <Span className="BtnText">패치중</Span>
                             </Btn>
                         </Div>
                     </Div>
                     <Div className="Box">
-                        <Div className="ImgBox"></Div>
+                        <Div className="ImgBox">
+                            <Img src="/assets/images/380px.png" className="Img" />
+                        </Div>
                         <Div className="TextBox">
-                            <Span className="Text" color="#e5e8ea" size="18px" weight="normal">
-                                서든어택 [원] 월 단품
-                            </Span>
-                            <Span className="TextBox">
-                                <Span className="Text" color="#7a7c85" size="15px" weight="500">
-                                    최강의 기능들로 구성된 제품입니다.
-                                </Span>
-                            </Span>
+                            <Span className="SubTitle">서든어택 [원] 월 단품</Span>
+                            <Span className="Info">최강의 기능들로 구성된 제품입니다.</Span>
                         </Div>
                         <Div className="BtnBox">
-                            <Div className="Rectangle-Copy-10">
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    12시간{' '}
-                                    <Span className="Text" color="rgba(229, 232, 234, 0.2)">
-                                        |
-                                    </Span>{' '}
-                                    13,000원
+                            <Div className="Dropdown">
+                                <Span>
+                                    12시간<Span className="Stick">|</Span>13,000원
                                 </Span>
-                                <Img src="/assets/images/icon-a-right-gray.png"></Img>
+                                <Img src="/assets/images/icon-a-right-gray.png" />
                             </Div>
-
-                            <Btn className="Rectangle-Copy-7" color="#1a8ac7">
-                                소개
+                            <Btn className="Info">
+                                <Span className="BtnText">소개</Span>
                             </Btn>
-                            <Btn className="Rectangle-Copy-7" color="#1fa58c">
-                                구매
+                            <Btn className="Buy">
+                                <Span className="BtnText">구매</Span>
                             </Btn>
                         </Div>
                     </Div>
                     <Div className="Box">
-                        <Div className="ImgBox"></Div>
+                        <Div className="ImgBox">
+                            <Img src="/assets/images/380px.png" className="Img" />
+                        </Div>
                         <Div className="TextBox">
-                            <Span className="Text" color="#e5e8ea" size="18px" weight="normal">
-                                (우디르) 최강학살 서든어택(반다르) 최강학살
-                            </Span>
-                            <Span className="TextBox">
-                                <Span className="Text" color="#7a7c85" size="15px" weight="500">
-                                    최강의 기능들로 구성된 제품입니다.
-                                </Span>
-                            </Span>
+                            <Span className="SubTitle">서든어택 [원] 월 단품</Span>
+                            <Span className="Info">최강의 기능들로 구성된 제품입니다.</Span>
                         </Div>
                         <Div className="BtnBox">
-                            <Div className="Rectangle-Copy-10">
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    12시간{' '}
-                                    <Span className="Text" color="rgba(229, 232, 234, 0.2)">
-                                        |
-                                    </Span>{' '}
-                                    13,000원
+                            <Div className="Dropdown">
+                                <Span>
+                                    12시간<Span className="Stick">|</Span>13,000원
                                 </Span>
-                                <Img src="/assets/images/icon-a-right-gray.png"></Img>
+                                <Img src="/assets/images/icon-a-right-gray.png" />
                             </Div>
-
-                            <Btn className="Rectangle-Copy-7" color="#1a8ac7">
-                                소개
+                            <Btn className="Info">
+                                <Span className="BtnText">소개</Span>
                             </Btn>
-                            <Btn className="Rectangle-Copy-7" color="#1fa58c">
-                                구매
+                            <Btn className="Buy">
+                                <Span className="BtnText">구매</Span>
                             </Btn>
                         </Div>
                     </Div>
                     <Div className="Box">
-                        <Div className="ImgBox"></Div>
+                        <Div className="ImgBox">
+                            <Img src="/assets/images/380px.png" className="Img" />
+                        </Div>
                         <Div className="TextBox">
-                            <Span className="Text" color="#e5e8ea" size="18px" weight="normal">
-                                (우디르) 최강학살 서든어택(반다르) 최강학살
-                            </Span>
-                            <Span className="TextBox">
-                                <Span className="Text" color="#7a7c85" size="15px" weight="500">
-                                    최강의 기능들로 구성된 제품입니다.
-                                </Span>
-                            </Span>
+                            <Span className="SubTitle">서든어택 [원] 월 단품</Span>
+                            <Span className="Info">최강의 기능들로 구성된 제품입니다.</Span>
                         </Div>
                         <Div className="BtnBox">
-                            <Div className="Rectangle-Copy-10">
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    12시간{' '}
-                                    <Span className="Text" color="rgba(229, 232, 234, 0.2)">
-                                        |
-                                    </Span>{' '}
-                                    13,000원
+                            <Div className="Dropdown">
+                                <Span>
+                                    12시간<Span className="Stick">|</Span>13,000원
                                 </Span>
-                                <Img src="/assets/images/icon-a-right-gray.png"></Img>
+                                <Img src="/assets/images/icon-a-right-gray.png" />
                             </Div>
-
-                            <Btn className="Rectangle-Copy-7" color="#1a8ac7">
-                                소개
+                            <Btn className="Info">
+                                <Span className="BtnText">소개</Span>
                             </Btn>
-                            <Btn className="Rectangle-Copy-7" color="#1fa58c">
-                                구매
+                            <Btn className="Buy">
+                                <Span className="BtnText">구매</Span>
                             </Btn>
                         </Div>
                     </Div>
@@ -270,7 +207,7 @@ const Div = styled.div`
         justify-content: space-between;
         padding: 0 24px 24px;
     }
-    &.Rectangle-Copy-10 {
+    &.Dropdown {
         cursor: pointer;
         width: 170px;
         display: flex;
@@ -282,47 +219,67 @@ const Div = styled.div`
         border: solid 1px #3d3f45;
         background-color: #31333a;
     }
-    &.LinkDropdown {
+    &.DropdownText {
+        cursor: pointer;
         margin-top: 60px;
         position: absolute;
         height: 154px;
         width: 170px;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 20px;
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #31333a;
         z-index: 1;
-        justify-content: space-between;
-        padding: 21px 0px 21px 20px;
+        padding: 20px 15px;
     }
 `;
 
 const Span = styled.span`
-    &.Text {
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        letter-spacing: normal;
-        color: ${(props) => props.color};
+    font-size: 15px;
+    font-weight: normal;
+    color: #e5e8ea;
+    line-height: 1.6;
+    &.Title {
+        font-size: 28px;
+        font-weight: bold;
     }
-    &.TextBox {
-        margin: 10px 0;
+    &.SubTitle {
+        font-size: 18px;
+    }
+    &.Info {
+        font-weight: 500;
+        color: #7a7c85;
+        margin-top: 10px;
+    }
+    &.Stick {
+        color: rgba(229, 232, 234, 0.2);
+        margin: 0 5px;
     }
 `;
 const Input = styled.input``;
 const Btn = styled.button`
-    &.Rectangle-Copy-7 {
-        height: 52px;
+    &.Info {
         padding: 14px 22px;
         border-radius: 10px;
-        background-color: ${(props) => props.color};
-        color: #fff;
-        font-size: 15px;
+        background-color: #1a8ac7;
+    }
+    &.Buy {
+        padding: 14px 22px;
+        border-radius: 10px;
+        background-color: #1fa58c;
+    }
+    &.Patch {
+        width: 70px;
+        border-radius: 10px;
+        background-color: #f06363;
     }
 `;
 
-const Img = styled.img``;
+const Img = styled.img`
+    &.Img {
+        border-radius: 16px 16px 0 0;
+    }
+`;

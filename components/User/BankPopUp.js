@@ -6,9 +6,7 @@ export default function BankPopUp() {
             <Div className="ModalContent">
                 <Div className="Top">
                     <Div className="TopTitle">
-                        <Span className="Text" size="22px" weigth="bold" color="#e5e8ea">
-                            결제
-                        </Span>
+                        <Span className="Title">결제</Span>
                     </Div>
                     <Div className="CloseIcon">
                         <Img src="/assets/images/icon-close-white.png" />
@@ -16,57 +14,38 @@ export default function BankPopUp() {
                 </Div>
                 <Div className="Bottom">
                     <Div className="BottomBox">
-                        <Span className="Text" size="15px" weight="500" color="#e5e8ea">
-                            아래 계좌로 입금후 확인버튼을 눌러주시면 신청이 완료됩니다.
-                        </Span>
+                        <Span>아래 계좌로 입금후 확인버튼을 눌러주시면 신청이 완료됩니다.</Span>
                     </Div>
                     <Div className="BottomBox">
-                        <Span className="Text" width="85px" size="18px" weight="500" color="#e5e8ea">
-                            은행
-                        </Span>
-                        <Div className="Input">
-                            <Input className="InputBox" />
-                        </Div>
+                        <Span className="SubTitle">은행</Span>
+                        <Input />
                     </Div>
                     <Div className="BottomBox">
-                        <Span className="Text" width="85px" size="18px" weight="500" color="#e5e8ea">
-                            계좌번호
-                        </Span>
-                        <Div className="Input">
-                            <Input className="InputBox" />
-                        </Div>
+                        <Span className="SubTitle">계좌번호</Span>
+                        <Input />
                     </Div>
                     <Div className="BottomBox">
-                        <Span className="Text" width="85px" size="18px" weight="500" color="#e5e8ea">
-                            예금주
-                        </Span>
-                        <Div className="Input">
-                            <Input className="InputBox" />
-                        </Div>
+                        <Span className="SubTitle">예금주</Span>
+                        <Input />
                     </Div>
                     <Div className="Line" />
-                    <Div className="Notice" margin="10px">
+                    <Div className="Notice">
                         <Img className="NoticeIcon" src="/assets/images/icon-info-16.png" />
-                        <Span className="Text" size="15px" weight="500" color="#e5e8ea">
-                            주의사항
-                        </Span>
+                        <Span className="Warning">주의사항</Span>
                     </Div>
-                    <Div className="Notice" margin="5px">
+                    <Div className="Notice">
                         <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Text" size="15px" weight="500" color="#7a7c85">
-                            꼭 계좌번호를 확인후 이체가 완료되면 확인버튼을 눌러주세요.
-                        </Span>
+                        <Span className="Info">꼭 계좌번호를 확인후 이체가 완료되면 확인버튼을 눌러주세요.</Span>
                     </Div>
-                    <Div className="Notice" margin="5px">
+                    <Div className="Notice">
                         <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Text" size="15px" weight="500" color="#7a7c85">
-                            확인 버튼을 누를 시 계좌번호를 다시 할인할 수 없습니다.
-                        </Span>
+                        <Span className="Info">확인 버튼을 누를 시 계좌번호를 다시 할인할 수 없습니다.</Span>
                     </Div>
                 </Div>
-                <Div className="BtnBox">
-                    <Btn>확인</Btn>
-                </Div>
+
+                <Btn>
+                    <Span className="BtnText">다음</Span>
+                </Btn>
             </Div>
         </Div>
     );
@@ -111,7 +90,6 @@ const Div = styled.div`
     &.CloseIcon {
         width: 32px;
         height: 32px;
-
         padding: 8px;
         border-radius: 50%;
         background-color: #32333a;
@@ -121,29 +99,16 @@ const Div = styled.div`
         padding: 0px 30px;
     }
     &.BottomBox {
-        width: 100%;
+        width: 50%;
         display: flex;
         align-items: center;
+        justify-content:space-between;
         padding-bottom: 30px;
-    }
-    &.Input {
-        width: 300px;
-        height: 52px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        border: solid 1px #3d3f45;
-        background-color: #31333a;
-        padding: 0px 10px;
     }
     &.Notice {
         display: flex;
         align-items: center;
-        margin: ${(props) => props.margin} 0;
-    }
-    &.BtnBox {
-        width: 100%;
-        text-align: center;
+        margin: 5px 0;
     }
     &.Line {
         width: 100%;
@@ -154,41 +119,47 @@ const Div = styled.div`
 `;
 
 const Span = styled.span`
-    &.Text {
-        width: ${(props) => props.width};
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        letter-spacing: normal;
-        color: ${(props) => props.color};
-        margin-right: 100px;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #e5e8ea;
+
+    &.Title {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &.SubTitle {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &.Warning {
+        font-weight: 500;
+    }
+    &.Info {
+        font-size: 15px;
+        font-weight: 500;
+        color: #7a7c85;
+    }
+    &.BtnText {
+        font-size: 18px;
+        font-weight: bold;
     }
 `;
 const Input = styled.input`
-    &.InputBox {
-        border: none;
-        background-color: transparent;
-        height: 52px;
-        width: 100%;
-        font-size: 18px;
-        color: #e5e8ea;
-    }
-    &.InputBox:focus {
-        outline: none;
-    }
+    width: 300px;
+    height: 52px;
+    border-radius: 10px;
+    border: solid 1px #3d3f45;
+    background-color: #31333a;
+    font-size: 18px;
+    color: #e5e8ea;
+    outline: none;
+    padding-left: 10px;
 `;
 const Btn = styled.button`
-    width: 200px;
-    height: 60px;
     padding: 16px 84px;
     border-radius: 35px;
     background-color: #1fa58c;
-    font-size: 18px;
-    font-weight: bold;
-    color: #e5e8ea;
     margin-top: 20px;
 `;
 

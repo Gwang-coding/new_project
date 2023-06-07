@@ -63,7 +63,7 @@ const Span = styled.span`
     }
 `;
 const Input = styled.input`
-    width: ${(props) => props.width};
+   
     height: 52px;
     margin 20px 0;
     padding-left:10px;

@@ -73,22 +73,22 @@ export default function ProdectManageIn() {
                         <Div className="Wrapper">
                             <Div className="WrapperItem">
                                 <Span>첫번째</Span>
-                                <Input className="BigInvenInput" placeholder="재고넣는 칸입니다." />
-                                <Input className="InvenInput" placeholder="가격(숫자만 입력)" />
+                                <Textarea placeholder="재고넣는 칸입니다." />
+                                <Input type="number" className="InvenInput" placeholder="가격(숫자만 입력)" />
                                 <Input className="InvenInput" placeholder="단위" />
                                 <Input className="InvenInput" placeholder="원가" />
                             </Div>
                             <Div className="WrapperItem">
                                 <Span>두번째</Span>
-                                <Input className="BigInvenInput" placeholder="재고넣는 칸입니다." />
-                                <Input className="InvenInput" placeholder="가격(숫자만 입력)" />
+                                <Textarea placeholder="재고넣는 칸입니다." />
+                                <Input type="number" className="InvenInput" placeholder="가격(숫자만 입력)" />
                                 <Input className="InvenInput" placeholder="단위" />
                                 <Input className="InvenInput" placeholder="원가" />
                             </Div>
                             <Div className="WrapperItem">
                                 <Span>세번째</Span>
-                                <Input className="BigInvenInput" placeholder="재고넣는 칸입니다." />
-                                <Input className="InvenInput" placeholder="가격(숫자만 입력)" />
+                                <Textarea placeholder="재고넣는 칸입니다." />
+                                <Input type="number" className="InvenInput" placeholder="가격(숫자만 입력)" />
                                 <Input className="InvenInput" placeholder="단위" />
                                 <Input className="InvenInput" placeholder="원가" />
                             </Div>
@@ -174,6 +174,7 @@ const Div = styled.div`
         padding: 3px 4px 3px 26px;
         border-radius: 100px;
         background-color: #00abbf;
+        cursor: pointer;
     }
     &.Rectangle-Copy-2-off {
         width: 50px;
@@ -182,6 +183,7 @@ const Div = styled.div`
         padding: 3px 26px 3px 4px;
         border-radius: 100px;
         background-color: #474950;
+        cursor: pointer;
     }
 
     &.Oval-Copy-2 {
@@ -227,20 +229,6 @@ const Input = styled.input`
         border: solid 1px #3d3f45;
         background-color: #31333a;
         padding: 10px;
-        font-family: Pretendard;
-        font-size: 15px;
-        font-weight: normal;
-        color: #e5e8ea;
-        outline: none;
-    }
-    &.BigInvenInput {
-        height: 250px;
-        width: 100%;
-        border-radius: 10px;
-        border: solid 1px #3d3f45;
-        background-color: #31333a;
-        padding: 10px;
-        font-family: Pretendard;
         font-size: 15px;
         font-weight: normal;
         color: #e5e8ea;
@@ -253,12 +241,29 @@ const Input = styled.input`
         border: solid 1px #3d3f45;
         background-color: #31333a;
         padding: 10px;
-        font-family: Pretendard;
         font-size: 15px;
         font-weight: normal;
         color: #e5e8ea;
         outline: none;
+        webkit-appearance: none;
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
     }
+`;
+const Textarea = styled.textarea`
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px #3d3f45;
+    background-color: #31333a;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #e5e8ea;
+    outline: none;
+    resize: none;
 `;
 const Btn = styled.button`
     &.DelBtn {
