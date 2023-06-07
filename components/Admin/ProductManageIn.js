@@ -5,126 +5,97 @@ const PostEditor = dynamic(() => import('../Admin/PostEditor'), { ssr: false });
 export default function ProdectManageIn() {
     return (
         <>
-            <Div className="Rectangle-Copy-15">
+            <Div className="Container">
                 <Div className="TopBox">
-                    <Span className="Text" size="26px" weight="bold">
-                        상품 [최강우디르] 관리
-                    </Span>
-                    <Span>
-                        <Btn className="Rectangle-Copy-7" color="#474950">
-                            삭제하기
+                    <Span className="Title">상품 [최강우디르] 관리</Span>
+                    <Div>
+                        <Btn className="DelBtn">
+                            <Span className="BtnText">삭제하기</Span>
                         </Btn>
-                        <Btn className="Rectangle-Copy-7" color="#00abbf">
-                            저장하기
+                        <Btn className="SaveBtn">
+                            <Span className="BtnText">저장하기</Span>
                         </Btn>
-                    </Span>
+                    </Div>
                 </Div>
                 <Div className="InfoBox">
-                    <Div className="Info" border="1px solid #3d3f45">
+                    <Div className="Info">
                         <Div className="WrapperBox" width="60%">
                             <Div className="Wrapper">
-                                <Span className="Text" size="18px" weight="normal" width="130px">
-                                    상품명
-                                </Span>
-                                <Input className="Rectangle-Copy-18" height="52px" width="633px" />
+                                <Span>상품명</Span>
+                                <Input className="ProductInput" />
                             </Div>
                             <Div className="Wrapper">
-                                <Span className="Text" size="18px" weight="normal" width="130px">
-                                    간략한 설명
-                                </Span>
-                                <Input className="Rectangle-Copy-18" height="52px" width="633px" />
+                                <Span>간략한 설명</Span>
+                                <Input className="ProductInput" />
                             </Div>
                             <Div className="Wrapper">
-                                <Span className="Text" size="18px" weight="normal" width="130px">
-                                    카테고리
-                                </Span>
-                                <Div className="Rectangle-Copy-10">
-                                    <Span className="Text" size="15px" weight="normal">
-                                        카테고리
-                                    </Span>
-                                    <Img src="/assets/images/icon-a-right-gray.png"></Img>
+                                <Span>카테고리</Span>
+                                <Div className="InputBox">
+                                    <Span className="InputText">카테고리</Span>
+                                    <Img src="/assets/images/icon-a-right-gray.png" />
                                 </Div>
                             </Div>
                             <Div className="Wrapper">
-                                <Span className="Text" size="18px" weight="normal" width="130px">
-                                    상품이미지 URL
-                                </Span>
-                                <Input className="Rectangle-Copy-18" height="52px" width="633px" />
+                                <Span>상품이미지 URL</Span>
+                                <Input className="ProductInput" />
                             </Div>
                             <Div className="Wrapper">
-                                <Span className="Text" size="18px" weight="normal" width="130px">
-                                    소개영상 URL
-                                </Span>
-                                <Input className="Rectangle-Copy-18" height="52px" width="633px" />
+                                <Span>소개영상 URL</Span>
+                                <Input className="ProductInput" />
                             </Div>
                         </Div>
                         <Div className="WrapperBox" width="30%">
                             <Div className="Wrapper">
-                                <Span className="Text" size="18px" weight="normal">
-                                    판매중지
-                                </Span>
+                                <Span>판매중지</Span>
                                 <Div className="Rectangle-Copy-2-on">
-                                    <Div className="Oval-Copy-2"></Div>
+                                    <Div className="Oval-Copy-2" />
                                 </Div>
                             </Div>
                             <Div className="Wrapper">
-                                <Span className="Text" size="18px" weight="normal">
-                                    패치중
-                                </Span>
+                                <Span>패치중</Span>
                                 <Div className="Rectangle-Copy-2-off">
-                                    <Div className="Oval-Copy-2"></Div>
+                                    <Div className="Oval-Copy-2" />
                                 </Div>
                             </Div>
                             <Div className="Wrapper">
-                                <Span className="Text" size="18px" weight="normal">
-                                    리셀러에게만 판매
-                                </Span>
+                                <Span>리셀러에게만 판매</Span>
                                 <Div className="Rectangle-Copy-2-off">
-                                    <Div className="Oval-Copy-2"></Div>
+                                    <Div className="Oval-Copy-2" />
                                 </Div>
                             </Div>
                         </Div>
                     </Div>
+                    <Div className="Line" />
                     <Div className="Top">
-                        <Span className="Text" size="22px" weight="bold">
-                            재고
-                        </Span>
+                        <Span className="SubTitle">재고</Span>
                     </Div>
                     <Div className="Info">
                         <Div className="Wrapper">
                             <Div className="WrapperItem">
-                                <Span className="Text" size="18px" weight="normal">
-                                    첫번째
-                                </Span>
-                                <Input className="Rectangle-Copy-18" height="250px" width="100%" placeholder="재고넣는 칸입니다." />
-                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="가격(숫자만 입력)" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="단위" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="원가" />
+                                <Span>첫번째</Span>
+                                <Input className="BigInvenInput" placeholder="재고넣는 칸입니다." />
+                                <Input className="InvenInput" placeholder="가격(숫자만 입력)" />
+                                <Input className="InvenInput" placeholder="단위" />
+                                <Input className="InvenInput" placeholder="원가" />
                             </Div>
                             <Div className="WrapperItem">
-                                <Span className="Text" size="18px" weight="normal">
-                                    두번째
-                                </Span>
-                                <Input className="Rectangle-Copy-18" height="250px" width="100%" placeholder="재고넣는 칸입니다." />
-                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="가격(숫자만 입력)" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="단위" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="원가" />
+                                <Span>두번째</Span>
+                                <Input className="BigInvenInput" placeholder="재고넣는 칸입니다." />
+                                <Input className="InvenInput" placeholder="가격(숫자만 입력)" />
+                                <Input className="InvenInput" placeholder="단위" />
+                                <Input className="InvenInput" placeholder="원가" />
                             </Div>
                             <Div className="WrapperItem">
-                                <Span className="Text" size="18px" weight="normal">
-                                    세번째
-                                </Span>
-                                <Input className="Rectangle-Copy-18" height="250px" width="100%" placeholder="재고넣는 칸입니다." />
-                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="가격(숫자만 입력)" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="단위" />
-                                <Input className="Rectangle-Copy-18" height="52px" width="100%" placeholder="원가" />
+                                <Span>세번째</Span>
+                                <Input className="BigInvenInput" placeholder="재고넣는 칸입니다." />
+                                <Input className="InvenInput" placeholder="가격(숫자만 입력)" />
+                                <Input className="InvenInput" placeholder="단위" />
+                                <Input className="InvenInput" placeholder="원가" />
                             </Div>
                         </Div>
                     </Div>
                     <Div className="Top">
-                        <Span className="Text" size="18px" weight="normal">
-                            제품소개
-                        </Span>
+                        <Span>제품소개</Span>
                     </Div>
                     <Div className="EditorBox">
                         <PostEditor />
@@ -136,9 +107,8 @@ export default function ProdectManageIn() {
 }
 
 const Div = styled.div`
-    &.Rectangle-Copy-15 {
+    &.Container {
         width: 100%;
-
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -167,7 +137,6 @@ const Div = styled.div`
     &.Info {
         display: flex;
         padding-top: 25px;
-        border-bottom: ${(props) => props.border};
     }
     &.Wrapper {
         width: 100%;
@@ -186,13 +155,13 @@ const Div = styled.div`
     &.EditorBox {
         margin: 25px 0;
     }
-    &.Rectangle-Copy-10 {
+    &.InputBox {
         cursor: pointer;
-        width: 633px;
+        width: 80%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 46px;
+        height: 52px;
         padding: 15px;
         border-radius: 10px;
         border: solid 1px #3d3f45;
@@ -222,57 +191,89 @@ const Div = styled.div`
         box-shadow: 0 1px 3px 0 rgba(17, 17, 17, 0.5);
         background-color: #e5e8ea;
     }
+    &.Line {
+        height: 1px;
+        width: 100%;
+        background-color: #393b44;
+    }
 `;
 const Span = styled.span`
-    &.Text {
-        width: ${(props) => props.width};
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        letter-spacing: normal;
-        color: #e5e8ea;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.46;
+    color: #e5e8ea;
+    &.Title {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    &.SubTitle {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &.InputText {
+        font-size: 15px;
+    }
+    &.BtnText {
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
     }
 `;
 const Input = styled.input`
-    &.Rectangle-Copy-18 {
-        width: ${(props) => props.width};
-        height: ${(props) => props.height};
+    &.ProductInput {
+        height: 52px;
+        width: 80%;
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #31333a;
         padding: 10px;
         font-family: Pretendard;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.73;
-        letter-spacing: normal;
-        color: #fff;
+        color: #e5e8ea;
+        outline: none;
     }
-    &.Rectangle-Copy-18 :focus {
+    &.BigInvenInput {
+        height: 250px;
+        width: 100%;
+        border-radius: 10px;
+        border: solid 1px #3d3f45;
+        background-color: #31333a;
+        padding: 10px;
+        font-family: Pretendard;
+        font-size: 15px;
+        font-weight: normal;
+        color: #e5e8ea;
+        outline: none;
+    }
+    &.InvenInput {
+        height: 52px;
+        width: 100%;
+        border-radius: 10px;
+        border: solid 1px #3d3f45;
+        background-color: #31333a;
+        padding: 10px;
+        font-family: Pretendard;
+        font-size: 15px;
+        font-weight: normal;
+        color: #e5e8ea;
         outline: none;
     }
 `;
 const Btn = styled.button`
-    &.Rectangle-Copy-7 {
-        width: 105px;
+    &.DelBtn {
         height: 40px;
-        padding: 5px 17px;
+        padding: 8px 19px;
         border-radius: 23px;
-        background-color: ${(props) => props.color};
-        color: #fff;
+        background-color: #474950;
+    }
+    &.SaveBtn {
+        height: 40px;
+        padding: 8px 19px;
+        border-radius: 23px;
+        background-color: #00abbf;
         margin-left: 10px;
-        font-size: 15px;
     }
 `;
 
-const Img = styled.img`
-    &.iconpagnagtion {
-        width: 24px;
-        height: 24px;
-    }
-`;
+const Img = styled.img``;

@@ -4,21 +4,17 @@ const PostEditor = dynamic(() => import('../Admin/PostEditor'), { ssr: false });
 
 export default function PopupManage() {
     return (
-        <Div className="Rectangle-Copy-15">
+        <Div className="Wrapper">
             <Div className="PopTop">
-                <Span className="PopText" size="26px" weight="bold">
-                    팝업관리
-                </Span>
-                <Btn className="Rectangle-Copy-6">+ 추가하기</Btn>
+                <Span className="Title">팝업관리</Span>
+                <Btn className="PlusBtn">
+                    <Span className="BtnText">+ 추가하기</Span>
+                </Btn>
             </Div>
             <Div className="PopBottom">
-                <Span className="PopText" size="18px" weight="normal">
-                    제목
-                </Span>
-                <Input className="Rectangle-Copy-10" width="100%"></Input>
-                <Span className="PopText" size="18px" weight="normal">
-                    내용
-                </Span>
+                <Span>제목</Span>
+                <Input />
+                <Span>내용</Span>
                 <Div className="EditorBox">
                     <PostEditor />
                 </Div>
@@ -28,9 +24,8 @@ export default function PopupManage() {
 }
 
 const Div = styled.div`
-    &.Rectangle-Copy-15 {
+    &.Wrapper {
         width: 100%;
-
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -38,6 +33,8 @@ const Div = styled.div`
     }
     &.PopBottom {
         padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
     }
     &.PopTop {
         width: 100%;
@@ -51,54 +48,39 @@ const Div = styled.div`
     }
 `;
 const Span = styled.span`
-    &.PopText {
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        text-align: center;
-        letter-spacing: normal;
-        color: #e5e8ea;
-        padding-left: ${(props) => props.Lpadding};
+    line-height: 1.46;
+    color: #e5e8ea;
+    font-size: 18px;
+    font-weight: normal;
+
+    &.Title {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    &.BtnText {
+        font-size: 15px;
+        font-weight: 600;
     }
 `;
 const Input = styled.input`
-&.Rectangle-Copy-10 {
     width: ${(props) => props.width};
     height: 52px;
     margin 20px 0;
+    padding-left:10px;
     border-radius: 10px;
     border: solid 1px #3d3f45;
     background-color: #31333a;
-    font-family: Pretendard;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.73;
-    letter-spacing: normal;
-    color: #fff;
-}
-&.Rectangle-Copy-10 :focus {
+    color:#e5e8ea;
     outline: none;
-}
 `;
 const Btn = styled.button`
-    &.Rectangle-Copy-6 {
+    &.PlusBtn {
         height: 40px;
         padding: 8px 19px;
         border-radius: 23px;
         background-color: #00abbf;
-        font-family: Pretendard;
-        font-size: 15px;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.6;
-        letter-spacing: normal;
-        color: #fff;
     }
 `;
 

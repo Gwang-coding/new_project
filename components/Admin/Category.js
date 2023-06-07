@@ -3,32 +3,26 @@ import styled from 'styled-components';
 export default function Category() {
     return (
         <>
-            <Div className="Rectangle-Copy-15">
+            <Div className="Container">
                 <Div className="TopBox">
-                    <Span className="Text" size="26px" weight="bold" color="#e5e8ea">
-                        카테고리
-                    </Span>
-
-                    <Btn className="Rectangle-Copy-7" color="#00abbf">
-                        저장하기
+                    <Span className="Title">카테고리</Span>
+                    <Btn>
+                        <Span className="BtnText">저장하기</Span>
                     </Btn>
                 </Div>
                 <Div className="InfoBox">
                     <Div className="Top">
-                        <Span className="Text" size="18px" weight="normal" color="#3dc6d7">
-                            카테고리 추가
-                        </Span>
-                        <Img src="/assets/images/icon-piuscircle.png"></Img>
+                        <Span className="SubTitle">카테고리 추가</Span>
+                        <Img src="/assets/images/icon-piuscircle.png" />
                     </Div>
                     <Div className="Wrapper">
-                        <Div className="Info" justify="space-between">
-                            <Img src="/assets/images/icon-control.png"></Img>
+                        <Div className="FirstInfo">
+                            <Img src="/assets/images/icon-control.png" />
                             <Div className="Oval">
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    1
-                                </Span>
+                                <Span>1</Span>
                             </Div>
-                            <Div className="Rectangle-Copy-18" justify="flex-end">
+                            <Div className="FirstBox">
+                                <Input />
                                 <Div className="ImgBox">
                                     <Img src="/assets/images/icon-uparrow.png" />
                                 </Div>
@@ -40,19 +34,19 @@ export default function Category() {
                                 </Div>
                             </Div>
                         </Div>
-                        <Div className="Info" justify="flex-end">
-                            <Div className="Rectangle-Copy-18" justify="space-between">
+                        <Div className="OtherInfo">
+                            <Div className="OtherBox">
                                 <Img src="/assets/images/icon-indentarrow.png" />
-
+                                <Input />
                                 <Div className="ImgBox">
                                     <Img src="/assets/images/icon-pius.png" />
                                 </Div>
                             </Div>
                         </Div>
-                        <Div className="Info" justify="flex-end">
-                            <Div className="Rectangle-Copy-18" justify="space-between">
+                        <Div className="OtherInfo">
+                            <Div className="OtherBox">
                                 <Img src="/assets/images/icon-indentarrow.png" />
-
+                                <Input />
                                 <Div className="ImgBox">
                                     <Img src="/assets/images/icon-pius.png" />
                                 </Div>
@@ -60,14 +54,13 @@ export default function Category() {
                         </Div>
                     </Div>
                     <Div className="Wrapper">
-                        <Div className="Info" justify="space-between">
+                        <Div className="FirstInfo" justify="space-between">
                             <Img src="/assets/images/icon-control.png"></Img>
                             <Div className="Oval">
-                                <Span className="Text" size="15px" weight="normal" color="#e5e8ea">
-                                    2
-                                </Span>
+                                <Span>2</Span>
                             </Div>
-                            <Div className="Rectangle-Copy-18" justify="flex-end">
+                            <Div className="FirstBox">
+                                <Input />
                                 <Div className="ImgBox">
                                     <Img src="/assets/images/icon-uparrow.png" />
                                 </Div>
@@ -79,19 +72,19 @@ export default function Category() {
                                 </Div>
                             </Div>
                         </Div>
-                        <Div className="Info" justify="flex-end">
-                            <Div className="Rectangle-Copy-18" justify="space-between">
+                        <Div className="OtherInfo">
+                            <Div className="OtherBox">
                                 <Img src="/assets/images/icon-indentarrow.png" />
-
+                                <Input />
                                 <Div className="ImgBox">
                                     <Img src="/assets/images/icon-pius.png" />
                                 </Div>
                             </Div>
                         </Div>
-                        <Div className="Info" justify="flex-end">
-                            <Div className="Rectangle-Copy-18" justify="space-between">
+                        <Div className="OtherInfo">
+                            <Div className="OtherBox">
                                 <Img src="/assets/images/icon-indentarrow.png" />
-
+                                <Input />
                                 <Div className="ImgBox">
                                     <Img src="/assets/images/icon-pius.png" />
                                 </Div>
@@ -105,9 +98,8 @@ export default function Category() {
 }
 
 const Div = styled.div`
-    &.Rectangle-Copy-15 {
+    &.Container {
         width: 100%;
-
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -133,9 +125,16 @@ const Div = styled.div`
         width: 100%;
         padding: 0px 40px;
     }
-    &.Info {
+    &.FirstInfo {
         display: flex;
-        justify-content: ${(props) => props.justify};
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+    }
+    &.OtherInfo {
+        display: flex;
+        justify-content: flex-end;
         align-items: center;
         width: 100%;
         margin-top: 15px;
@@ -149,14 +148,25 @@ const Div = styled.div`
         border-radius: 50%;
         background-color: #3a3b44;
     }
-    &.Rectangle-Copy-18 {
+    &.FirstBox {
         width: 95%;
         height: 52px;
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #31333a;
         display: flex;
-        justify-content: ${(props) => props.justify};
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 15px;
+    }
+    &.OtherBox {
+        width: 95%;
+        height: 52px;
+        border-radius: 10px;
+        border: solid 1px #3d3f45;
+        background-color: #31333a;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
         padding-left: 15px;
     }
@@ -170,30 +180,42 @@ const Div = styled.div`
     }
 `;
 const Span = styled.span`
-    &.Text {
-        width: ${(props) => props.width};
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        letter-spacing: normal;
-        color: ${(props) => props.color};
+    line-height: 1.46;
+    font-size: 15px;
+    font-weight: normal;
+    color: #e5e8ea;
+    &.Title {
+        font-size: 26px;
+        font-weight: bold;
+        color: #e5e8ea;
+    }
+    &.SubTitle {
+        font-size: 18px;
+        font-weight: 500;
+        color: #3dc6d7;
+    }
+    &.BtnText {
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
     }
 `;
-const Input = styled.input``;
+const Input = styled.input`
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #31333a;
+    font-size: 15px;
+    font-weight: normal;
+    color: #e5e8ea;
+    outline: none;
+`;
 const Btn = styled.button`
-    &.Rectangle-Copy-7 {
-        width: 105px;
-        height: 40px;
-        padding: 5px 17px;
-        border-radius: 23px;
-        background-color: ${(props) => props.color};
-        color: #fff;
-        margin-left: 10px;
-        font-size: 15px;
-    }
+    height: 40px;
+    padding: 8px 19px;
+    border-radius: 23px;
+    background-color: #00abbf;
 `;
 
 const Img = styled.img``;

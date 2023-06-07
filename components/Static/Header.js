@@ -7,7 +7,7 @@ export function Header() {
             <Img src="/assets/images/icon-c-chat.png" className="IconC"></Img>
             <Img src="/assets/images/icon-c-setting.png" className="IconC"></Img>
             <Div className="IconSlash" />
-            <Span className="admon5488">admon5488님</Span>
+            <Span className="ID">admon5488님</Span>
             <Div className="MenuMask">
                 <Img src="/assets/images/icon-user.png" className="iconuser24"></Img>
             </Div>
@@ -18,25 +18,20 @@ export function UserHeader() {
     return (
         <Div className="UserMenuTop">
             <Img src="/assets/images/icon-c-home.png" className="IconC"></Img>
-
             <Div className="UserMenu">
                 <Img src="/assets/images/icon-c-notice.png" className="IconC"></Img>
                 <Img src="/assets/images/icon-c-chat.png" className="IconC"></Img>
                 <Img src="/assets/images/icon-c-setting.png" className="IconC"></Img>
                 <Div className="IconSlash" />
                 <Div>
-                    <Span className="admon5488">admon5488님</Span>
-                    <Div className="PopupImg">
+                    <Span className="ID">admon5488님</Span>
+                    <Div className="ClickedBox">
                         <Img src="/assets/images/icon-tooltip-arrow.png" className="PopupImg" />
                         <Div className="LinkDropdown">
                             <Div className="NameBox">
-                                <Span className="Text" size="18px" weight="normal" color="#e5e8ea">
-                                    admon5488님
-                                </Span>
-                                <Div className="Rectangle-Copy-11" bcolor="#0cbe9d">
-                                    <Span className="Text" size="14px" weight="600" color="#e5e8ea">
-                                        VIP
-                                    </Span>
+                                <Span className="DropID">admon5488님</Span>
+                                <Div className="ColorBox">
+                                    <Span className="IdRank">VIP</Span>
                                 </Div>
                             </Div>
                             <Div className="PointBox">
@@ -44,32 +39,20 @@ export function UserHeader() {
                                     <Img src="/assets/images/icon-point.png" />
                                     <Span className="TextBox">누적포인트</Span>
                                 </Div>
-                                <Span className="Text" size="15px" color="#fff">
-                                    10,000원
-                                </Span>
+                                <Span className="DropText">10,000원</Span>
                             </Div>
                             <Div className="PointBox">
                                 <Div className="PointText">
                                     <Img src="/assets/images/icon-point.png" />
                                     <Span className="TextBox">누적포인트</Span>
                                 </Div>
-                                <Span className="Text" size="15px" color="#fff">
-                                    758,400원
-                                </Span>
+                                <Span className="DropText">758,400원</Span>
                             </Div>
-                            <Div className="Rectangle-Copy-4" />
-                            <Span className="Text" size="15px" color="#fff">
-                                구매내역
-                            </Span>
-                            <Span className="Text" size="15px" color="#fff">
-                                충전내역
-                            </Span>
-                            <Span className="Text" size="15px" color="#fff">
-                                비밀번호 변경
-                            </Span>
-                            <Span className="Text" size="15px" color="#fff">
-                                로그아웃
-                            </Span>
+                            <Div className="Line" />
+                            <Span className="DropText">구매내역</Span>
+                            <Span className="DropText">충전내역</Span>
+                            <Span className="DropText">비밀번호 변경</Span>
+                            <Span className="DropText">로그아웃</Span>
                         </Div>
                     </Div>
                 </Div>
@@ -133,15 +116,14 @@ const Div = styled.div`
         z-index: 1;
         text-align: start;
     }
-    &.PopupImg {
-        width: 100%;
+    &.ClickedBox {
         text-align: center;
     }
     &.NameBox {
         display: flex;
+        align-items: center;
     }
-    &.Rectangle-Copy-11 {
-        height: 22px;
+    &.ColorBox {
         margin-left: 10px;
         padding: 0 8px;
         border-radius: 4px;
@@ -157,41 +139,33 @@ const Div = styled.div`
         display: flex;
         align-items: center;
     }
-    .Rectangle-Copy-4 {
+    &.Line {
         width: 220px;
         height: 1px;
         background-color: #575a63;
     }
 `;
 const Span = styled.span`
-    &.admon5488 {
-        width: 103px;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.75;
+    color: #e5e8ea;
+    &.ID {
         height: 28px;
         margin: 0px 12px 0px 20px;
-        font-family: Pretendard;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.75;
-        letter-spacing: normal;
-        color: #e5e8ea;
     }
-    &.Text {
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        letter-spacing: normal;
-        color: ${(props) => props.color};
+    &.DropID {
+        font-size: 18px;
+    }
+    &.IdRank {
+        font-size: 14px;
+        font-weight: 600;
     }
     &.TextBox {
         margin: 0 5px;
-        color: #e5e8ea;
-        font-size: 15px;
-        weight: normal;
+    }
+    &.DropText {
+        color: #fff;
     }
 `;
 const Img = styled.img`

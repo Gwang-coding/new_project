@@ -1,75 +1,72 @@
-import { SP } from 'next/dist/shared/lib/utils';
 import styled from 'styled-components';
 
 export default function UserMange() {
     return (
-        <Div className="Rectangle-Copy-15">
+        <Div className="Wrapper">
             <Div className="UserTopBox">
                 <Div className="UserTop">
-                    <Span className="UserMangeText" size="26px" weight="bold">
-                        admon5488님의 회원관리
-                    </Span>
-                    <Div className="Rectangle-Copy-16">
-                        <Span className="UserMangeText" size="13px" weight="normal">
-                            미인증
-                        </Span>
+                    <Span className="Title">admon5488님의 회원관리</Span>
+                    <Div className="RankBox">
+                        <Span className="RankText">미인증</Span>
                     </Div>
                 </Div>
                 <Div className="UserTop">
-                    <Btn className="Rectangle-Copy-7" width="106px" color="#474950;">
-                        삭제하기
+                    <Btn className="DelBtn">
+                        <Span className="BtnText">삭제하기</Span>
                     </Btn>
-                    <Btn className="Rectangle-Copy-7" width="80px" color="#00abbf">
-                        수정하기
+                    <Btn className="ModBtn">
+                        <Span className="BtnText">수정하기</Span>
                     </Btn>
                 </Div>
             </Div>
             <Div className="PercentWrapper">
                 <Div className="PercentBox">
-                    <Span className="GridText">아이디</Span>
-                    <Div className="FixedValue">admon5488</Div>
-                </Div>
-                <Div className="PercentBox">
-                    <Span className="GridText">보유금액</Span>
-                    <Input type="password" className="Rectangle-Copy-10" />
-                </Div>
-                <Div className="PercentBox">
-                    <Span className="GridText">비밀번호</Span>
-                    <Input type="password" className="Rectangle-Copy-10" />
-                </Div>
-                <Div className="PercentBox">
-                    <Span className="GridText">총 구매금액</Span>
-                    <Div className="FixedValue">450,000</Div>
-                </Div>
-                <Div className="PercentBox">
-                    <Span className="GridText">입금자명</Span>
-                    <Input className="Rectangle-Copy-10" />
-                </Div>
-                <Div className="PercentBox">
-                    <Span className="GridText">등급</Span>
-                    <Div className="Rectangle-Copy-10">
-                        <Span className="UserMangeText" size="15px" weight="normal">
-                            등급
-                        </Span>
-                        <Img src="/assets/images/icon-a-right-gray.png"></Img>
+                    <Span>아이디</Span>
+                    <Div className="FixedValue">
+                        <Span className="InputText">admon5488</Span>
                     </Div>
                 </Div>
                 <Div className="PercentBox">
-                    <Span className="GridText">가입아이피</Span>
+                    <Span>보유금액</Span>
+                    <Input type="password" />
+                </Div>
+                <Div className="PercentBox">
+                    <Span>비밀번호</Span>
+                    <Input type="password" />
+                </Div>
+                <Div className="PercentBox">
+                    <Span>총 구매금액</Span>
                     <Div className="FixedValue">
-                        <Span className="UserMangeText" size="15px" weight="normal">
-                            121.456.78.00
-                        </Span>
+                        <Span className="InputText">450,000</Span>
+                    </Div>
+                </Div>
+                <Div className="PercentBox">
+                    <Span>입금자명</Span>
+                    <Input />
+                </Div>
+                <Div className="PercentBox">
+                    <Span>등급</Span>
+                    <Div className="InputBox">
+                        <Span className="InputText">등급</Span>
+                        <Img src="/assets/images/icon-a-right-gray.png" />
+                    </Div>
+                </Div>
+                <Div className="PercentBox">
+                    <Span>가입아이피</Span>
+                    <Div className="FixedValue">
+                        <Span className="InputText">121.456.78.00</Span>
                         <Btn className="BlockBtn">차단</Btn>
                     </Div>
                 </Div>
                 <Div className="PercentBox">
-                    <Span className="GridText">메모</Span>
-                    <Input className="Rectangle-Copy-10" />
+                    <Span>메모</Span>
+                    <Input />
                 </Div>
                 <Div className="PercentBox">
-                    <Span className="GridText">휴대폰번호</Span>
-                    <Div className="FixedValue">010-1234-5678</Div>
+                    <Span>휴대폰번호</Span>
+                    <Div className="FixedValue">
+                        <Span className="InputText">010-1234-5678</Span>
+                    </Div>
                 </Div>
             </Div>
         </Div>
@@ -77,9 +74,8 @@ export default function UserMange() {
 }
 
 const Div = styled.div`
-    &.Rectangle-Copy-15 {
+    &.Wrapper {
         width: 100%;
-
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -93,12 +89,11 @@ const Div = styled.div`
         border-bottom: 1px solid #3d3f45;
     }
     &.UserTop {
-        width: ${(props) => props.width};
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .Rectangle-Copy-16 {
+    &.RankBox {
         height: 26px;
         margin-left: 10px;
         padding: 2px 8px;
@@ -119,7 +114,7 @@ const Div = styled.div`
         align-items: center;
         justify-content: space-between;
     }
-    &.Rectangle-Copy-10 {
+    &.InputBox {
         width: 70%;
         height: 52px;
         display: flex;
@@ -129,7 +124,6 @@ const Div = styled.div`
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #31333a;
-        color: #e5e8ea;
     }
     &.FixedValue {
         width: 70%;
@@ -141,65 +135,56 @@ const Div = styled.div`
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #272a31;
-        color: #e5e8ea;
     }
 `;
 const Span = styled.span`
-    &.UserMangeText {
-        width: ${(props) => props.width};
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        text-align: center;
-        letter-spacing: normal;
-        color: #e5e8ea;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.46;
+    color: #e5e8ea;
+
+    &.Title {
+        font-size: 26px;
+        font-weight: bold;
     }
-    &.GridText {
-        width: 83px;
-        font-family: Pretendard;
+    &.InputText {
         font-size: 15px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        margin-right: 10px;
-        letter-spacing: normal;
-        color: #e5e8ea;
+    }
+    &.BtnText {
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+    }
+    &.RankText {
+        font-size: 13px;
     }
 `;
 const Input = styled.input`
-    &.Rectangle-Copy-10 {
-        width: 70%;
-        height: 52px;
-        padding-left: 10px;
-        border-radius: 10px;
-        border: solid 1px #3d3f45;
-        background-color: #31333a;
-        font-family: Pretendard;
-        font-size: 17px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.73;
-        letter-spacing: normal;
-        color: #e5e8ea;
-    }
-    &.Rectangle-Copy-10 :focus {
-        outline: none;
-    }
+    width: 70%;
+    height: 52px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: solid 1px #3d3f45;
+    background-color: #31333a;
+    font-size: 15px;
+    font-weight: normal;
+    color: #e5e8ea;
+    outline: none;
 `;
 const Btn = styled.button`
-    &.Rectangle-Copy-7 {
+    &.DelBtn {
         margin-left: 10px;
-        width: 100px;
         height: 40px;
         padding: 8px 24px;
         border-radius: 23px;
-        background-color: ${(props) => props.color};
-        color: #fff;
+        background-color: #474950;
+    }
+    &.ModBtn {
+        margin-left: 10px;
+        height: 40px;
+        padding: 8px 24px;
+        border-radius: 23px;
+        background-color: #00abbf;
     }
     &.BlockBtn {
         font-size: 15px;

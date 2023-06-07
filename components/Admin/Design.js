@@ -2,47 +2,37 @@ import styled from 'styled-components';
 
 export default function Design() {
     return (
-        <Div className="Rectangle-Copy-15">
+        <Div className="Wrapper">
             <Div className="DesignTop">
-                <Span className="DesignText" size="26px" weight="bold">
-                    디지인
-                </Span>
-                <Btn className="Rectangle-Copy-6"> 적용하기</Btn>
+                <Span className="Title">디지인</Span>
+                <Btn>
+                    <Span className="BtnText"> 적용하기</Span>
+                </Btn>
             </Div>
-
-            <Div className="DesignWrapper" border="1px solid #3d3f45" flex="column">
-                <Div className="DesignBox" width="100%">
-                    <Span className="DesignText" weight="normal" size="18px">
-                        로그인 배경화면 이미지 URL
-                    </Span>
-                    <Input className="Rectangle-Copy-10" width="80%" placeholder="https://"></Input>
+            <Div className="Line" />
+            <Div className="DesignWrapper" flex="column">
+                <Div className="DesignBox">
+                    <Span className="UrlText">로그인 배경화면 이미지 URL</Span>
+                    <Input className="UrlInput" placeholder="https://" />
                 </Div>
-                <Div className="DesignBox" width="100%">
-                    <Span className="DesignText" weight="normal" size="18px">
-                        공지사항 URL
-                    </Span>
-                    <Input className="Rectangle-Copy-10" width="80%" placeholder="https://"></Input>
+                <Div className="DesignBox">
+                    <Span className="UrlText">공지사항 URL</Span>
+                    <Input className="UrlInput" placeholder="https://" />
                 </Div>
-                <Div className="DesignBox" width="100%">
-                    <Span className="DesignText" weight="normal" size="18px">
-                        배경음악 URL
-                    </Span>
-                    <Input className="Rectangle-Copy-10" width="80%" placeholder="https://"></Input>
+                <Div className="DesignBox">
+                    <Span className="UrlText">배경음악 URL</Span>
+                    <Input className="UrlInput" placeholder="https://" />
                 </Div>
-                <Div className="DesignBox" width="100%">
-                    <Span className="DesignText" weight="normal" size="18px">
-                        점검창로고 URL
-                    </Span>
-                    <Input className="Rectangle-Copy-10" width="80%" placeholder="https://"></Input>
+                <Div className="DesignBox">
+                    <Span className="UrlText">점검창로고 URL</Span>
+                    <Input className="UrlInput" placeholder="https://" />
                 </Div>
-                <Div className="DesignBox" width="100%">
-                    <Span className="DesignText" weight="normal" size="18px">
-                        프로필사진
-                    </Span>
-                    <Input className="Rectangle-Copy-10" width="80%" placeholder="https://"></Input>
+                <Div className="DesignBox">
+                    <Span className="UrlText">프로필사진</Span>
+                    <Input className="UrlInput" placeholder="https://" />
                 </Div>
-                <Div className="DesignBox" width="25%">
-                    <Span className="DesignText" weight="normal" size="18px">
+                <Div className="RGBBox" width="25%">
+                    <Span className="UrlText">
                         RGB 사용
                         <br />
                         <Span className="RGBText">#00000000</Span>
@@ -52,93 +42,89 @@ export default function Design() {
                     </Div>
                 </Div>
             </Div>
-            <Div className="DesignWrapper" border="1px solid #3d3f45">
-                <Span className="DesignText" size="22px" weight="bold">
-                    메인
-                </Span>
+            <Div className="Line" />
+            <Div className="DesignWrapper">
+                <Span className="SubTitle">메인</Span>
                 <Div className="PercentWrapper">
                     <Div className="PercentBox">
                         <Span className="GridText">배경</Span>
-
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
                         <Span className="GridText">글자</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
                         <Span className="GridText">긴급공지</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
                         <Span className="GridText">카드</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Input className="MainInput" />
                     </Div>
                 </Div>
             </Div>
-            <Div className="DesignWrapper" border="1px solid #3d3f45">
-                <Span className="DesignText" size="22px" weight="bold">
-                    카테고리
-                </Span>
+            <Div className="Line" />
+            <Div className="DesignWrapper">
+                <Span className="SubTitle">카테고리</Span>
                 <Div className="PercentWrapper">
                     <Div className="PercentBox">
                         <Span className="GridText">배경</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
                         <Span className="GridText">버튼1</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
                         <Span className="GridText">버튼2</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
                         <Span className="GridText">클릭시 글자</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
                         <Span className="GridText">방문자수</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Input className="MainInput" />
                     </Div>
                 </Div>
             </Div>
+            <Div className="Line" />
             <Div className="DesignWrapper">
-                <Span className="DesignText" size="22px" weight="bold">
-                    상점
-                </Span>
+                <Span className="SubTitle">상점</Span>
                 <Div className="PercentWrapper">
                     <Div className="PercentBox">
-                        <Span className="GridText">배경</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Span>배경</Span>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="GridText">카드</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Span>카드</Span>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="GridText">버튼1</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Span>버튼1</Span>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="GridText">버튼2</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Span>버튼2</Span>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="GridText">버튼3</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Span>버튼3</Span>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="GridText">버튼1클릭</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Span>버튼1클릭</Span>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="GridText">버튼2클릭</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Span>버튼2클릭</Span>
+                        <Input className="MainInput" />
                     </Div>
                     <Div className="PercentBox">
-                        <Span className="GridText">버튼3클릭</Span>
-                        <Input className="Rectangle-Copy-10" width="70%"></Input>
+                        <Span>버튼3클릭</Span>
+                        <Input className="MainInput" />
                     </Div>
                 </Div>
             </Div>
@@ -147,9 +133,8 @@ export default function Design() {
 }
 
 const Div = styled.div`
-    &.Rectangle-Copy-15 {
+    &.Wrapper {
         width: 100%;
-
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -158,19 +143,25 @@ const Div = styled.div`
         width: 100%;
         padding: 25px 40px;
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid #3d3f45;
     }
 
     &.DesignWrapper {
         width: 100%;
         padding: 25px 40px 10px 40px;
-        border-bottom: ${(props) => props.border};
         display: flex;
         flex-direction: column;
     }
     &.DesignBox {
-        width: ${(props) => props.width};
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    &.RGBBox {
+        width: 25%;
         display: flex;
         align-items: center;
         margin-bottom: 20px;
@@ -195,7 +186,7 @@ const Div = styled.div`
         margin: 20px 0;
         display: grid;
         row-gap: 20px;
-        column-gap: 40px;
+        column-gap: 4%;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     &.PercentBox {
@@ -204,80 +195,67 @@ const Div = styled.div`
         align-items: center;
         justify-content: space-between;
     }
+    &.Line {
+        width: 100%;
+        height: 1px;
+        background-color: #393b44;
+    }
 `;
 const Span = styled.span`
-    &.DesignText {
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        margin-right: 10px;
-        letter-spacing: normal;
-        color: #e5e8ea;
+    font-size: 15px;
+    font-weight: normal;
+    color: #e5e8ea;
+    &.Title {
+        font-size: 26px;
+        font-weight: bold;
     }
-    &.GridText {
-        width: 80px;
-        font-family: Pretendard;
-        font-size: 15px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        margin-right: 10px;
-        letter-spacing: normal;
-        color: #e5e8ea;
+    &.SubTitle {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &.BtnText {
+        font-weight: 600;
+        color: #fff;
+    }
+    &.UrlText {
+        font-size: 18px;
     }
     &.RGBText {
-        width: 65px;
-        height: 24px;
-        margin: 2px 6px 0 0;
-        font-family: Pretendard;
         font-size: 15px;
         font-weight: 500;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.6;
-        letter-spacing: normal;
         color: #979aa0;
     }
 `;
 const Input = styled.input`
-    &.Rectangle-Copy-10 {
-        width: ${(props) => props.width};
+    &.UrlInput {
+        width: 80%;
         height: 52px;
         padding-left: 10px;
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #31333a;
-        font-family: Pretendard;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.73;
-        letter-spacing: normal;
-        color: #fff;
-    }
-    &.Rectangle-Copy-10 :focus {
+        color: #e5e8ea;
         outline: none;
+    }
+    &.MainInput {
+        width: 60%;
+        height: 52px;
+        background-color: #31333a;
+        padding-left: 10px;
+        border-radius: 10px;
+        border: solid 1px #3d3f45;
+        font-size: 15px;
+        font-weight: normal;
+        color: #e5e8ea;
+        outline: none;
+        margin-left: 10px;
     }
 `;
 const Btn = styled.button`
-    &.Rectangle-Copy-6 {
-        width: 90px;
-        height: 40px;
-        padding: 8px 19px;
-        border-radius: 23px;
-        background-color: #00abbf;
-        font-family: Pretendard;
-        font-size: 15px;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.6;
-        letter-spacing: normal;
-        color: #fff;
-    }
+    height: 40px;
+    padding: 8px 19px;
+    border-radius: 23px;
+    background-color: #00abbf;
 `;

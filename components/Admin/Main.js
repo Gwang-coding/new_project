@@ -5,149 +5,85 @@ export default function Main() {
         <>
             <Div className="UserBox">
                 <Div className="user" shadow="#8c81ff" backgroundColor="#584cdb">
-                    <Div className="user_wrapper">
-                        <Div className="Rectangle-Copy-12" backgroundColor="#554ad1">
-                            <Img src="/assets/images/icon-user-white.png" className="iconuserwhite30-copy-2"></Img>
-                        </Div>
-                        <Div className="main_textbox" margin="20px">
-                            <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                                총 유저
-                            </Span>
-                            <Span className="user_info" size="22px" color="#e5e8ea" weight="500">
-                                515명
-                            </Span>
-                        </Div>
+                    <Div className="Rectangle-Copy-12" backgroundColor="#554ad1">
+                        <Img src="/assets/images/icon-user-white.png" className="iconuserwhite30-copy-2"></Img>
+                    </Div>
+                    <Div className="main_textbox">
+                        <Span>총 유저</Span>
+                        <Span className="Member">515명</Span>
                     </Div>
                 </Div>
                 <Div className="user" shadow="#3b7ee9" backgroundColor="#5f80b5">
-                    <Div className="user_wrapper">
-                        <Div className="Rectangle-Copy-12" backgroundColor="#5393f8">
-                            <Img src="/assets/images/icon-user-white.png" className="iconuserwhite30-copy-2" />
-                        </Div>
-                        <Div className="main_textbox" margin="20px">
-                            <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                                구매한 유저
-                            </Span>
-                            <Span className="user_info" size="22px" color="#e5e8ea" weight="500">
-                                515명
-                            </Span>
-                        </Div>
+                    <Div className="Rectangle-Copy-12" backgroundColor="#5393f8">
+                        <Img src="/assets/images/icon-user-white.png" className="iconuserwhite30-copy-2" />
+                    </Div>
+                    <Div className="main_textbox">
+                        <Span>구매한 유저</Span>
+                        <Span className="Member">515명</Span>
                     </Div>
                 </Div>
                 <Div className="user" shadow="#8bf3ff" backgroundColor="#55848a">
-                    <Div className="user_wrapper">
-                        <Div className="Rectangle-Copy-12" backgroundColor="#22b4c6">
-                            <Img src="/assets/images/icon-user-white.png" className="iconuserwhite30-copy-2" />
-                        </Div>
-                        <Div className="main_textbox" margin="20px">
-                            <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                                신규 유저
-                            </Span>
-                            <Span className="user_info" size="22px" color="#e5e8ea" weight="500">
-                                515명
-                            </Span>
-                        </Div>
+                    <Div className="Rectangle-Copy-12" backgroundColor="#22b4c6">
+                        <Img src="/assets/images/icon-user-white.png" className="iconuserwhite30-copy-2" />
+                    </Div>
+                    <Div className="main_textbox">
+                        <Span>신규 유저</Span>
+                        <Span className="Member">515명</Span>
                     </Div>
                 </Div>
                 <Div className="user" shadow="#ffb695" backgroundColor="#e18a62">
-                    <Div className="user_wrapper">
-                        <Div className="Rectangle-Copy-12" backgroundColor="#fc9d72">
-                            <Img src="/assets/images/icon-user-white.png" className="iconuserwhite30-copy-2" />
-                        </Div>
-                        <Div className="main_textbox" margin="20px">
-                            <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                                비구매 유저
-                            </Span>
-                            <Span className="user_info" size="22px" color="#e5e8ea" weight="500">
-                                515명
-                            </Span>
-                        </Div>
+                    <Div className="Rectangle-Copy-12" backgroundColor="#fc9d72">
+                        <Img src="/assets/images/icon-user-white.png" className="iconuserwhite30-copy-2" />
+                    </Div>
+                    <Div className="main_textbox">
+                        <Span>비구매 유저</Span>
+                        <Span className="Member">515명</Span>
                     </Div>
                 </Div>
             </Div>
             <Div className="UserBox">
                 <Div className="PriceBoxWrapper">
-                    <Div className="main_textbox" margin="0px">
-                        <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                            당일 충전금액
-                        </Span>
-                        <Span className="user_info" size="24px" color="#3dc5d6" weight="500">
-                            3,471,300원
-                        </Span>
-                        <Div className="Rectangle-Copy-4" />
-                        <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                            당일 구매금액
-                        </Span>
-                        <Span className="user_info" size="24px" color="#3dc5d6" weight="500">
-                            3,471,300원
-                        </Span>
-                        <Div className="Rectangle-Copy-4" />
-                        <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                            당일 구매차익
-                        </Span>
-                        <Span className="user_info" size="24px" color="#3dc5d6" weight="500">
-                            2,889,900원
-                        </Span>
+                    <Div className="main_textbox">
+                        <Span>당일 충전금액</Span>
+                        <Span className="Price">3,471,300원</Span>
+                        <Div className="Line" />
+                        <Span>당일 구매금액</Span>
+                        <Span className="Price">3,471,300원</Span>
+                        <Div className="Line" />
+                        <Span>당일 구매차익</Span>
+                        <Span className="Price">2,889,900원</Span>
                     </Div>
                 </Div>
                 <Div className="PriceBoxWrapper">
-                    <Div className="main_textbox" margin="0px">
-                        <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                            이번주 충전금액
-                        </Span>
-                        <Span className="user_info" size="24px" color="#3dc5d6" weight="500">
-                            3,471,300원
-                        </Span>
-                        <Div className="Rectangle-Copy-4" />
-                        <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                            이번주 구매금액
-                        </Span>
-                        <Span className="user_info" size="24px" color="#3dc5d6" weight="500">
-                            3,471,300원
-                        </Span>
-                        <Div className="Rectangle-Copy-4" />
-                        <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                            이번주 구매차익
-                        </Span>
-                        <Span className="user_info" size="24px" color="#3dc5d6" weight="500">
-                            2,889,900원
-                        </Span>
+                    <Div className="main_textbox">
+                        <Span>이번주 충전금액</Span>
+                        <Span className="Price">3,471,300원</Span>
+                        <Div className="Line" />
+                        <Span>이번주 구매금액</Span>
+                        <Span className="Price">3,471,300원</Span>
+                        <Div className="Line" />
+                        <Span>이번주 구매차익</Span>
+                        <Span className="Price">2,889,900원</Span>
                     </Div>
                 </Div>
                 <Div className="PriceBoxWrapper">
-                    <Div className="main_textbox" margin="0px">
-                        <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                            이번달 충전금액
-                        </Span>
-                        <Span className="user_info" size="24px" color="#3dc5d6" weight="500">
-                            3,471,300원
-                        </Span>
-                        <Div className="Rectangle-Copy-4" />
-                        <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                            이번달 구매금액
-                        </Span>
-                        <Span className="user_info" size="24px" color="#3dc5d6" weight="500">
-                            3,471,300원
-                        </Span>
-                        <Div className="Rectangle-Copy-4" />
-                        <Span className="user_info" size="18px" color="#e5e8ea" weight="normal">
-                            이번달 구매차익
-                        </Span>
-                        <Span className="user_info" size="24px" color="#3dc5d6" weight="500">
-                            2,889,900원
-                        </Span>
+                    <Div className="main_textbox">
+                        <Span>이번달 충전금액</Span>
+                        <Span className="Price">3,471,300원</Span>
+                        <Div className="Line" />
+                        <Span>이번달 구매금액</Span>
+                        <Span className="Price">3,471,300원</Span>
+                        <Div className="Line" />
+                        <Span>이번달 구매차익</Span>
+                        <Span className="Price">2,889,900원</Span>
                     </Div>
                 </Div>
                 <Div className="RankingBoxWrapper">
                     <Div className="RankingBox">
-                        <Span className="user_info" size="22px" color="#e5e8ea" weight="bold">
-                            회원순위
-                        </Span>
+                        <Span className="Ranking">회원순위</Span>
                     </Div>
                     <Div className="accuBar">
-                        <Span className="user_info" size="18px" color="#e5e8ea" weight="bold">
-                            누적
-                        </Span>
+                        <Span className="accum">누적</Span>
                     </Div>
                     <Div className="RankingBox">
                         <Div className="Ranking">
@@ -179,7 +115,6 @@ const Div = styled.div`
         margin-top: 30px;
         width: 100%;
     }
-
     &.user {
         width: 23%;
         height: 130px;
@@ -193,19 +128,16 @@ const Div = styled.div`
     &.Rectangle-Copy-12 {
         width: 56px;
         height: 56px;
-        margin: 4px 0;
+        margin: 4px 20px 0 0;
         padding: 13px;
         border-radius: 20px;
         background-color: ${(props) => props.backgroundColor};
     }
-    &.user_wrapper {
-        display: flex;
-    }
+
     &.main_textbox {
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-left: ${(props) => props.margin};
     }
     &.PriceBoxWrapper {
         width: 23%;
@@ -215,15 +147,14 @@ const Div = styled.div`
         border-radius: 16px;
         background-color: #272a31;
     }
-    &.Rectangle-Copy-4 {
-        width: 271px;
+    &.Line {
+        width: 100%;
         height: 1px;
-        margin: 80px 0 80px;
+        margin: 80px 0;
         background-color: #3d3f45;
     }
     &.RankingBoxWrapper {
         width: 23%;
-
         padding: 30px 0 35px 0;
         border-radius: 20px;
         background-color: #272a31;
@@ -248,27 +179,32 @@ const Div = styled.div`
     }
 `;
 const Span = styled.span`
-    &.user_info {
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.56;
-        letter-spacing: normal;
-        color: ${(props) => props.color};
+    line-height: 1.56;
+    font-size: 18px;
+    color: #e5e8ea;
+    font-weight: normal;
+
+    &.Member {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    &.Price {
+        font-size: 24px;
+        color: #3dc5d6;
+        font-weight: 500;
+    }
+    &.Ranking {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &.accum {
+        weight: bold;
     }
     &.Ranking_text {
         width: 50%;
         text-align: center;
-        font-family: Pretendard;
         margin-bottom: 20px;
         font-size: 15px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.73;
-        letter-spacing: normal;
         text-align: center;
         color: #e5e8ea;
     }

@@ -3,122 +3,77 @@ import styled from 'styled-components';
 export default function IP() {
     return (
         <>
-            <Div className="Rectangle-Copy-15">
+            <Div className="Wrapper">
                 <Div className="IpTopBox">
-                    <Span className="Text" size="26px" weight="bold">
-                        아이피 차단
-                    </Span>
+                    <Span className="Title">아이피 차단</Span>
                 </Div>
+                <Div className="Line" />
                 <Div className="IpTopBox">
-                    <Div className="IpTop">
-                        <Span className="Text" size="15px" weight="normal">
-                            아이피
-                        </Span>
-                        <Input className="Rectangle-Copy-18" width="100%" />
+                    <Div className="IpTop" width="20%">
+                        <Span>아이피</Span>
+                        <Input width="60%" />
                     </Div>
-                    <Div className="IpTop">
-                        <Span className="Text" size="15px" weight="normal">
-                            차단이유
-                        </Span>
-                        <Input className="Rectangle-Copy-18" width="100%" />
-                        <Btn className="Rectangle-Copy-7" width="106px" color="#f34a7e">
-                            차단하기
+                    <Div className="IpTop" width="40%">
+                        <Span>차단이유</Span>
+                        <Input width="50%" />
+                        <Btn className="BlockBtn">
+                            <Span className="BtnText">차단하기</Span>
                         </Btn>
                     </Div>
-                    <Div className="IpTop">
-                        <Input className="Rectangle-Copy-18" width="90%" placeholder="아이피" />
-                        <Input className="Rectangle-Copy-18" width="110%" />
-                        <Btn className="Rectangle-Copy-7" width="80px" color="#00abbf">
-                            검색
+                    <Div className="IpTop" width="50%">
+                        <Input placeholder="아이피" />
+                        <Input width="35%" />
+                        <Btn className="SearchBtn">
+                            <Span>검색</Span>
                         </Btn>
                     </Div>
                 </Div>
+                <Div className="Line" />
                 <Div className="IpTopBox">
-                    <Span className="Text" size="22px" weight="bold">
-                        아이피 차단 목록
-                    </Span>
+                    <Span className="SubTitle">아이피 차단 목록</Span>
                 </Div>
                 <Div className="Bar">
-                    <Span className="Text" size="16px" weight="bold" width="50px">
-                        NO
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="220px">
-                        아이피
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="600px">
-                        차단이유
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="130px">
-                        차단날짜
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="36px" />
+                    <Span className="BarText">NO</Span>
+                    <Span className="BarText">아이피</Span>
+                    <Span className="BarText">차단이유</Span>
+                    <Span className="BarText">차단날짜</Span>
+                    <Span className="BarText" />
                 </Div>
-                <Div className="Info" border="1px solid #3d3f45">
-                    <Span className="Text" size="16px" weight="bold" width="50px">
-                        1
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="220px">
-                        559.295.456
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="600px">
-                        욕설과 비속어 표현 자주 사용해서 너무 상처 받았습니다. 이 사람 차단하고 싶습니다.
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="130px">
-                        2022.07.01
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="36px">
-                        삭제
-                    </Span>
+                <Div className="Info">
+                    <Span>1</Span>
+                    <Span>559.295.456</Span>
+                    <Span>욕설과 비속어 표현 자주 사용해서 너무 상처 받았습니다. 이 사람 차단하고 싶습니다.</Span>
+                    <Span>2022.07.01</Span>
+                    <Btn className="DelBtn">삭제</Btn>
                 </Div>
-                <Div className="Info" border="">
-                    <Span className="Text" size="16px" weight="bold" width="50px">
-                        1
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="220px">
-                        559.295.456
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="600px">
-                        욕설과 비속어 표현 자주 사용해서 너무 상처 받았습니다. 이 사람 차단하고 싶습니다.
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="130px">
-                        2022.07.01
-                    </Span>
-                    <Span className="Text" size="16px" weight="bold" width="36px">
-                        삭제
-                    </Span>
+                <Div className="Line" />
+                <Div className="Info">
+                    <Span>1</Span>
+                    <Span>559.295.456</Span>
+                    <Span>욕설과 비속어 표현 자주 사용해서 너무 상처 받았습니다. 이 사람 차단하고 싶습니다.</Span>
+                    <Span>2022.07.01</Span>
+                    <Btn className="DelBtn">삭제</Btn>
                 </Div>
             </Div>
             <Div className="PageBox">
-                <Div className="PageBar">
-                    <Div className="Rectangle-Copy-17">
-                        <Img src="/assets/images/icon-pagnagtion-left-2.png" className="iconpagnagtion" />
-                    </Div>
-                    <Div className="Rectangle-Copy-17">
-                        <Img src="/assets/images/icon-pagnagtion-left.png" className="iconpagnagtion" />
-                    </Div>
-                    <Div className="CheckedNum">
-                        <Div className="Rectangle-Copy-17" color="#fff">
-                            1
-                        </Div>
-                    </Div>
-                    <Div className="Rectangle-Copy-17" color="#7a7c85">
-                        2
-                    </Div>
-                    <Div className="Rectangle-Copy-17" color="#7a7c85">
-                        3
-                    </Div>
-                    <Div className="Rectangle-Copy-17" color="#7a7c85">
-                        4
-                    </Div>
-                    <Div className="Rectangle-Copy-17" color="#7a7c85">
-                        5
-                    </Div>
-                    <Div className="Rectangle-Copy-17" color="#7a7c85">
-                        <Img src="/assets/images/icon-pagnagtion-right.png" className="iconpagnagtion" />
-                    </Div>
-                    <Div className="Rectangle-Copy-17">
-                        <Img src="/assets/images/icon-pagnagtion-right-2.png" className="iconpagnagtion" />
-                    </Div>
+                <Div className="PageText">
+                    <Img src="/assets/images/icon-pagnagtion-left-2.png" className="iconpagnagtion" />
+                </Div>
+                <Div className="PageText">
+                    <Img src="/assets/images/icon-pagnagtion-left.png" className="iconpagnagtion" />
+                </Div>
+                <Div className="CheckedNum">
+                    <Div className="CheckedText">1</Div>
+                </Div>
+                <Div className="PageText">2</Div>
+                <Div className="PageText">3</Div>
+                <Div className="PageText">4</Div>
+                <Div className="PageText">5</Div>
+                <Div className="PageText">
+                    <Img src="/assets/images/icon-pagnagtion-right.png" className="iconpagnagtion" />
+                </Div>
+                <Div className="PageText">
+                    <Img src="/assets/images/icon-pagnagtion-right-2.png" className="iconpagnagtion" />
                 </Div>
             </Div>
         </>
@@ -126,9 +81,8 @@ export default function IP() {
 }
 
 const Div = styled.div`
-    &.Rectangle-Copy-15 {
+    &.Wrapper {
         width: 100%;
-
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -136,68 +90,29 @@ const Div = styled.div`
     }
     &.IpTopBox {
         width: 100%;
-        padding: 25px 40px;
         display: flex;
+        padding: 30px 40px;
         justify-content: space-between;
-        border-bottom: 1px solid #3d3f45;
     }
     &.IpTop {
         width: ${(props) => props.width};
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
     &.Bar {
-        padding: 0px 40px;
+        display: grid;
+        grid-template-columns: 5fr 22fr 52fr 13fr 3.6fr;
+        text-align: center;
+        padding: 15px 40px;
         width: 100%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         background-color: #31333a;
     }
     &.Info {
-        display: flex;
-        width: 100%;
+        display: grid;
+        grid-template-columns: 5fr 22fr 52fr 13fr 3.6fr;
         text-align: center;
-        justify-content: space-between;
+        width: 100%;
         padding: 20px 40px;
-        background-color: #272a31;
-        border-bottom: ${(props) => props.border};
-    }
-    &.Wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    &.Rectangle-Copy-10 {
-        cursor: pointer;
-        width: ${(props) => props.width};
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 46px;
-        padding: 15px;
-        margin-left: 40px;
-        border-radius: 10px;
-        border: solid 1px #3d3f45;
-        background-color: #31333a;
-        font-family: Pretendard;
-        font-size: 17px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.73;
-        letter-spacing: normal;
-        color: #fff;
-    }
-    &.Rectangle-Copy-7 {
-        margin: 0 37px;
-        width: 76px;
-        padding: 0 12px;
-        opacity: 0.1;
-        border-radius: 13px;
-        background-color: ${(props) => props.color};
     }
     &.PageBox {
         display: flex;
@@ -205,23 +120,15 @@ const Div = styled.div`
         justify-content: center;
         padding: 30px 0;
     }
-    &.PageBar {
-        display: flex;
-    }
-    &.Rectangle-Copy-17 {
+    &.PageText {
         width: 44px;
         height: 44px;
-        font-family: Pretendard;
         font-size: 16px;
         font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.75;
         display: flex;
-        letter-spacing: normal;
         align-items: center;
         justify-content: center;
-        color: ${(props) => props.color};
+        color: #7a7c85;
     }
     &.CheckedNum {
         width: 44px;
@@ -229,52 +136,77 @@ const Div = styled.div`
         border-radius: 50%;
         background-color: #00abbf;
     }
+    &.CheckedText {
+        width: 44px;
+        height: 44px;
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+    &.Line {
+        height: 1px;
+        width: 100%;
+        background-color: #393b44;
+    }
 `;
 const Span = styled.span`
-    &.Text {
-        width: ${(props) => props.width};
-        font-family: Pretendard;
-        font-size: ${(props) => props.size};
-        font-weight: ${(props) => props.weight};
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.46;
-        text-align: center;
-        letter-spacing: normal;
-        color: #e5e8ea;
-        padding-left: ${(props) => props.Lpadding};
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.46;
+    color: #e5e8ea;
+    &.Title {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    &.SubTitle {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &.BtnText {
+        font-weight: 600;
+        color: #fff;
+    }
+    &.BarText {
+        font-size: 16px;
+        font-weight: bold;
     }
 `;
 const Input = styled.input`
-    &.Rectangle-Copy-18 {
-        width: ${(props) => props.width};
-        height: 46px;
-        border-radius: 10px;
-        border: solid 1px #3d3f45;
-        background-color: #31333a;
-        margin: 0 10px;
-        padding-left: 10px;
-        font-family: Pretendard;
-        font-size: 17px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.73;
-        letter-spacing: normal;
-        color: #fff;
-    }
-    &.Rectangle-Copy-18 :focus {
-        outline: none;
-    }
+    width: ${(props) => props.width};
+    height: 46px;
+    border-radius: 10px;
+    border: solid 1px #3d3f45;
+    background-color: #31333a;
+    margin-left: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #e5e8ea;
+    outline: none;
 `;
 const Btn = styled.button`
-    &.Rectangle-Copy-7 {
-        width: 100px;
+    &.BlockBtn {
         height: 46px;
-        padding: 5px 20px;
+        padding: 11px 27px;
         border-radius: 10px;
-        background-color: ${(props) => props.color};
-        color: #fff;
+        background-color: #f34a7e;
+        margin-left: 15px;
+    }
+    &.SearchBtn {
+        height: 46px;
+        padding: 11px 27px;
+        border-radius: 10px;
+        background-color: #00abbf;
+        margin-left: 15px;
+    }
+    &.DelBtn {
+        font-size: 15px;
+        color: #3dc5d6;
+        border: none;
+        background: none;
     }
 `;
 
