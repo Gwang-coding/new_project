@@ -15,7 +15,6 @@ export default function Notice() {
                     <Btn>저장하기</Btn>
                 </Span>
             </Div>
-
             <Div className="EditorBox">
                 <PostEditor />
             </Div>

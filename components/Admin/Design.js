@@ -175,6 +175,15 @@ const Div = styled.div`
         background-color: #00abbf;
         cursor: pointer;
     }
+    &.Rectangle-Copy-2-off {
+        width: 50px;
+        height: 26px;
+        margin: 0 20px;
+        padding: 3px 26px 3px 4px;
+        border-radius: 100px;
+        background-color: #474950;
+        cursor: pointer;
+    }
     &.Oval-Copy-2 {
         width: 24px;
         height: 24px;

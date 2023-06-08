@@ -130,7 +130,6 @@ const Div = styled.div`
         padding: 20px 40px;
         background-color: #272a31;
     }
-
     &.InputBox {
         cursor: pointer;
         width: 180px;

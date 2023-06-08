@@ -34,10 +34,30 @@ import Nomoney from '../components/User/Nomoney';
 import ChargeLog from '../components/User/ChargeLog';
 import Userinfo from '../components/User/Userinfo';
 import PurchaseLog from '../components/User/PurchaseLog';
+import Purchase from '../components/Etc/Purchase';
+import Check from '../components/Etc/Check';
+import DelUser from '../components/Etc/DelUser';
+import Charge from '../components/Etc/Charge';
+import Point from '../components/Etc/Point';
+import JoinPopup from '../components/Etc/Join';
+import NoticePopup from '../components/Etc/Notice';
+import IdError from '../components/Etc/IdError';
+import PasswordError from '../components/Etc/PasswordError';
+import SuccessJoin from '../components/Etc/SuccessJoin';
 
 export default function Home() {
     return (
         <>
+            <SuccessJoin />
+            <PasswordError />
+            <IdError />
+            <NoticePopup />
+            <JoinPopup />
+            <Point />
+            <Charge />
+            <DelUser />
+            <Purchase />
+            <Check />
             <Section>
                 <AdminSide />
                 <Div className="Rectangle-Copy">

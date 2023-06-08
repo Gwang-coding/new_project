@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default function PasswordError() {
+export default function SuccessJoin() {
     return (
         <Div className="ModalBox">
             <Div className="ModalContent">
@@ -10,8 +10,8 @@ export default function PasswordError() {
                     </Div>
                 </Div>
                 <Div className="Bottom">
-                    <Img src="/assets/images/icon-login-110.png" className="Wallet" />
-                    <Span>비번 에러</Span>
+                    <Img src="/assets/images/icon-acess-110.png" className="Wallet" />
+                    <Span>회원가입 성공</Span>
                 </Div>
             </Div>
         </Div>
