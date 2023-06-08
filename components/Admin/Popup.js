@@ -121,4 +121,5 @@ const Btn = styled.button`
 
 const Img = styled.img`
     padding-right: 10px;
+    cursor: pointer;
 `;

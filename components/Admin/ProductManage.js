@@ -47,7 +47,9 @@ export default function ProdectManage() {
                             <Div className="Oval-Copy-2"></Div>
                         </Div>
                     </Div>
-                    <Span>관리</Span>
+                    <Span>
+                        <a>관리</a>
+                    </Span>
                 </Div>
                 <Div className="Line" />
                 <Div className="Info">
@@ -74,7 +76,9 @@ export default function ProdectManage() {
                             <Div className="Oval-Copy-2"></Div>
                         </Div>
                     </Div>
-                    <Span>관리</Span>
+                    <Span>
+                        <a>관리</a>
+                    </Span>
                 </Div>
                 <Div className="Line" />
                 <Div className="Info">
@@ -103,7 +107,9 @@ export default function ProdectManage() {
                             <Div className="Oval-Copy-2"></Div>
                         </Div>
                     </Div>
-                    <Span>관리</Span>
+                    <Span>
+                        <a>관리</a>
+                    </Span>
                 </Div>
             </Div>
             <Div className="PageBox">
@@ -280,6 +286,6 @@ const Img = styled.img`
         width: 24px;
         height: 24px;
         margin: 0 10px;
-        cursor: pointer;
     }
+    cursor: pointer;
 `;

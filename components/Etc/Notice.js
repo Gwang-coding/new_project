@@ -59,6 +59,7 @@ const Div = styled.div`
         text-align: end;
     }
     &.On {
+        curosr: pointer;
         width: 24px;
         height: 24px;
         margin: 32px 12px 0 0;
@@ -67,6 +68,7 @@ const Div = styled.div`
         background-color: #1fa58c;
     }
     &.Off {
+        cursor: pointer;
         width: 24px;
         height: 24px;
         margin-right: 12px;

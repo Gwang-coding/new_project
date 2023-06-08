@@ -100,6 +100,7 @@ const Div = styled.div`
         margin: 0 0 0 12px;
         padding: 9px;
         background-image: linear-gradient(to bottom, rgba(213, 251, 255, 0.8), rgba(163, 226, 234, 0.8));
+        cursor: pointer;
     }
     &.LinkDropdown {
         position: absolute;
