@@ -90,8 +90,8 @@ export default function Profit() {
                         <Span>0회</Span>
                         <Span>0원</Span>
                     </Div>
+                    <Div className="Line" />
                 </Div>
-                <Div className="Line" />
             </Div>
         </>
     );
@@ -99,7 +99,7 @@ export default function Profit() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -107,7 +107,7 @@ const Div = styled.div`
     }
     &.TopBox {
         width: 100%;
-        padding: 25px 40px;
+        padding: 21px 40px;
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid #3d3f45;

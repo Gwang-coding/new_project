@@ -19,7 +19,7 @@ export default function ProdectManageIn() {
                 </Div>
                 <Div className="InfoBox">
                     <Div className="Info">
-                        <Div className="WrapperBox" width="60%">
+                        <Div className="WrapperBox" width="55%">
                             <Div className="Wrapper">
                                 <Span>상품명</Span>
                                 <Input className="ProductInput" />
@@ -108,7 +108,7 @@ export default function ProdectManageIn() {
 
 const Div = styled.div`
     &.Container {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -136,14 +136,15 @@ const Div = styled.div`
     }
     &.Info {
         display: flex;
-        padding-top: 25px;
+        padding: 30px 0 10px 0;
+        justify-content: space-between;
     }
     &.Wrapper {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     &.WrapperItem {
         display: flex;
@@ -157,7 +158,7 @@ const Div = styled.div`
     }
     &.InputBox {
         cursor: pointer;
-        width: 80%;
+        width: 633px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -224,7 +225,7 @@ const Span = styled.span`
 const Input = styled.input`
     &.ProductInput {
         height: 52px;
-        width: 80%;
+        width: 633px;
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #31333a;

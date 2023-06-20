@@ -76,15 +76,14 @@ export default function SellLog() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 20px;
     }
     &.TopBox {
         width: 100%;
-        padding: 25px 40px;
+        padding: 21px 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -95,7 +94,9 @@ const Div = styled.div`
     }
     &.Bar {
         display: grid;
-        padding: 15px 40px;
+        padding: 0px 40px;
+        place-items: center;
+        height: 50px;
         width: 100%;
         grid-template-columns: 5fr 22fr 13fr 13fr 9fr 13fr 22fr;
         background-color: #31333a;
@@ -106,7 +107,10 @@ const Div = styled.div`
         width: 100%;
         grid-template-columns: 5fr 22fr 13fr 13fr 9fr 13fr 22fr;
         text-align: center;
-        padding: 20px 40px;
+        padding: 0px 40px;
+        place-items: center;
+        height: 76px;
+        border-radius: 16px;
     }
     &.InputBox {
         cursor: pointer;
@@ -193,11 +197,12 @@ const Span = styled.span`
 `;
 const Input = styled.input`
     height: 46px;
+    width: 250px;
     border-radius: 10px;
     border: solid 1px #3d3f45;
     background-color: #31333a;
     padding: 10px;
-    margin: 0 20px;
+    margin: 0 14px;
     font-size: 17px;
     font-weight: normal;
     color: #fff;

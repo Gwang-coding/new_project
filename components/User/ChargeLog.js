@@ -104,7 +104,6 @@ const Div = styled.div`
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 20px;
     }
     &.NameBox {
         display: flex;
@@ -137,7 +136,9 @@ const Div = styled.div`
     &.Bar {
         display: grid;
         grid-template-columns: 9fr 18fr 26fr 13fr 13fr 9fr;
-        padding: 15px 40px;
+        padding: 0px 40px;
+        place-items: center;
+        height: 50px;
         text-align: center;
         width: 100%;
         background-color: #31333a;
@@ -147,14 +148,16 @@ const Div = styled.div`
         grid-template-columns: 9fr 18fr 26fr 13fr 13fr 9fr;
         width: 100%;
         text-align: center;
-        padding: 20px 40px;
+        padding: 0px 40px;
+        place-items: center;
+        height: 76px;
         border-bottom: 1px solid #393b44;
     }
     &.PageBox {
         display: flex;
         width: 100%;
         justify-content: center;
-        padding: 30px 0;
+        padding: 50px 0;
     }
     &.PageText {
         width: 44px;
@@ -233,32 +236,31 @@ const Span = styled.span`
         width: 76px;
         background-color: #3d372f;
         border-radius: 6px;
-        padding: 0 8px;
+        padding: 4px 8px;
         color: #cb9424;
     }
     &.Munsang {
         width: 76px;
         background-color: #3c3037;
         border-radius: 6px;
-        padding: 1px 8px;
+        padding: 4px 8px;
         color: #a35756;
     }
     &.Account {
-        width: 76px;
-        padding: 0 8px;
+        padding: 4px 12px;
         border-radius: 6px;
         background-color: #34373d;
         color: #c0c1c2;
     }
     &.Success {
         width: 43px;
-        padding: 3px 10px;
+        padding: 4px 9px;
         border-radius: 6px;
         background-color: #0b8be9;
     }
     &.Fail {
         width: 43px;
-        padding: 3px 10px;
+        padding: 4px 9px;
         border-radius: 6px;
         background-color: #ff6136;
     }

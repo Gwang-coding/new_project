@@ -149,7 +149,7 @@ const Div = styled.div`
         width: 100%;
         height: 530px;
         border-radius: 16px;
-        margin: 30px 0px;
+        margin: 30px 0px 40px 0;
     }
     &.Bottom {
         width: 100%;
@@ -157,7 +157,8 @@ const Div = styled.div`
         justify-content: space-between;
     }
     &.BottomWrapper {
-        width: 49%;
+        width: 650px;
+        height: 281px;
         border-radius: 16px;
         box-shadow: inset 0 1px 6px 0 rgba(255, 255, 255, 0.12);
         border: solid 1px rgba(61, 63, 69, 0.6);

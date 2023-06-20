@@ -66,7 +66,7 @@ const Div = styled.div`
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 20px;
+        padding-bottom: 115px;
     }
     &.NameBox {
         display: flex;
@@ -80,7 +80,7 @@ const Div = styled.div`
         margin-bottom: 10px;
     }
     &.TopBox {
-        padding: 25px 40px;
+        padding: 25px 50px;
         border-bottom: 1px solid #393b44;
     }
     &.BtnBox {
@@ -105,7 +105,7 @@ const Div = styled.div`
     &.BottomBox {
         display: flex;
         flex-direction: column;
-        margin: 25px 30px;
+        margin: 36px 50px 16px;
     }
     &.InputBox {
         width: 40%;
@@ -114,14 +114,14 @@ const Div = styled.div`
         align-items: center;
     }
     &.BottomText {
-        padding: 10px;
+        padding: 3px 0 3px 16px;
         border-left: 4px solid #25b499;
     }
     &.Line {
         height: 1px;
         width: 100%;
         background-color: #393b44;
-        margin: 20px 0;
+        margin: 24px 0;
     }
 `;
 
@@ -193,7 +193,6 @@ const Btn = styled.button`
     padding: 16px 68px;
     border-radius: 35px;
     background-color: #1fa58c;
-    margin-bottom: 30px;
 `;
 
 const Img = styled.img`

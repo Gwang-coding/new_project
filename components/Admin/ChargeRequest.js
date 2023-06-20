@@ -95,22 +95,22 @@ export default function ChargeRequest() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
+        height: 893px;
         padding-bottom: 15px;
         border-radius: 16px;
         background-color: #272a31;
     }
     &.TopBox {
         width: 100%;
-        padding: 25px 40px;
+        padding: 24px 40px;
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid #3d3f45;
     }
     &.Box {
         width: 100%;
-        padding: 25px 40px;
+        padding: 23px 40px;
         display: flex;
         flex-direction: column;
     }
@@ -118,7 +118,9 @@ const Div = styled.div`
         display: grid;
         grid-template-columns: 22fr 22fr 15fr 18fr;
         width: 100%;
-        padding: 10px 40px;
+        place-items: center;
+        height: 50px;
+        padding: 0px 40px;
         background-color: #31333a;
         margin-top: 20px;
         text-align: center;
@@ -126,9 +128,11 @@ const Div = styled.div`
     &.Info {
         display: grid;
         grid-template-columns: 22fr 22fr 15fr 18fr;
-        padding: 10px 40px;
+        padding: 0px 40px;
+        place-items: center;
+        height: 76px;
         background-color: #272a31;
-        margin: 5px 0;
+
         text-align: center;
     }
     &.Line {
@@ -181,6 +185,7 @@ const Btn = styled.button`
     &.OkBtn {
         height: 40px;
         padding: 8px 14px;
+        margin-left: 140px;
         border-radius: 10px;
         background-color: #00abbf;
     }

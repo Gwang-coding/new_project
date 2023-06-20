@@ -5,7 +5,7 @@ export default function Menu() {
         <Div className="Rectangle-Copy-5">
             <Div className="MenuBox">
                 <Span>홈</Span>
-                <Div>
+                <Div className="Menu">
                     <Span className="ClickedText">설정</Span>
                     {/* <Div className="Dropdown">
                         <Span className="DropClicked">공지사항</Span>
@@ -14,19 +14,19 @@ export default function Menu() {
                     </Div> */}
                 </Div>
                 <Span>디자인</Span>
-                <Div>
+                <Div className="Menu">
                     <Span className="ClickedText">회원관리</Span>
                     {/* <Div className="Dropdown">
                         <Span className="Droptext">아이피 차단</Span>
                     </Div> */}
                 </Div>
-                <Div>
+                <Div className="Menu">
                     <Span className="ClickedText">상품관리</Span>
                     {/* <Div className="Dropdown">
                         <Span className="Droptext">카테고리</Span>
                     </Div> */}
                 </Div>
-                <Div>
+                <Div className="Menu">
                     <Span className="ClickedText">충전관리</Span>
                     {/* <Div className="Dropdown">
                         <Span className="Droptext">충전요청</Span>
@@ -41,7 +41,8 @@ export default function Menu() {
 
 const Div = styled.div`
     &.Rectangle-Copy-5 {
-        width: 100%;
+        width: 1500px;
+        height: 70px;
         border-radius: 16px;
         box-shadow: inset 0 1px 2px 0 #3dc5d6;
         background-image: radial-gradient(circle at 0 -42%, #12a7b8, #272a31 7%);
@@ -52,9 +53,13 @@ const Div = styled.div`
         flex-direction: row;
         align-items: center;
     }
+    &.Menu {
+        display: flex;
+        justify-content: center;
+    }
     &.Dropdown {
         position: absolute;
-        margin-top: 17px;
+        margin-top: 70px;
         width: 131px;
         padding: 20px 20px;
         display: grid;
@@ -67,8 +72,8 @@ const Div = styled.div`
     }
 `;
 const Span = styled.span`
-    padding: 16px 15px;
-    margin: 0 25px;
+    padding: 19px 15px;
+    margin: 0 20px;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.56;

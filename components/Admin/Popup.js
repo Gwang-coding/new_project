@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default function Popup() {
     return (
         <Div className="Wrapper">
-            <Div className="Box">
+            <Div className="Top">
                 <Span className="Title">팝업관리</Span>
                 <Btn className="PlusBtn">
                     <Span className="BtnText">+ 추가하기</Span>
@@ -47,16 +47,26 @@ export default function Popup() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 5px;
+    }
+    &.Top {
+        width: 100%;
+        padding: 24px 40px;
+        align-items: center;
+        display: flex;
+        border-radius: 16px;
+        justify-content: space-between;
     }
     &.Box {
         width: 100%;
-        padding: 20px 40px;
+        padding: 0px 40px;
+        height: 64px;
+        align-items: center;
         display: flex;
+        border-radius: 16px;
         justify-content: space-between;
     }
     &.PopBar {

@@ -9,7 +9,7 @@ export function Header() {
             <Div className="IconSlash" />
             <Span className="ID">admon5488님</Span>
             <Div className="MenuMask">
-                <Img src="/assets/images/icon-user.png" className="iconuser24"></Img>
+                <Img src="/assets/images/icon-user-24.png" className="iconuser24"></Img>
             </Div>
         </Div>
     );
@@ -56,8 +56,8 @@ export function UserHeader() {
                         </Div>
                     </Div> */}
                 </Div>
-                <Div className="MenuMask">
-                    <Img src="/assets/images/icon-user.png" className="iconuser24" />
+                <Div className="UserMask">
+                    <Img src="/assets/images/icon-user-24-black.png" className="iconuser24" />
                 </Div>
             </Div>
         </Div>
@@ -67,19 +67,21 @@ export function UserHeader() {
 const Div = styled.div`
     &.MenuTop {
         width: 100%;
+        height: 76px;
         display: flex;
         align-items: center;
+        padding: 17px 30px;
         justify-content: center;
-        padding: 18px 30px;
         border-bottom: 1px solid #3d3f45;
         justify-content: flex-end;
     }
     &.UserMenuTop {
-        width: 100%;
+        width: 1620px;
+        height: 70px;
         display: flex;
+        padding: 17px 30px 17px 8px;
         align-items: center;
         justify-content: center;
-        padding: 18px 30px 18px 10px;
         border-bottom: 1px solid #3d3f45;
         justify-content: space-between;
     }
@@ -90,7 +92,7 @@ const Div = styled.div`
     &.IconSlash {
         width: 1px;
         height: 20px;
-        margin: 8px 10px;
+        margin: 0px 20px 0px 6px;
         background-color: #3d3f45;
     }
     &.MenuMask {
@@ -100,6 +102,15 @@ const Div = styled.div`
         margin: 0 0 0 12px;
         padding: 9px;
         background-image: linear-gradient(to bottom, rgba(213, 251, 255, 0.8), rgba(163, 226, 234, 0.8));
+        cursor: pointer;
+    }
+    &.UserMask {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        margin: 0 0 0 12px;
+        padding: 9px;
+        background-color: #272a31;
         cursor: pointer;
     }
     &.LinkDropdown {
@@ -153,8 +164,8 @@ const Span = styled.span`
     color: #e5e8ea;
     &.ID {
         height: 28px;
-        margin: 0px 12px 0px 20px;
         cursor: pointer;
+        font-size: 16px;
     }
     &.DropID {
         font-size: 18px;

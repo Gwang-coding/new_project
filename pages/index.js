@@ -44,10 +44,12 @@ import NoticePopup from '../components/Etc/Notice';
 import IdError from '../components/Etc/IdError';
 import PasswordError from '../components/Etc/PasswordError';
 import SuccessJoin from '../components/Etc/SuccessJoin';
+import Emergency from '../components/Etc/ Emergency';
 
 export default function Home() {
     return (
         <>
+            <Emergency />
             <SuccessJoin />
             <PasswordError />
             <IdError />
@@ -300,14 +302,14 @@ export default function Home() {
     );
 }
 const Section = styled.section`
-    width: 100%;
-    height: 100%;
+    width: 1920px;
+
     display: flex;
 `;
 
 const Div = styled.div`
     &.Rectangle-Copy {
-        width: 85%;
+        width: 1620px;
         background-color: #1b1e24;
         display: flex;
         align-items: center;
@@ -315,7 +317,10 @@ const Div = styled.div`
     }
     &.Main {
         margin: 50px 0px;
-        width: 95%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     &.UserMain {
         width: 100%;

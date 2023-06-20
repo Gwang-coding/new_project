@@ -9,20 +9,20 @@ export default function IP() {
                 </Div>
                 <Div className="Line" />
                 <Div className="IpTopBox">
-                    <Div className="IpTop" width="20%">
+                    <Div className="IpTop">
                         <Span>아이피</Span>
-                        <Input width="60%" />
+                        <Input width="220px" />
                     </Div>
-                    <Div className="IpTop" width="40%">
+                    <Div className="IpTop">
                         <Span>차단이유</Span>
-                        <Input width="50%" />
+                        <Input width="300px" />
                         <Btn className="BlockBtn">
                             <Span className="BtnText">차단하기</Span>
                         </Btn>
                     </Div>
-                    <Div className="IpTop" width="50%">
-                        <Input placeholder="아이피" />
-                        <Input width="35%" />
+                    <Div className="IpTop">
+                        <Input placeholder="아이피" width="180px" />
+                        <Input width="250px" />
                         <Btn className="SearchBtn">
                             <Span>검색</Span>
                         </Btn>
@@ -72,16 +72,15 @@ export default function IP() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 20px;
     }
     &.IpTopBox {
         width: 100%;
         display: flex;
-        padding: 30px 40px;
+        padding: 25px 40px;
         justify-content: space-between;
     }
     &.IpTop {
@@ -95,14 +94,17 @@ const Div = styled.div`
         text-align: center;
         padding: 15px 40px;
         width: 100%;
+        border-radius: 16px;
         background-color: #31333a;
     }
     &.Info {
         display: grid;
         grid-template-columns: 5fr 22fr 52fr 13fr 3.6fr;
         text-align: center;
+        height: 76px;
+        place-items: center;
         width: 100%;
-        padding: 20px 40px;
+        padding: 0px 40px;
     }
     &.PageBox {
         display: flex;

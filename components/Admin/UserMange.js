@@ -75,8 +75,9 @@ export default function UserMange() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
+        height: 893px;
         border-radius: 16px;
         background-color: #272a31;
         padding: 25px 40px;
@@ -102,7 +103,7 @@ const Div = styled.div`
     }
     &.PercentWrapper {
         width: 100%;
-        padding: 20px 100px 20px 0;
+        padding: 26px 100px 20px 0;
         display: grid;
         row-gap: 20px;
         column-gap: 200px;

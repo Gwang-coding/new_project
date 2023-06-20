@@ -99,7 +99,7 @@ export default function Category() {
 
 const Div = styled.div`
     &.Container {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -150,7 +150,7 @@ const Div = styled.div`
         margin: 0 11px;
     }
     &.FirstBox {
-        width: 95%;
+        width: 1345px;
         height: 52px;
         border-radius: 10px;
         border: solid 1px #3d3f45;
@@ -160,7 +160,7 @@ const Div = styled.div`
         align-items: center;
     }
     &.OtherBox {
-        width: 94%;
+        width: 1345px;
         height: 52px;
         border-radius: 10px;
         border: solid 1px #3d3f45;

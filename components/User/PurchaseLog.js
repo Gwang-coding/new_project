@@ -84,7 +84,7 @@ const Div = styled.div`
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 20px;
+    
     }
     &.NameBox {
         display: flex;
@@ -117,7 +117,9 @@ const Div = styled.div`
     &.Bar {
         display: grid;
         grid-template-columns: 9fr 18fr 26fr 12fr 26fr 18fr;
-        padding: 15px 40px;
+        padding: 0px 40px;
+        place-items:center;
+        height:50px;
         text-align: center;
         width: 100%;
         background-color: #31333a;
@@ -126,8 +128,11 @@ const Div = styled.div`
         display: grid;
         grid-template-columns: 9fr 18fr 26fr 12fr 26fr 18fr;
         width: 100%;
+        place-items:center;
+        height:74px;
+        margin:1px; 0px;
         text-align: center;
-        padding: 20px 40px;
+        padding: 0px 40px;
         border-bottom: 1px solid #393b44;
     }
     &.PageBox {

@@ -52,11 +52,10 @@ export default function LogManage() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 20px;
     }
     &.LogManageTopBox {
         width: 100%;
@@ -73,7 +72,9 @@ const Div = styled.div`
     &.Bar {
         display: grid;
         grid-template-columns: 22fr 22fr 13fr 52fr;
-        padding: 15px 40px;
+        padding: 0px 40px;
+        height: 50px;
+        place-items: center;
         text-align: center;
         width: 100%;
         background-color: #31333a;
@@ -82,9 +83,13 @@ const Div = styled.div`
         display: grid;
         grid-template-columns: 22fr 22fr 13fr 52fr;
         width: 100%;
+        margin: 1px 0;
+        place-items: center;
+        height: 74px;
         text-align: center;
         padding: 20px 40px;
         background-color: #272a31;
+        border-radius: 16px;
     }
     &.PageBox {
         display: flex;

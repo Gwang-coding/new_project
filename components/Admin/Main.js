@@ -113,10 +113,10 @@ const Div = styled.div`
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
-        width: 100%;
+        width: 1500px;
     }
     &.user {
-        width: 23%;
+        width: 351px;
         height: 130px;
         display: flex;
         align-items: center;
@@ -140,7 +140,7 @@ const Div = styled.div`
         text-align: center;
     }
     &.PriceBoxWrapper {
-        width: 23%;
+        width: 351px;
         display: flex;
         flex-direction: column;
         padding: 93px 40px;

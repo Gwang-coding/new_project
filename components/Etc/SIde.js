@@ -61,7 +61,7 @@ export function AdminSide() {
 export function UserSide() {
     return (
         <Div className="Rectangle">
-            <Div className="SideTop">
+            <Div className="SideUserTop">
                 <Span className="BEURRI">BEURRI</Span>
                 <Img src="/assets/images/icon-c-menu-gray.png" className="IconCMenuGray30" />
             </Div>
@@ -70,8 +70,8 @@ export function UserSide() {
                     <Img src="/assets/images/icon-user-44.png" className="iconuser44" />
                     <Div className="Oval" bcolor="#ffd700" />
                 </Div>
-                <Div className="NameBox" left="50px">
-                    <Span className="Id">admon5488님</Span>
+                <Div className="UserNameBox">
+                    <Span className="Id">Messi8090</Span>
                     <Div className="ColorBox" bcolor="#0cbe9d">
                         <Span className="IdRank">VIP</Span>
                     </Div>
@@ -127,7 +127,6 @@ export function UserSide() {
                             <Span>카카오톡 구매자방</Span>
                         </Div>
                     </Div>
-
                     <Div className="Menu">
                         <Div className="MenuText">
                             <Img src="/assets/images/icon-c-file-gray.png" className="MenuImg" />
@@ -162,18 +161,26 @@ export function UserSide() {
 const Div = styled.div`
     &.Rectangle {
         background-color: #13171e;
-        width: 15%;
+        width: 300px;
     }
     &.SideTop {
         display: flex;
         justify-content: space-between;
+        height: 76px;
         padding: 20px 30px;
+        border-bottom: 1px solid #3d3f45;
+    }
+    &.SideUserTop {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        padding: 17px 30px;
         border-bottom: 1px solid #3d3f45;
     }
     &.SideBottom {
         display: flex;
         flex-direction: column;
-        padding: 40px 20px;
+        padding: 40px 30px;
         align-items: center;
     }
     &.Mask {
@@ -188,7 +195,7 @@ const Div = styled.div`
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 20px 0;
+        margin-top: 20px;
         padding: 21px 19px;
         border-radius: 20px;
         border: solid 1px #3d3f45;
@@ -198,7 +205,8 @@ const Div = styled.div`
     &.UserInfo {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 240px;
+        height: 212px;
         margin: 20px 0 0;
         padding: 21px 19px;
         border-radius: 20px;
@@ -207,7 +215,7 @@ const Div = styled.div`
         text-align: center;
     }
     &.TextBox {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         display: flex;
         flex-direction: column;
     }
@@ -218,6 +226,14 @@ const Div = styled.div`
     &.NameBox {
         width: 100%;
         display: flex;
+        margin-right: -50px;
+        align-items: center;
+        justify-content: center;
+    }
+    &.UserNameBox {
+        width: 100%;
+        display: flex;
+
         align-items: center;
         justify-content: center;
     }
@@ -241,8 +257,8 @@ const Div = styled.div`
     }
     &.ColorBox {
         height: 22px;
-        margin-left: 10px;
-        padding: 0 8px;
+        margin-left: 7px;
+        padding: 0 5px;
         border-radius: 4px;
         background-color: ${(props) => props.bcolor};
     }
@@ -255,6 +271,7 @@ const Div = styled.div`
         width: 100%;
         border-bottom: 1px solid #3d3f45;
         padding: 20px 0px;
+        margin-bottom: 10px;
     }
     &.TodayBox {
         width: 100%;
@@ -269,6 +286,7 @@ const Div = styled.div`
         background-color: #f06868;
         display: flex;
         justify-content: center;
+        padding: 1px 8px;
         border-radius: 6px;
     }
     &.Menu {
@@ -308,6 +326,7 @@ const Span = styled.span`
     &.Info {
         font-size: 500;
         color: #979aa0;
+        margin-bottom: 5px;
     }
     &.Menu {
         color: #1ec9a9;
@@ -317,6 +336,7 @@ const Span = styled.span`
     }
     &.Today {
         font-size: 14px;
+        line-height: 1.71;
         font-weight: bold;
         color: #fff;
     }
@@ -368,7 +388,7 @@ const Btn = styled.button`
         border-radius: 23px;
     }
     &.UserBtn {
-        margin-top: 10px;
+        margin-top: 15px;
         width: ${(props) => props.width};
         padding: 12px 0px;
         border-radius: 8px;

@@ -13,13 +13,13 @@ export default function Link() {
                     <Div className="LinkPlus">
                         <Div className="LinkBox">
                             <Span>이름</Span>
-                            <Input placeholder="이름" width="65%" />
+                            <Input placeholder="이름" width="220px" />
                         </Div>
-                        <Div className="LinkBox" width="50%">
+                        <Div className="LinkBox">
                             <Span>링크 URL(http://필수)</Span>
-                            <Input placeholder="링크 URL" width="65%" />
+                            <Input placeholder="링크 URL" width="450px" />
                         </Div>
-                        <Div className="LinkBox" width="530px">
+                        <Div className="LinkBox">
                             <Span>구매자 이상만 보기</Span>
                             <Div>
                                 <Div className="DropdownBox">
@@ -66,6 +66,18 @@ export default function Link() {
                         <Span>삭제</Span>
                     </Btn>
                 </Div>
+                <Div className="Line" />
+                <Div className="LinkInfo">
+                    <Span className="LinkText">
+                        <Img src="/assets/images/icon-a-updowncotrol-gray.png" />
+                    </Span>
+                    <Span className="LinkText">텔레그램 관리자문의</Span>
+                    <Span className="LinkText">https://t.me.+GaJUth56dVKNFGI</Span>
+                    <Span className="LinkText">아니오</Span>
+                    <Btn className="Delete">
+                        <Span>삭제</Span>
+                    </Btn>
+                </Div>
             </Div>
             <Div className="PageBox">
                 <Div className="PageText">
@@ -92,9 +104,9 @@ export default function Link() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
-        padding-bottom: 15px;
+
         border-radius: 16px;
         background-color: #272a31;
     }
@@ -119,7 +131,7 @@ const Div = styled.div`
         justify-content: center;
     }
     &.DropdownBox {
-        width: 200px;
+        width: 220px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -134,7 +146,7 @@ const Div = styled.div`
     &.LinkDropdown {
         position: absolute;
         margin: 5px 20px 0;
-        width: 200px;
+        width: 220px;
         display: grid;
         padding: 20px;
         grid-template-columns: 1fr;
@@ -157,9 +169,11 @@ const Div = styled.div`
     &.LinkInfo {
         display: grid;
         grid-template-columns: 1fr 3fr 6fr 3fr 1fr;
-        padding: 10px 40px;
+        padding: 0px 40px;
+        place-items: center;
+        height: 76px;
+        border-radius: 16px;
         background-color: #272a31;
-        margin-top: 10px;
     }
     &.Line {
         height: 1px;
@@ -223,7 +237,7 @@ const Span = styled.span`
 
 const Input = styled.input`
     width: ${(props) => props.width};
-    height: 52px;
+    height: 46px;
     padding-left: 10px;
     margin: 0 20px;
     border-radius: 10px;
@@ -236,7 +250,8 @@ const Input = styled.input`
 `;
 const Btn = styled.button`
     &.PlusBtn {
-        height: 40px;
+        width: 104px;
+        height: 46px;
         padding: 10px 19px;
         border-radius: 10px;
         background-color: #00abbf;
@@ -250,6 +265,7 @@ const Btn = styled.button`
         padding: 5px 17px;
         border-radius: 6px;
         background-color: #f34a7e;
+        margin-left: 40px;
     }
 `;
 
@@ -257,6 +273,6 @@ const Img = styled.img`
     &.iconpagnagtion {
         width: 24px;
         height: 24px;
-        cursor: pointer;
     }
+    cursor: pointer;
 `;

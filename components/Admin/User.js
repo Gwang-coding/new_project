@@ -44,8 +44,29 @@ export default function User() {
                     <Span>dkasdkasd</Span>
                     <Span>김길동</Span>
                     <Span>
-                        <Span className="ColorText" bcolor="#ffb621">
+                        <Span className="ColorText" color="#ffb621" bcolor="#3D372F">
                             vip
+                        </Span>
+                    </Span>
+                    <Span>2022.07.01</Span>
+                    <Span>6,000</Span>
+                    <Span>570,000</Span>
+                    <Span>
+                        <a>관리</a>
+                    </Span>
+                    <Span>
+                        <a>로그</a>
+                    </Span>
+                </Div>
+                <Div className="Line" />
+
+                <Div className="Info">
+                    <Span>1</Span>
+                    <Span>dkasdkasd</Span>
+                    <Span>김길동</Span>
+                    <Span>
+                        <Span className="ColorText" color="#fc7772" bcolor="#3C3137">
+                            미승인
                         </Span>
                     </Span>
                     <Span>2022.07.01</Span>
@@ -64,8 +85,89 @@ export default function User() {
                     <Span>dkasdkasd</Span>
                     <Span>김길동</Span>
                     <Span>
-                        <Span className="ColorText" bcolor="#fc7772">
-                            미승인
+                        <Span className="ColorText" color="#25c1b6" bcolor="#26383E">
+                            비구매자
+                        </Span>
+                    </Span>
+                    <Span>2022.07.01</Span>
+                    <Span>6,000</Span>
+                    <Span>570,000</Span>
+                    <Span>
+                        <a>관리</a>
+                    </Span>
+                    <Span>
+                        <a>로그</a>
+                    </Span>
+                </Div>
+                <Div className="Line" />
+                <Div className="Info">
+                    <Span>1</Span>
+                    <Span>dkasdkasd</Span>
+                    <Span>김길동</Span>
+                    <Span>
+                        <Span className="ColorText" color="#52a4ff" bcolor="#2A3546">
+                            구매자
+                        </Span>
+                    </Span>
+                    <Span>2022.07.01</Span>
+                    <Span>6,000</Span>
+                    <Span>570,000</Span>
+                    <Span>
+                        <a>관리</a>
+                    </Span>
+                    <Span>
+                        <a>로그</a>
+                    </Span>
+                </Div>
+                <Div className="Line" />
+                <Div className="Info">
+                    <Span>1</Span>
+                    <Span>dkasdkasd</Span>
+                    <Span>김길동</Span>
+                    <Span>
+                        <Span className="ColorText" color="#c0c1c2" bcolor="#35373E">
+                            관리자
+                        </Span>
+                    </Span>
+                    <Span>2022.07.01</Span>
+                    <Span>6,000</Span>
+                    <Span>570,000</Span>
+                    <Span>
+                        <a>관리</a>
+                    </Span>
+                    <Span>
+                        <a>로그</a>
+                    </Span>
+                </Div>
+                <Div className="Line" />
+                <Div className="Info">
+                    <Span>1</Span>
+                    <Span>dkasdkasd</Span>
+                    <Span>김길동</Span>
+                    <Span>
+                        <Span className="ColorText" color="#ff8c2a" bcolor="#3D3430">
+                            rvip
+                        </Span>
+                    </Span>
+                    <Span>2022.07.01</Span>
+                    <Span>6,000</Span>
+                    <Span>570,000</Span>
+                    <Span>
+                        <a>관리</a>
+                    </Span>
+                    <Span>
+                        <a>로그</a>
+                    </Span>
+                </Div>
+
+                <Div className="Line" />
+                <Div className="Info">
+                    <Span>1</Span>
+                    <Span>dkasdkasd</Span>
+                    <Span>김길동</Span>
+                    <Span>
+                        <Span className="ColorText" color="#be72fc" bcolor="#362F46">
+                            vvip
                         </Span>
                     </Span>
                     <Span>2022.07.01</Span>
@@ -96,11 +198,10 @@ export default function User() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 20px;
     }
     &.UserTopBox {
         width: 100%;
@@ -116,8 +217,10 @@ const Div = styled.div`
     }
     &.Bar {
         display: grid;
-        padding: 15px 40px;
+        padding: 0px 40px;
         width: 100%;
+        height: 50px;
+        place-items: center;
         text-align: center;
         grid-template-columns: 5fr 13fr 13fr 13fr 13fr 13fr 13fr 9fr 9fr;
         background-color: #31333a;
@@ -125,10 +228,14 @@ const Div = styled.div`
     &.Info {
         display: grid;
         width: 100%;
+        height: 74px;
+        place-items: center;
         text-align: center;
         grid-template-columns: 5fr 13fr 13fr 13fr 13fr 13fr 13fr 9fr 9fr;
-        padding: 20px 40px;
+        padding: 0px 40px;
         background-color: #272a31;
+        border-radius: 16px;
+        margin: 1px 0;
     }
     &.InputBox {
         cursor: pointer;
@@ -213,8 +320,10 @@ const Span = styled.span`
         font-weight: bold;
     }
     &.ColorText {
-        padding: 2px 10px;
+        padding: 4px 12px;
+        height: 26px;
         border-radius: 13px;
+        color: ${(props) => props.color};
         background-color: ${(props) => props.bcolor};
     }
 `;
@@ -224,7 +333,7 @@ const Input = styled.input`
     border-radius: 10px;
     border: solid 1px #3d3f45;
     background-color: #31333a;
-    margin: 0 10px;
+    margin: 0 14px;
     padding-left: 10px;
     font-size: 15px;
     font-weight: normal;
@@ -233,12 +342,13 @@ const Input = styled.input`
 `;
 const Btn = styled.button`
     &.DelBtn {
+        width: 106px;
         height: 46px;
-        padding: 5px 17px;
         border-radius: 10px;
         background-color: #f34a7e;
     }
     &.SearchBtn {
+        width: 80px;
         height: 46px;
         padding: 5px 17px;
         border-radius: 10px;

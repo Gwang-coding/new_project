@@ -31,7 +31,7 @@ export default function Design() {
                     <Span className="UrlText">프로필사진</Span>
                     <Input className="UrlInput" placeholder="https://" />
                 </Div>
-                <Div className="RGBBox" width="25%">
+                <Div className="RGBBox">
                     <Span className="UrlText">
                         RGB 사용
                         <br />
@@ -134,14 +134,14 @@ export default function Design() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
     }
     &.DesignTop {
         width: 100%;
-        padding: 25px 40px;
+        padding: 24px 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -149,7 +149,7 @@ const Div = styled.div`
 
     &.DesignWrapper {
         width: 100%;
-        padding: 25px 40px 10px 40px;
+        padding: 30px 40px 15px 40px;
         display: flex;
         flex-direction: column;
     }
@@ -161,7 +161,7 @@ const Div = styled.div`
         justify-content: space-between;
     }
     &.RGBBox {
-        width: 25%;
+        width: 350px;
         display: flex;
         align-items: center;
         margin-bottom: 20px;

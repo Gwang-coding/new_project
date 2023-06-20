@@ -347,7 +347,7 @@ export default function Setting() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
@@ -366,7 +366,7 @@ const Div = styled.div`
     }
     &.SettingWrapper {
         width: 100%;
-        padding: 20px 0px;
+        padding: 30px 0px;
         display: flex;
         flex-direction: ${(props) => props.flex};
         justify-content: space-between;
@@ -415,10 +415,12 @@ const Div = styled.div`
     &.PercentWrapper {
         width: 83%;
         display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     &.PercentBox {
-        width: 90%;
+        width: 280px;
     }
     &.PercentInput {
         height: 52px;

@@ -129,11 +129,10 @@ export default function ProdectManage() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 20px;
     }
     &.TopBox {
         width: 100%;
@@ -144,8 +143,10 @@ const Div = styled.div`
     &.Bar {
         display: grid;
         grid-template-columns: 2.4fr 13fr 23fr 13fr 13fr 13fr 9fr 9fr 9fr 9fr 2.6fr;
-        padding: 15px 40px;
+        padding: 0px 40px;
         width: 100%;
+        place-items: center;
+        height: 50px;
         text-align: center;
         background-color: #31333a;
     }
@@ -154,7 +155,10 @@ const Div = styled.div`
         grid-template-columns: 2.4fr 13fr 23fr 13fr 13fr 13fr 9fr 9fr 9fr 9fr 2.6fr;
         width: 100%;
         text-align: center;
-        padding: 20px 40px;
+        padding: 0px 40px;
+        height: 76px;
+        place-items: center;
+        border-radius: 16px;
     }
     &.InputBox {
         width: 100%;

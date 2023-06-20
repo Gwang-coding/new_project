@@ -69,15 +69,14 @@ export default function ChargeManage() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 20px;
     }
     &.TopBox {
         width: 100%;
-        padding: 25px 40px;
+        padding: 21px 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -90,7 +89,9 @@ const Div = styled.div`
     &.Bar {
         display: grid;
         grid-template-columns: 5fr 22fr 13fr 13fr 13fr 9fr 13fr;
-        padding: 15px 40px;
+        padding: 0px 40px;
+        place-items: center;
+        height: 50px;
         text-align: center;
         width: 100%;
         background-color: #31333a;
@@ -100,8 +101,12 @@ const Div = styled.div`
         grid-template-columns: 5fr 22fr 13fr 13fr 13fr 9fr 13fr;
         width: 100%;
         text-align: center;
-        padding: 20px 40px;
+        place-items: center;
+        height: 74px;
+        margin: 1px 0;
+        padding: 0px 40px;
         background-color: #272a31;
+        border-radius: 16px;
     }
     &.PageBox {
         display: flex;

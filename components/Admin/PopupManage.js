@@ -25,11 +25,10 @@ export default function PopupManage() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         margin-top: 40px;
         border-radius: 16px;
         background-color: #272a31;
-        padding-bottom: 5px;
     }
     &.PopBottom {
         padding: 30px 40px;
@@ -44,7 +43,8 @@ const Div = styled.div`
         border-bottom: 1px solid #3d3f45;
     }
     &.EditorBox {
-        margin: 25px 0;
+        margin-top: 25px;
+        border-radius: 16px;
     }
 `;
 const Span = styled.span`

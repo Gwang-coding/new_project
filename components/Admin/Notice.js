@@ -28,7 +28,7 @@ export default function Notice() {
 
 const Div = styled.div`
     &.Wrapper {
-        width: 100%;
+        width: 1500px;
         padding: 25px 40px;
         margin: 40px 0px;
         display: flex;
