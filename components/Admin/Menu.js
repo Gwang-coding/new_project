@@ -7,11 +7,11 @@ export default function Menu() {
                 <Span>홈</Span>
                 <Div className="Menu">
                     <Span className="ClickedText">설정</Span>
-                    {/* <Div className="Dropdown">
+                    <Div className="Dropdown">
                         <Span className="DropClicked">공지사항</Span>
                         <Span className="Droptext">하이퍼링크</Span>
                         <Span className="Droptext">하이퍼링크</Span>
-                    </Div> */}
+                    </Div>
                 </Div>
                 <Span>디자인</Span>
                 <Div className="Menu">
