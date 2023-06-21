@@ -17,11 +17,11 @@ export default function Munsang() {
                         <Span className="SubTitle">결제 방식</Span>
                         <Div className="CheckText">
                             <Div className="Oval" />
-                            <Span>계좌이체</Span>
-                            <Div className="Oval" />
-                            <Span>카카오페이 송금</Span>
+                            <Span className="CheckText">계좌이체</Span>
                             <Div className="CheckedOval" />
-                            <Span>문화 상품권 충전</Span>
+                            <Span className="CheckText">카카오페이 송금</Span>
+                            <Div className="Oval" />
+                            <Span className="CheckText">문화 상품권 충전</Span>
                         </Div>
                     </Div>
                     <Div className="Line" />
@@ -115,17 +115,34 @@ const Div = styled.div`
         width: 100%;
         padding: 20px 30px 0;
     }
+    &.CheckText {
+        display: flex;
+        align-items: center;
+        margin-left: 90px;
+    }
     &.CheckBox {
-        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    &.Box {
+        width: 40%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    &.CheckText {
-        display: flex;
-        width: 73%;
-        align-items: center;
-        justify-content: space-between;
+    &.CheckedOval {
+        width: 20px;
+        height: 20px;
+        border: solid 6px #25b499;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &.Oval {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: solid 1px #e5e8ea;
+        cursor: pointer;
     }
     &.BottomBox {
         width: 94%;
@@ -140,22 +157,7 @@ const Div = styled.div`
         column-gap: 10px;
         margin-bottom: 10px;
     }
-    &.CheckedOval {
-        width: 20px;
-        height: 20px;
-        border: solid 6px #25b499;
-        border-radius: 50%;
-        cursor: pointer;
-        margin-right: -20px;
-    }
-    &.Oval {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: solid 1px #e5e8ea;
-        margin-right: -20px;
-        cursor: pointer;
-    }
+
     &.Notice {
         display: flex;
         align-items: center;
@@ -194,6 +196,9 @@ const Span = styled.span`
     &.BtnText {
         font-size: 18px;
         font-weight: bold;
+    }
+    &.CheckText {
+        margin: 0 40px 0 20px;
     }
 `;
 const Input = styled.input`

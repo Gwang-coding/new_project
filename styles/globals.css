@@ -52,3 +52,10 @@ button {
     cursor: pointer;
     border: 0;
 }
+input {
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

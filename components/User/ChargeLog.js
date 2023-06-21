@@ -66,9 +66,10 @@ export default function ChargeLog() {
                     </Span>
                     <Span>6,000원</Span>
                     <Span>
-                        <Span className="Success">성공</Span>
+                        <Span className="Wait">대기</Span>
                     </Span>
                 </Div>
+
                 <Div className="PageBox">
                     <Div className="PageText">
                         <Img src="/assets/images/icon-pagnagtion-left-2.png" className="iconpagnagtion" />
@@ -263,6 +264,12 @@ const Span = styled.span`
         padding: 4px 9px;
         border-radius: 6px;
         background-color: #ff6136;
+    }
+    &.Wait {
+        width: 43px;
+        padding: 4px 9px;
+        border-radius: 6px;
+        background-color: #56586e;
     }
 `;
 const Input = styled.input``;
