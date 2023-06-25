@@ -16,9 +16,9 @@ export default function BankModal() {
                     <Div className="CheckBox">
                         <Span className="SubTitle">결제 방식</Span>
                         <Div className="CheckText">
-                            <Div className="Oval" />
-                            <Span className="CheckText">계좌이체</Span>
                             <Div className="CheckedOval" />
+                            <Span className="CheckText">계좌이체</Span>
+                            <Div className="Oval" />
                             <Span className="CheckText">카카오페이 송금</Span>
                             <Div className="Oval" />
                             <Span className="CheckText">문화 상품권 충전</Span>
@@ -40,25 +40,27 @@ export default function BankModal() {
                         </Div>
                     </Div>
                     <Div className="Line" />
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-info-16.png" />
-                        <Span className="Warning">주의사항</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">입금자명은 한 번 지정시 변경이 불가능 합니다.</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">입금금액과 입금자 명이 정확하다면 1분내로 충전됩니다.</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">5분동안 입금확인이 되지 않을 경우 취소 처리 됩니다.</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">입금신청을 잘못하신 경우 5분 후 다시 시도해주세요.</Span>
+                    <Div className="NoticeBox">
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-info-16.png" />
+                            <Span className="Warning">주의사항</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">입금자명은 한 번 지정시 변경이 불가능 합니다.</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">입금금액과 입금자 명이 정확하다면 1분내로 충전됩니다.</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">5분동안 입금확인이 되지 않을 경우 취소 처리 됩니다.</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">입금신청을 잘못하신 경우 5분 후 다시 시도해주세요.</Span>
+                        </Div>
                     </Div>
                 </Div>
                 <Btn>
@@ -114,7 +116,7 @@ const Div = styled.div`
     }
     &.Bottom {
         width: 100%;
-        padding: 30px 30px 0;
+        padding: 36px 30px 30px 30px;
     }
     &.CheckText {
         display: flex;
@@ -124,12 +126,14 @@ const Div = styled.div`
     &.CheckBox {
         display: flex;
         align-items: center;
+        margin-bottom: 36px;
     }
     &.Box {
         width: 40%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin: 24px 0;
     }
     &.CheckedOval {
         width: 20px;
@@ -152,13 +156,14 @@ const Div = styled.div`
         background-color: #31333a;
         padding: 0px 10px;
     }
+    &.NoticeBox {
+        margin-top: 30px;
+    }
     &.Notice {
         display: flex;
         align-items: center;
-        margin: 5px 0;
     }
     &.Line {
-        margin: 30px 0;
         height: 1px;
         width: 100%;
         background-color: #3d3f45;
@@ -181,6 +186,7 @@ const Span = styled.span`
     }
     &.Warning {
         font-weight: 500;
+        margin-bottom: 8px;
     }
     &.Info {
         font-size: 15px;
@@ -208,11 +214,11 @@ const Btn = styled.button`
     padding: 16px 84px;
     border-radius: 35px;
     background-color: #1fa58c;
-    margin-top: 20px;
 `;
 
 const Img = styled.img`
     &.NoticeIcon {
         margin-right: 10px;
+        margin-bottom: 8px;
     }
 `;

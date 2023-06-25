@@ -62,7 +62,7 @@ const Div = styled.div`
     &.Wrapper {
         width: 750px;
         height: 660px;
-        padding: 40px 30px;
+        padding: 50px 50px;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -29,17 +29,19 @@ export default function BankPopUp() {
                         <Input />
                     </Div>
                     <Div className="Line" />
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-info-16.png" />
-                        <Span className="Warning">주의사항</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">꼭 계좌번호를 확인후 이체가 완료되면 확인버튼을 눌러주세요.</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">확인 버튼을 누를 시 계좌번호를 다시 할인할 수 없습니다.</Span>
+                    <Div className="NoticeBox">
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-info-16.png" />
+                            <Span className="Warning">주의사항</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">꼭 계좌번호를 확인후 이체가 완료되면 확인버튼을 눌러주세요.</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">확인 버튼을 누를 시 계좌번호를 다시 할인할 수 없습니다.</Span>
+                        </Div>
                     </Div>
                 </Div>
 
@@ -102,19 +104,20 @@ const Div = styled.div`
         width: 50%;
         display: flex;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
         padding-bottom: 30px;
+    }
+    &.NoticeBox {
+        margin-top: 30px;
     }
     &.Notice {
         display: flex;
         align-items: center;
-        margin: 5px 0;
     }
     &.Line {
-        width: 100%;
         height: 1px;
-        background-color: #393b44;
-        margin 10px 0 30px;
+        width: 100%;
+        background-color: #3d3f45;
     }
 `;
 
@@ -134,6 +137,7 @@ const Span = styled.span`
     }
     &.Warning {
         font-weight: 500;
+        margin-bottom: 8px;
     }
     &.Info {
         font-size: 15px;
@@ -166,5 +170,6 @@ const Btn = styled.button`
 const Img = styled.img`
     &.NoticeIcon {
         margin-right: 10px;
+        margin-bottom: 8px;
     }
 `;

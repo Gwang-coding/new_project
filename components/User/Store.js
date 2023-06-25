@@ -280,6 +280,8 @@ const Btn = styled.button`
 
 const Img = styled.img`
     &.Img {
+        width: 380px;
+        height: 200px;
         border-radius: 16px 16px 0 0;
     }
 `;

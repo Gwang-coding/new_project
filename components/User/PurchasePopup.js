@@ -72,7 +72,7 @@ const Div = styled.div`
         flex-direction: column;
         justify-content: space-between;
         background-color: #272a31;
-        padding: 30px 0px;
+        padding: 30px 0px 40px;
     }
     &.Top {
         width: 100%;
@@ -121,7 +121,7 @@ const Div = styled.div`
         display: flex;
         justify-content: space-between;
         padding: 0px 30px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     &.Line {
         width: 100%;
@@ -133,9 +133,10 @@ const Div = styled.div`
 const Span = styled.span`
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.56;
+
     color: #e5e8ea;
     &.Title {
+        line-height: 1.4;
         font-size: 22px;
         font-weight: bold;
     }

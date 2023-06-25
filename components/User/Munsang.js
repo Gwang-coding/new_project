@@ -43,21 +43,23 @@ export default function Munsang() {
                         </Div>
                     </Div>
                     <Div className="Line" />
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-info-16.png" />
-                        <Span className="Warning">주의사항</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">문화상품권 충전 수수료는 10%입니다.</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">문화상품권 핀번호가 정확하다면 1분내로 충전됩니다.</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">충전 오류가 있을 시 관리자에게 문의 주세요.</Span>
+                    <Div className="NoticeBox">
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-info-16.png" />
+                            <Span className="Warning">주의사항</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">문화상품권 충전 수수료는 10%입니다.</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">문화상품권 핀번호가 정확하다면 1분내로 충전됩니다.</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">충전 오류가 있을 시 관리자에게 문의 주세요.</Span>
+                        </Div>
                     </Div>
                 </Div>
                 <Btn>
@@ -157,11 +159,12 @@ const Div = styled.div`
         column-gap: 10px;
         margin-bottom: 10px;
     }
-
+    &.NoticeBox {
+        margin-top: 30px;
+    }
     &.Notice {
         display: flex;
         align-items: center;
-        margin: 5px 0;
     }
     &.Line {
         margin: 30px 0;
@@ -186,6 +189,7 @@ const Span = styled.span`
         font-weight: 500;
     }
     &.Warning {
+        margin-bottom: 8px;
         font-weight: 500;
     }
     &.Info {
@@ -222,5 +226,6 @@ const Btn = styled.button`
 const Img = styled.img`
     &.NoticeIcon {
         margin-right: 10px;
+        margin-bottom: 8px;
     }
 `;

@@ -272,7 +272,12 @@ const Span = styled.span`
         background-color: #56586e;
     }
 `;
-const Input = styled.input``;
+const Input = styled.input`
+::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }`;
 const Btn = styled.button``;
 
 const Img = styled.img`

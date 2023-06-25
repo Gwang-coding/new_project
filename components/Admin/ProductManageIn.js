@@ -34,6 +34,11 @@ export default function ProdectManageIn() {
                                     <Span className="InputText">카테고리</Span>
                                     <Img src="/assets/images/icon-a-right-gray.png" />
                                 </Div>
+                                <Div className="LinkDropdown">
+                                    <Span className="InputText">비구매자</Span>
+                                    <Span className="InputText">구매자</Span>
+                                    <Span className="InputText">리셀러</Span>
+                                </Div>
                             </Div>
                             <Div className="Wrapper">
                                 <Span>상품이미지 URL</Span>
@@ -140,6 +145,7 @@ const Div = styled.div`
         justify-content: space-between;
     }
     &.Wrapper {
+        position: relative;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -199,6 +205,23 @@ const Div = styled.div`
         width: 100%;
         background-color: #393b44;
     }
+    &.LinkDropdown {
+        position: absolute;
+        top: 60px;
+        left: 148px;
+        width: 635px;
+        display: grid;
+        padding: 20px 13px;
+        grid-template-columns: 1fr;
+        border-radius: 10px;
+        row-gap: 10px;
+        border: solid 1px #3d3f45;
+        box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
+        background-color: #31333a;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        cursor: pointer;
+    }
 `;
 const Span = styled.span`
     font-size: 18px;
@@ -250,6 +273,22 @@ const Input = styled.input`
         &::-webkit-inner-spin-button,
         &::-webkit-outer-spin-button {
             -webkit-appearance: none;
+        }
+        &.LinkDropdown {
+            position: absolute;
+            margin: 320px 0 0 168px;
+            width: 390px;
+            display: grid;
+            padding: 20px 13px;
+            grid-template-columns: 1fr;
+            border-radius: 10px;
+            row-gap: 10px;
+            border: solid 1px #3d3f45;
+            box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
+            background-color: #31333a;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            cursor: pointer;
         }
     }
 `;

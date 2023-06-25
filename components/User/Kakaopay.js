@@ -40,29 +40,31 @@ export default function Kakaopay() {
                         </Div>
                     </Div>
                     <Div className="Line" />
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-info-16.png" />
-                        <Span className="Warning">주의사항</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">송금자명은 한번 지정시 변경이 불가능 합니다.</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">[친구에게 송금]하시면 안됩니다.</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">[받는 분 이름표시]에 꼭 송금자명 맞춰서 송금해야합니다.</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">5분동안 입금확인이 되지 않을 경우 취소처리 됩니다.</Span>
-                    </Div>
-                    <Div className="Notice">
-                        <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
-                        <Span className="Info">입금 신청을 잘못하신 경우 5분후 다시 시도해주세요.</Span>
+                    <Div className="NoticeBox">
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-info-16.png" />
+                            <Span className="Warning">주의사항</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">송금자명은 한번 지정시 변경이 불가능 합니다.</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">[친구에게 송금]하시면 안됩니다.</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">[받는 분 이름표시]에 꼭 송금자명 맞춰서 송금해야합니다.</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">5분동안 입금확인이 되지 않을 경우 취소처리 됩니다.</Span>
+                        </Div>
+                        <Div className="Notice">
+                            <Img className="NoticeIcon" src="/assets/images/icon-bullet.png" />
+                            <Span className="Info">입금 신청을 잘못하신 경우 5분후 다시 시도해주세요.</Span>
+                        </Div>
                     </Div>
                 </Div>
                 <Btn>
@@ -93,11 +95,11 @@ const Div = styled.div`
         flex-direction: column;
         justify-content: space-between;
         background-color: #272a31;
-        padding: 30px 0px;
+        padding: 29px 0px;
     }
     &.Top {
         width: 100%;
-        padding: 0px 25px 30px 10px;
+        padding: 0px 25px 29px 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -117,7 +119,7 @@ const Div = styled.div`
     }
     &.Bottom {
         width: 100%;
-        padding: 30px 30px 0;
+        padding: 36px 30px 0px 30px;
     }
     &.CheckText {
         display: flex;
@@ -127,12 +129,14 @@ const Div = styled.div`
     &.CheckBox {
         display: flex;
         align-items: center;
+        margin-bottom: 36px;
     }
     &.Box {
         width: 40%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin: 24px 0;
     }
     &.CheckedOval {
         width: 20px;
@@ -155,13 +159,14 @@ const Div = styled.div`
         background-color: #31333a;
         padding: 0px 10px;
     }
+    &.NoticeBox {
+        margin-top: 30px;
+    }
     &.Notice {
         display: flex;
         align-items: center;
-        margin: 5px 0;
     }
     &.Line {
-        margin: 25px 0;
         height: 1px;
         width: 100%;
         background-color: #3d3f45;
@@ -184,6 +189,7 @@ const Span = styled.span`
     }
     &.Warning {
         font-weight: 500;
+        margin-bottom: 8px;
     }
     &.Info {
         font-size: 15px;
@@ -216,5 +222,6 @@ const Btn = styled.button`
 const Img = styled.img`
     &.NoticeIcon {
         margin-right: 10px;
+        margin-bottom: 8px;
     }
 `;

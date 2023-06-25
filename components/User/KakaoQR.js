@@ -82,12 +82,12 @@ const Div = styled.div`
         text-align: center;
         display: flex;
         flex-direction: column;
-        padding: 20px 30px 0;
+        padding: 40px 30px 0;
     }
     &.Rectangle {
         width: 180px;
         height: 180px;
-        margin: 30px 0;
+        margin: 52px 0 75px;
         padding: 20px;
         border-radius: 20px;
         box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
@@ -120,7 +120,7 @@ const Btn = styled.button`
     padding: 16px 84px;
     border-radius: 35px;
     background-color: #1fa58c;
-    margin-top: 20px;
+    margin: 30px 0 0;
 `;
 
 const Img = styled.img``;

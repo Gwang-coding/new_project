@@ -50,6 +50,15 @@ export default function UserMange() {
                         <Span className="InputText">등급</Span>
                         <Img src="/assets/images/icon-a-right-gray.png" />
                     </Div>
+                    <Div className="LinkDropdown">
+                        <Span className="InputText">비구매자</Span>
+                        <Span className="InputText">구매자</Span>
+                        <Span className="InputText">리셀러</Span>
+                        <Span className="InputText">VIP</Span>
+                        <Span className="InputText">VVIP</Span>
+                        <Span className="InputText">RVIP</Span>
+                        <Span className="InputText">직원관리자</Span>
+                    </Div>
                 </Div>
                 <Div className="PercentBox">
                     <Span>가입아이피</Span>
@@ -110,6 +119,7 @@ const Div = styled.div`
         grid-template-columns: 1fr 1fr;
     }
     &.PercentBox {
+        position: relative;
         width: 100%;
         display: flex;
         align-items: center;
@@ -137,6 +147,23 @@ const Div = styled.div`
         border-radius: 10px;
         border: solid 1px #3d3f45;
         background-color: #272a31;
+    }
+    &.LinkDropdown {
+        position: absolute;
+        top: 60px;
+        left: 169px;
+        width: 390px;
+        display: grid;
+        padding: 20px 13px;
+        grid-template-columns: 1fr;
+        border-radius: 10px;
+        row-gap: 10px;
+        border: solid 1px #3d3f45;
+        box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
+        background-color: #31333a;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        cursor: pointer;
     }
 `;
 const Span = styled.span`
