@@ -115,7 +115,7 @@ const Div = styled.div`
     }
     &.Bottom {
         width: 100%;
-        padding: 20px 30px 0;
+        padding: 36px 30px 10px 30px;
     }
     &.CheckText {
         display: flex;
@@ -125,6 +125,7 @@ const Div = styled.div`
     &.CheckBox {
         display: flex;
         align-items: center;
+        margin-bottom: 36px;
     }
     &.Box {
         width: 40%;
@@ -150,6 +151,7 @@ const Div = styled.div`
         width: 94%;
         display: flex;
         justify-content: space-between;
+        margin: 24px 0;
     }
     &.Input {
         height: 160px;
@@ -167,7 +169,6 @@ const Div = styled.div`
         align-items: center;
     }
     &.Line {
-        margin: 30px 0;
         height: 1px;
         width: 100%;
         background-color: #3d3f45;
